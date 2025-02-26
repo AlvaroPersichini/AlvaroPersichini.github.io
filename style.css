@@ -1,0 +1,461 @@
+html {
+    scroll-behavior: smooth;
+
+
+
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+ 
+   
+ 
+ 
+
+}
+
+body {
+
+    background: linear-gradient(to left, rgb(233, 221, 223), #c4c2c0, #c3cee2, #d7d7e0);
+}
+
+
+main {
+
+    background: linear-gradient(to left, rgb(30, 74, 168), #c4c2c0, #c3cee2, #d7d7e0);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 6px 40px -2px black;
+    margin: 20px;
+
+}
+
+
+
+/* SECTION ASIDE */
+.aside {
+    width: 25%;
+    height: 90vh;
+    position: fixed;
+    top: 70px;
+    right: 50px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+ul {
+
+    list-style: none;
+    padding: 0;
+    display: flex;
+    bottom: 0;
+    top: 30px;
+    right: 50%;
+    flex-direction: column;
+}
+
+li {
+
+    width: 100%;
+    padding: 2vh;
+}
+
+
+aside h1 {
+    color: white;
+    font-size: calc(1.5vw + 1.8vh);
+    text-shadow: white -3px -3px 30px;
+    margin: 2vh;
+}
+
+
+li a {
+    font-size: clamp(16px, 0.9vw + 0.9vh, 24px);
+    text-shadow: rgb(16, 68, 36) 2px 2px 3px;
+}
+
+li:not(:first-child) {
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(237, 237, 240, 0.5), rgba(0, 0, 0, 0)) 1;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.selfie {
+    display: block;
+    margin: 15px auto;
+    width: 12vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+p a {
+    color: black;
+}
+
+h2 a {
+    color: black;
+    font-size: 2.2vw;
+
+}
+
+
+a:hover {
+    color: rgb(146, 97, 79);
+}
+
+
+.menu-toggle {
+
+    background: #333;
+    color: white;
+    font-size: 4vw;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    float: right;
+    position: fixed;
+    top: 50px;
+    right: 40px;
+    border-radius: 10px;
+}
+
+
+
+/* max-width de 768px para ocultar el menú normal y mostrar el botón hamburguesa:*/
+@media (min-width: 768px) and (max-width:2000px) {
+
+
+    .h1Nav {
+        font-size: clamp(2rem, 2vw, 3vh);
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .about{
+        width: 70%;
+    }
+
+    #work{
+        width: 70%;
+    }
+
+    .presentacion {
+        margin-left:5vw ;
+
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .aside {
+        display: none;
+
+    }
+
+    .about {
+        width: 90%;
+      
+    }
+
+    #work{
+        width: 90%;
+    }
+
+ 
+    .presentacion {
+        margin-left:0 ;
+
+    }
+
+
+
+
+    .nav {
+        display: none;
+    }
+
+    .selfie {
+        display: none;
+    }
+
+    .h1Nav {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+
+
+
+}
+
+/* --------------- SECCION ABOUT ---------------------------------- */
+
+.about {
+
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    height: 100vh;
+
+}
+
+.profesion {
+    display: block;
+    justify-self: left;
+    font-size: clamp(16px, 3vw, 40px);
+    border-bottom: 1px solid transparent;
+    border-image-source: linear-gradient(to right, rgb(13, 13, 14), rgba(14, 14, 14, 0.5), rgba(0, 0, 0, 0));
+    border-image-slice: 1;
+    text-shadow: gray -1px -3px 20px;
+
+}
+
+
+.presentacion {
+    display: inline-block;
+   
+    padding: 10px;
+    font-size: clamp(16px, 1.5vw, 24px);
+    text-align: start;
+    border-left: 2px solid black;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(19, 19, 139, 0.5), rgba(0, 0, 0, 0)) 1;
+    text-shadow: gray -1px -3px 20px;
+
+
+}
+
+
+
+.linkContacto {
+    font-size: calc(0.9vw + 0.9vh);
+    color: blue;
+}
+
+/* --------------- WORK SECCION ---------------------------------- */
+
+
+#work {
+
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.workExperience {
+
+    display: block;
+    justify-self: left;
+    font-size: clamp(16px, 3vw, 40px);
+    border-bottom: 1px solid transparent;
+    border-image-source: linear-gradient(to right, rgb(13, 13, 14), rgba(14, 14, 14, 0.5), rgba(0, 0, 0, 0));
+    border-image-slice: 1;
+    text-shadow: gray -1px -3px 20px;
+
+}
+
+.workContainer {
+    justify-self: left;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    border-image-source: linear-gradient(to right, rgb(207, 207, 211), rgba(14, 14, 14, 0.5), rgba(240, 237, 237, 0));
+    border-image-slice: 1;
+    font-size: clamp(16px, 1vw, 25px);
+ 
+
+
+
+}
+
+.imgContainer {
+
+    display: flex;
+    align-items: center;
+    
+  
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+
+
+#work h2 {
+    display: inline;
+    font-size: clamp(16px, 1.7vw, 40px);
+   
+}
+
+
+
+#work h3 {
+    display: block;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: normal;
+    color: rgb(77, 76, 76);
+    font-size: 16px;
+}
+
+
+#work p {
+    color: black;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 0; 
+    font-size: clamp(16px, 1vw, 24px);
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+.empresa {
+
+    position: relative;
+    display: block;
+    top: 0;
+    left: 15px;
+    font-family: 'Lato', sans-serif;
+    text-shadow: gray -1px -3px 20px;
+}
+
+/* .Expe p {
+    padding-left: 5px;
+    position: relative;
+    left: 10vw;
+    border-left: 1px solid transparent;
+    border-image-source: linear-gradient(to bottom, rgb(236, 236, 238), rgba(14, 14, 14, 0.5), rgba(247, 244, 244, 0));
+    border-image-slice: 1;
+    width: 70%;
+    font-size: min(2vw, 2vh);
+    text-shadow: gray -1px -3px 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2vh;
+} */
+
+
+.logo {
+
+    width: 3vw;
+    padding-left: 5px;
+
+}
+
+
+
+
+
+
+.logoNombre {
+    font-size: 1.2vw;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    height: 45px;
+
+}
+
+div.contenedor {
+    margin: 1vh;
+}
+
+
+
+.contenedorWork {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+
+
+
+/* --------------- SECCION ACADEMIC ---------------------------------- */
+.academic {
+    position: relative;
+    width: calc(100vw - 27vw);
+    height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+    border: #1b1b1b solid;
+}
+
+#academic article h1 {
+    color: black;
+    font-size: 3vw;
+    border-bottom: 2px solid transparent;
+    border-image-source: linear-gradient(to right, rgb(13, 13, 14), rgba(14, 14, 14, 0.5), rgba(0, 0, 0, 0));
+    border-image-slice: 1;
+    padding-bottom: 1px;
+}
+
+#academic article h2 {
+    font-size: 2vw;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas de igual tamaño */
+    grid-template-rows: repeat(2, auto);
+    /* 2 filas ajustadas al contenido */
+    gap: 10px;
+    /* Espacio entre los elementos */
+    padding: 20px;
+
+}
+
+
+/* --------------- SECCION PORTFOLIO ---------------------------------- */
+.portfolio {
+    position: relative;
+    width: calc(100vw - 27vw);
+    height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+    border: #1b1b1b solid;
+}
+
+
+/* --------------- SECCION CONTACT ---------------------------------- */
+.contact {
+    position: relative;
+    width: calc(100vw - 27vw);
+    height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+    border: #1b1b1b solid;
+}
