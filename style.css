@@ -21,6 +21,7 @@ body {
 main{
     display: flex;
     flex-direction: column;
+    overflow: visible;
 }
 
 
@@ -122,8 +123,12 @@ a:hover {
     justify-self: center;
     background-color: black;
     display: none;
+   
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
+  
+ 
 
 }
 
