@@ -1,60 +1,55 @@
 html {
     scroll-behavior: smooth;
 
-
-
 }
 
 * {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
- 
-   
- 
- 
+  
 
 }
 
 body {
 
-    background: linear-gradient(to left, rgb(233, 221, 223), #c4c2c0, #c3cee2, #d7d7e0);
-}
-
-
-main {
-
     background: linear-gradient(to left, rgb(30, 74, 168), #c4c2c0, #c3cee2, #d7d7e0);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 10px 6px 40px -2px black;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
 
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* SECTION ASIDE */
 .aside {
-    width: 25%;
-    height: 90vh;
+    width: 24%;
+    height: 96vh;
     position: fixed;
-    top: 70px;
-    right: 50px;
+    right: 10px;
     color: white;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    scrollbar-width: none;
+    ::-webkit-scrollbar { display: none; }
 
 }
+
+
 
 ul {
 
     list-style: none;
     padding: 0;
     display: flex;
-    bottom: 0;
-    top: 30px;
-    right: 50%;
     flex-direction: column;
 }
 
@@ -78,7 +73,7 @@ li a {
     text-shadow: rgb(16, 68, 36) 2px 2px 3px;
 }
 
-li:not(:first-child) {
+#menuVertical>li:not(:first-child) {
     border: 1px solid transparent;
     border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(237, 237, 240, 0.5), rgba(0, 0, 0, 0)) 1;
 }
@@ -98,9 +93,9 @@ a {
     border-radius: 50%;
 }
 
-p a {
-    color: black;
-}
+
+
+
 
 h2 a {
     color: black;
@@ -114,111 +109,86 @@ a:hover {
 }
 
 
-.menu-toggle {
 
-    background: #333;
-    color: white;
-    font-size: 4vw;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    float: right;
-    position: fixed;
-    top: 50px;
-    right: 40px;
-    border-radius: 10px;
+
+
+
+
+
+/* ---------------  NAV HORIZONTAL ---------------------------------- */
+
+.site-header {
+    width: 100%;
+    justify-self: center;
+    background-color: black;
+    display: none;
 }
 
 
 
-/* max-width de 768px para ocultar el menú normal y mostrar el botón hamburguesa:*/
-@media (min-width: 768px) and (max-width:2000px) {
+.ulHorizontal {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
 
-
-    .h1Nav {
-        font-size: clamp(2rem, 2vw, 3vh);
-    }
-
-    .menu-toggle {
-        display: none;
-    }
-
-    .about{
-        width: 70%;
-    }
-
-    #work{
-        width: 70%;
-    }
-
-    .presentacion {
-        margin-left:5vw ;
-
-    }
-
+  
 
 }
 
-@media (max-width: 768px) {
-    .aside {
-        display: none;
 
-    }
 
-    .about {
-        width: 90%;
-      
-    }
 
-    #work{
-        width: 90%;
-    }
+.liHorizontal1 {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+  
+}
 
+.aHorizontal {
+   
+    font-size: .85rem;
+    display: flex;
+    flex-direction: column;
  
-    .presentacion {
-        margin-left:0 ;
-
-    }
-
-
-
-
-    .nav {
-        display: none;
-    }
-
-    .selfie {
-        display: none;
-    }
-
-    .h1Nav {
-        display: none;
-    }
-
-    .logo {
-        display: none;
-    }
-
-
-
+    align-self: center;
+  
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --------------- SECCION ABOUT ---------------------------------- */
 
 .about {
 
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px;
+    border-radius: 10px;
+    padding: 30px;
     height: 100vh;
+    display: block;
+    width: 73%;
+
 
 }
 
 .profesion {
     display: block;
-    justify-self: left;
-    font-size: clamp(16px, 3vw, 40px);
+    font-size: clamp(24px, 4vw, 32px);
     border-bottom: 1px solid transparent;
     border-image-source: linear-gradient(to right, rgb(13, 13, 14), rgba(14, 14, 14, 0.5), rgba(0, 0, 0, 0));
     border-image-slice: 1;
@@ -229,17 +199,15 @@ a:hover {
 
 .presentacion {
     display: inline-block;
-   
     padding: 10px;
     font-size: clamp(16px, 1.5vw, 24px);
     text-align: start;
     border-left: 2px solid black;
     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(19, 19, 139, 0.5), rgba(0, 0, 0, 0)) 1;
     text-shadow: gray -1px -3px 20px;
-
-
+  
+   
 }
-
 
 
 .linkContacto {
@@ -278,7 +246,7 @@ a:hover {
     border-image-source: linear-gradient(to right, rgb(207, 207, 211), rgba(14, 14, 14, 0.5), rgba(240, 237, 237, 0));
     border-image-slice: 1;
     font-size: clamp(16px, 1vw, 25px);
- 
+
 
 
 
@@ -288,8 +256,8 @@ a:hover {
 
     display: flex;
     align-items: center;
-    
-  
+
+
 }
 
 .logo {
@@ -301,7 +269,7 @@ a:hover {
 #work h2 {
     display: inline;
     font-size: clamp(16px, 1.7vw, 40px);
-   
+
 }
 
 
@@ -322,10 +290,10 @@ a:hover {
     color: black;
     margin-top: 10px;
     padding-bottom: 15px;
-    margin-bottom: 0; 
+    margin-bottom: 0;
     font-size: clamp(16px, 1vw, 24px);
 
-   
+
 }
 
 
@@ -458,4 +426,99 @@ div.contenedor {
     padding: 30px;
     box-sizing: border-box;
     border: #1b1b1b solid;
+}
+
+
+/* max-width de 768px para ocultar el menú normal y mostrar el botón hamburguesa:*/
+/* @media (min-width: 900px) {
+
+    .h1Nav {
+        font-size: clamp(2rem, 2vw, 3vh);
+    }
+
+    .about {
+        width: 75%;
+    }
+
+    #work {
+        width: 70%;
+    }
+
+    .presentacion {
+        margin-left: 5vw;
+
+    }
+
+    header {
+        display: none;
+    }
+
+    .profesion {
+        justify-self: left;
+    }
+
+    .divPresentacion {
+        justify-self: left;
+
+    }
+
+    .site-header{
+        display: none;
+    }
+
+} */
+
+
+@media (max-width: 768px)  {
+
+    .site-header{
+        display: initial;
+    }
+
+  
+    .aside {
+        display: none;
+
+    }
+
+    .about {
+        width: 100%;
+
+    }
+
+    #work {
+        width: 90%;
+    }
+
+    .presentacion {
+        margin-left: 0;
+    }
+
+ 
+
+    .selfie {
+        display: none;
+    }
+
+    .h1Nav {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .profesion {
+        justify-self: center;
+    }
+
+    .presentacion {
+        justify-self: center;
+
+    }
+
+    .divPresentacion {
+        justify-self: center;
+
+    }
 }
