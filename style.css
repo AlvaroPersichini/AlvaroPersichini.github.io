@@ -154,7 +154,7 @@ a:hover {
 .liHorizontal1 {
     display: flex;
     width: 150px;
-    justify-content: left;
+  
     
   
 }
@@ -169,6 +169,35 @@ a:hover {
 
 }
 
+
+
+/* Estilos del botón hamburguesa */
+.hamburger {
+    display: flex;
+    flex-direction:column;
+    align-self: center;
+   
+    
+
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.hamburger:hover span {
+    background-color: #c21212;
+}
 
 
 
