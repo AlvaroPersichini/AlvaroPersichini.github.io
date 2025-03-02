@@ -122,6 +122,9 @@ a:hover {
     justify-self: center;
     background-color: black;
     display: none;
+    position: sticky;
+    top: 0;
+
 }
 
 
@@ -135,7 +138,7 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     height: 50px;
-
+   
   
 
 }
@@ -146,7 +149,8 @@ a:hover {
 .liHorizontal1 {
     display: flex;
     width: 150px;
-    justify-content: center;
+    justify-content: left;
+    
   
 }
 
@@ -155,9 +159,8 @@ a:hover {
     font-size: .85rem;
     display: flex;
     flex-direction: column;
- 
     align-self: center;
-  
+   
 
 }
 
