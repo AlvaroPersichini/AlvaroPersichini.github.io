@@ -154,6 +154,8 @@ a:hover {
 .liHorizontal1 {
     display: flex;
     width: 150px;
+    justify-content: right;
+  
   
     
   
@@ -164,7 +166,7 @@ a:hover {
     font-size: .85rem;
     display: flex;
     flex-direction: column;
-    align-self: center;
+    
    
 
 }
@@ -174,30 +176,32 @@ a:hover {
 /* Estilos del botón hamburguesa */
 .hamburger {
     display: flex;
-    flex-direction:column;
-    align-self: center;
-   
-    
-
+    flex-direction: column;
     gap: 5px;
     background: none;
     border: none;
     cursor: pointer;
     padding: 10px;
+    -webkit-tap-highlight-color: transparent; /* Evita el destello azul en Safari móvil */
+    justify-content: center;
 }
 
 .hamburger span {
     width: 30px;
     height: 3px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 0;
     transition: 0.3s ease;
+    
+    /* Asegura que el ancho y alto sean correctos en Safari */
+    display: block; 
+    -webkit-tap-highlight-color: transparent; /* Evita el destello azul en Safari móvil */
 }
 
-/* Efecto al pasar el mouse */
 .hamburger:hover span {
-    background-color: #c21212;
+    background-color: #555353;
 }
+
 
 
 
