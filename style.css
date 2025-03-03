@@ -166,6 +166,7 @@ a:hover {
     font-size: .85rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     
    
 
