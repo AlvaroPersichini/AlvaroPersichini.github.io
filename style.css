@@ -170,6 +170,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    white-space: nowrap;
 
     color: white;
     /* Color del texto */
@@ -244,6 +245,8 @@ a:hover {
     border-bottom: 1px solid transparent;
     border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(61, 61, 126, 0.5), rgba(0, 0, 0, 0)) 1;
     text-align: left;
+    text-indent: 0.2em; 
+    
 }
 
 
@@ -263,6 +266,7 @@ a:hover {
     border-left: 2px solid black;
     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(19, 19, 139, 0.5), rgba(0, 0, 0, 0)) 1;
     text-shadow: gray -1px -3px 20px;
+    text-justify:newspaper;
 }
 
 
@@ -496,6 +500,7 @@ div.contenedor {
 
     .profesion {
         justify-self: center;
+        text-align: center;
     }
 
     .presentacion {
