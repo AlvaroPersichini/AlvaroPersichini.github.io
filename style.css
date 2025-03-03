@@ -6,7 +6,7 @@ html {
 * {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
-  
+
 
 }
 
@@ -18,7 +18,7 @@ body {
 
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     overflow: visible;
@@ -40,7 +40,10 @@ main{
     justify-content: flex-start;
     overflow-y: auto;
     scrollbar-width: none;
-    ::-webkit-scrollbar { display: none; }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
 
 }
 
@@ -123,12 +126,12 @@ a:hover {
     justify-self: center;
     background-color: black;
     display: none;
-   
+
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-  
- 
+
+
 
 }
 
@@ -143,8 +146,8 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     height: 50px;
-   
-  
+
+
 
 }
 
@@ -155,25 +158,26 @@ a:hover {
     display: flex;
     width: 150px;
     justify-content: right;
-  
-  
-    
-  
+
+
+
+
 }
 
 .aHorizontal {
-   
+
     font-size: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    color: white; /* Color del texto */
+    color: white;
+    /* Color del texto */
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-                 0 0 20px rgba(255, 255, 255, 0.6),
-                 0 0 30px rgba(255, 255, 255, 0.4);
-    
-   
+        0 0 20px rgba(255, 255, 255, 0.6),
+        0 0 30px rgba(255, 255, 255, 0.4);
+
+
 
 }
 
@@ -188,7 +192,8 @@ a:hover {
     border: none;
     cursor: pointer;
     padding: 10px;
-    -webkit-tap-highlight-color: transparent; /* Evita el destello azul en Safari móvil */
+    -webkit-tap-highlight-color: transparent;
+    /* Evita el destello azul en Safari móvil */
     justify-content: center;
 }
 
@@ -198,10 +203,11 @@ a:hover {
     background-color: white;
     border-radius: 0;
     transition: 0.3s ease;
-    
+
     /* Asegura que el ancho y alto sean correctos en Safari */
-    display: block; 
-    -webkit-tap-highlight-color: transparent; /* Evita el destello azul en Safari móvil */
+    display: block;
+    -webkit-tap-highlight-color: transparent;
+    /* Evita el destello azul en Safari móvil */
 }
 
 .hamburger:hover span {
@@ -237,11 +243,18 @@ a:hover {
     display: block;
     font-size: clamp(24px, 4vw, 32px);
     border-bottom: 1px solid transparent;
-    border-image-source: linear-gradient(to right, rgb(13, 13, 14), rgba(14, 14, 14, 0.5), rgba(0, 0, 0, 0));
-    border-image-slice: 1;
+
     text-shadow: gray -1px -3px 20px;
+    text-align: center;
+
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(61, 61, 126, 0.5), rgba(0, 0, 0, 0)) 1;
+
 
 }
+
+
+
 
 
 .presentacion {
@@ -252,8 +265,8 @@ a:hover {
     border-left: 2px solid black;
     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(19, 19, 139, 0.5), rgba(0, 0, 0, 0)) 1;
     text-shadow: gray -1px -3px 20px;
-  
-   
+
+
 }
 
 
@@ -516,13 +529,13 @@ div.contenedor {
 } */
 
 
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
 
-    .site-header{
+    .site-header {
         display: initial;
     }
 
-  
+
     .aside {
         display: none;
 
@@ -541,7 +554,7 @@ div.contenedor {
         margin-left: 0;
     }
 
- 
+
 
     .selfie {
         display: none;
