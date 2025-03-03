@@ -235,24 +235,22 @@ a:hover {
     height: 100vh;
     display: block;
     width: 73%;
-
-
 }
 
 .profesion {
     display: block;
     font-size: clamp(24px, 4vw, 32px);
-    border-bottom: 1px solid transparent;
-
     text-shadow: gray -1px -3px 20px;
-    text-align: center;
-
     border-bottom: 1px solid transparent;
     border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(61, 61, 126, 0.5), rgba(0, 0, 0, 0)) 1;
-
-
+    text-align: left;
 }
 
+
+.divPresentacion {
+    justify-self: right; 
+
+}
 
 
 
@@ -265,8 +263,6 @@ a:hover {
     border-left: 2px solid black;
     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(19, 19, 139, 0.5), rgba(0, 0, 0, 0)) 1;
     text-shadow: gray -1px -3px 20px;
-
-
 }
 
 
@@ -306,8 +302,6 @@ a:hover {
     border-image-source: linear-gradient(to right, rgb(207, 207, 211), rgba(14, 14, 14, 0.5), rgba(240, 237, 237, 0));
     border-image-slice: 1;
     font-size: clamp(16px, 1vw, 25px);
-
-
 
 
 }
@@ -353,16 +347,7 @@ a:hover {
     margin-bottom: 0;
     font-size: clamp(16px, 1vw, 24px);
 
-
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -376,20 +361,6 @@ a:hover {
     text-shadow: gray -1px -3px 20px;
 }
 
-/* .Expe p {
-    padding-left: 5px;
-    position: relative;
-    left: 10vw;
-    border-left: 1px solid transparent;
-    border-image-source: linear-gradient(to bottom, rgb(236, 236, 238), rgba(14, 14, 14, 0.5), rgba(247, 244, 244, 0));
-    border-image-slice: 1;
-    width: 70%;
-    font-size: min(2vw, 2vh);
-    text-shadow: gray -1px -3px 30px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 2vh;
-} */
 
 
 .logo {
@@ -398,9 +369,6 @@ a:hover {
     padding-left: 5px;
 
 }
-
-
-
 
 
 
@@ -489,6 +457,74 @@ div.contenedor {
 }
 
 
+
+
+
+@media (max-width: 768px) {
+
+    .site-header {
+        display: initial;
+    }
+
+
+    .aside {
+        display: none;
+
+    }
+
+    .about {
+        width: 100%;
+
+    }
+
+    #work {
+        width: 90%;
+    }
+
+
+    .selfie {
+        display: none;
+    }
+
+    .h1Nav {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .profesion {
+        justify-self: center;
+    }
+
+    .presentacion {
+         justify-self: center; 
+      
+
+    }
+
+    .divPresentacion {
+        justify-self: center; 
+
+    }
+
+    
+    .presentacion {
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* max-width de 768px para ocultar el menú normal y mostrar el botón hamburguesa:*/
 /* @media (min-width: 900px) {
 
@@ -529,56 +565,17 @@ div.contenedor {
 } */
 
 
-@media (max-width: 768px) {
-
-    .site-header {
-        display: initial;
-    }
-
-
-    .aside {
-        display: none;
-
-    }
-
-    .about {
-        width: 100%;
-
-    }
-
-    #work {
-        width: 90%;
-    }
-
-    .presentacion {
-        margin-left: 0;
-    }
-
-
-
-    .selfie {
-        display: none;
-    }
-
-    .h1Nav {
-        display: none;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .profesion {
-        justify-self: center;
-    }
-
-    .presentacion {
-        justify-self: center;
-
-    }
-
-    .divPresentacion {
-        justify-self: center;
-
-    }
-}
+/* .Expe p {
+    padding-left: 5px;
+    position: relative;
+    left: 10vw;
+    border-left: 1px solid transparent;
+    border-image-source: linear-gradient(to bottom, rgb(236, 236, 238), rgba(14, 14, 14, 0.5), rgba(247, 244, 244, 0));
+    border-image-slice: 1;
+    width: 70%;
+    font-size: min(2vw, 2vh);
+    text-shadow: gray -1px -3px 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2vh;
+} */
