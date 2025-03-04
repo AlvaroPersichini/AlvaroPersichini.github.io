@@ -3,16 +3,19 @@ html {
 
 }
 
+html:has(:target) {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
-
 
 }
 
 body {
 
-    background: linear-gradient(to left, rgb(30, 74, 168), #c4c2c0, #c3cee2, #d7d7e0);
+    background: linear-gradient(to left, rgb(180, 208, 250), #c4c2c0, #c3cee2, #d7d7e0);
     margin: 0;
     padding: 0;
 
@@ -28,18 +31,20 @@ main {
 /* SECTION ASIDE */
 .aside {
     width: 24%;
-    height: 96vh;
+    height: 100vh;
     position: fixed;
-    right: 10px;
+    right: 0;
+    top: 0;
     color: white;
     text-align: center;
-    border-radius: 10px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     overflow-y: auto;
     scrollbar-width: none;
+    margin: 0;
+    background: linear-gradient(to bottom, #61615d, #19181a);
 
     ::-webkit-scrollbar {
         display: none;
@@ -47,14 +52,33 @@ main {
 
 }
 
+.iconosMenuVertical{
+    padding-top: 40px;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
 
-ul {
+}
 
+
+
+.menuVertical{
+    
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: column;
+
+
+}
+
+.active{
+    color: #da9e2e;
+
+
+
 }
 
 li {
@@ -67,7 +91,7 @@ li {
 aside h1 {
     color: white;
     font-size: calc(1.5vw + 1.8vh);
-    text-shadow: white -3px -3px 30px;
+    /* text-shadow: white -3px -3px 30px; */
     margin: 2vh;
 }
 
@@ -77,7 +101,7 @@ li a {
     text-shadow: rgb(16, 68, 36) 2px 2px 3px;
 }
 
-#menuVertical>li:not(:first-child) {
+.menuVertical>li:not(:first-child) {
     border: 1px solid transparent;
     border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(237, 237, 240, 0.5), rgba(0, 0, 0, 0)) 1;
 }
@@ -98,23 +122,23 @@ a {
 }
 
 
-
-
-
 h2 a {
     color: black;
     font-size: 2.2vw;
-
 }
 
 
-a:hover {
+a:hover:not(.active) {
     color: rgb(146, 97, 79);
+    transform: scale(1.5);
+    font-weight: bold; 
+    color: #ffcc00;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px; /* Separa un poco las letras */
+    opacity: 0.9; /* Un pequeño cambio en opacidad para suavidad */
+    text-shadow: white -3px -3px 30px;
+   
 }
-
-
-
-
 
 
 
@@ -126,15 +150,11 @@ a:hover {
     justify-self: center;
     background-color: black;
     display: none;
-
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 
-
-
 }
-
 
 
 .ulHorizontal {
@@ -147,20 +167,13 @@ a:hover {
     justify-content: space-between;
     height: 50px;
 
-
-
 }
-
-
 
 
 .liHorizontal1 {
     display: flex;
     width: 150px;
     justify-content: right;
-
-
-
 
 }
 
@@ -171,17 +184,13 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     white-space: nowrap;
-
     color: white;
-    /* Color del texto */
+
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
         0 0 20px rgba(255, 255, 255, 0.6),
         0 0 30px rgba(255, 255, 255, 0.4);
 
-
-
 }
-
 
 
 /* Estilos del botón hamburguesa */
@@ -217,63 +226,111 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* --------------- SECCION ABOUT ---------------------------------- */
 
 .about {
 
-    border-radius: 10px;
-    padding: 30px;
-    height: 100vh;
+    padding: 10vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
     display: block;
-    width: 73%;
+    width: 76%;
+    margin: 0;
+    background-color: white;
 }
-
-.profesion {
-    display: block;
-    font-size: clamp(24px, 4vw, 32px);
-    text-shadow: gray -1px -3px 20px;
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(61, 61, 126, 0.5), rgba(0, 0, 0, 0)) 1;
-    text-align: left;
-    text-indent: 0.2em; 
-    
-}
-
-
-.divPresentacion {
-    justify-self: right; 
-
-}
-
-
-
 
 .presentacion {
     display: inline-block;
     padding: 10px;
-    font-size: clamp(16px, 1.5vw, 24px);
+    font-size: 16px;
     text-align: start;
-    border-left: 2px solid black;
+    border-left: 1px solid black;
     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(19, 19, 139, 0.5), rgba(0, 0, 0, 0)) 1;
-    text-shadow: gray -1px -3px 20px;
-    text-justify:newspaper;
+    color: #888;
+    height: calc(100vh - 200px);
 }
+
+.encabezado {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    text-align: left;
+    justify-content: end;
+}
+
+.encabezadoTexto{
+    padding-left:  20px;
+    padding-bottom: 20px;
+    margin: 10px;
+    display:inline;
+    font-size: 50px;
+    width: 300px;
+   color:  #da9e2e;
+}
+
+.profesion {
+
+    display: block;
+    font-size: clamp(24px, 3vw, 40px);
+    text-align: left;
+    text-indent: 0.2em;
+    color: black;
+
+
+}
+
+.h2Profesion {
+    font-size: clamp(18px, 1.2vw, 30px);
+    text-align: left;
+    text-indent: 0.2em;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: black;
+
+}
+
+.pAbout{
+
+    text-align: justify;
+   
+
+}
+
 
 
 .linkContacto {
-    font-size: calc(0.9vw + 0.9vh);
-    color: blue;
+    font-size: 16px;
+    color: #2b28e9;
 }
+
+
+/* --------------- SECCION ABOUT 2 ---------------------------------- */
+.about2{
+   
+    padding: 10vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+    display: block;
+    width: 76%;
+    margin: 0;
+    background-color: #da9e2e;
+}
+  
+
+.articulo2About{
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    text-align: start;
+    height: 100vh;
+}
+
+
 
 /* --------------- WORK SECCION ---------------------------------- */
 
@@ -464,10 +521,14 @@ div.contenedor {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
 
     .site-header {
         display: initial;
+    }
+
+    .encabezado {
+        display: none;
     }
 
 
@@ -478,8 +539,32 @@ div.contenedor {
 
     .about {
         width: 100%;
+        height: calc(100vh - 50px);
+     
 
     }
+
+
+    .about2{
+        width: 100%;
+    }
+    .articulo2About{
+
+        height: calc(100vh - 50px);
+
+    }
+
+    .pAbout{
+
+        text-align: justify;
+       
+    
+    }
+        
+      
+        
+     
+ 
 
     #work {
         width: 90%;
@@ -503,18 +588,20 @@ div.contenedor {
         text-align: center;
     }
 
-    .presentacion {
-         justify-self: center; 
-      
+    .h2Profesion{
+        justify-self: center;
+        text-align: center;
 
     }
+
+
 
     .divPresentacion {
-        justify-self: center; 
+        justify-self: center;
 
     }
 
-    
+
     .presentacion {
         margin-left: 0;
     }
