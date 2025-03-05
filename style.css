@@ -52,9 +52,9 @@ main {
 
 }
 
-.iconosMenuVertical{
+.iconosMenuVertical {
     padding-top: 40px;
-   
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -64,8 +64,8 @@ main {
 
 
 
-.menuVertical{
-    
+.menuVertical {
+
     list-style: none;
     padding: 0;
     display: flex;
@@ -74,7 +74,7 @@ main {
 
 }
 
-.active{
+.active {
     color: #da9e2e;
 
 
@@ -131,13 +131,15 @@ h2 a {
 a:hover:not(.active) {
     color: rgb(146, 97, 79);
     transform: scale(1.5);
-    font-weight: bold; 
+    font-weight: bold;
     color: #ffcc00;
     transition: all 0.3s ease-in-out;
-    letter-spacing: 1px; /* Separa un poco las letras */
-    opacity: 0.9; /* Un pequeño cambio en opacidad para suavidad */
+    letter-spacing: 1px;
+    /* Separa un poco las letras */
+    opacity: 0.9;
+    /* Un pequeño cambio en opacidad para suavidad */
     text-shadow: white -3px -3px 30px;
-   
+
 }
 
 
@@ -230,25 +232,27 @@ a:hover:not(.active) {
 
 .about {
 
-    padding: 10vw;
+    padding: 6vw;
     padding-top: 0;
     padding-bottom: 0;
     height: 100%;
-    display: block;
     width: 76%;
     margin: 0;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .presentacion {
+
     display: inline-block;
     padding: 10px;
-    font-size: 16px;
-    text-align: start;
     border-left: 1px solid black;
     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(19, 19, 139, 0.5), rgba(0, 0, 0, 0)) 1;
-    color: #888;
     height: calc(100vh - 200px);
+    overflow: hidden;
+
+
 }
 
 .encabezado {
@@ -262,14 +266,14 @@ a:hover:not(.active) {
     justify-content: end;
 }
 
-.encabezadoTexto{
-    padding-left:  20px;
+.encabezadoTexto {
+    padding-left: 20px;
     padding-bottom: 20px;
     margin: 10px;
-    display:inline;
+    display: inline;
     font-size: 50px;
     width: 300px;
-   color:  #da9e2e;
+    color: #da9e2e;
 }
 
 .profesion {
@@ -279,6 +283,7 @@ a:hover:not(.active) {
     text-align: left;
     text-indent: 0.2em;
     color: black;
+
 
 
 }
@@ -293,10 +298,16 @@ a:hover:not(.active) {
 
 }
 
-.pAbout{
+.pAbout {
 
     text-align: justify;
-   
+    color: #888;
+    font-size: 16px;
+    text-align: start;
+    word-wrap: break-word;
+    max-width: 600px;
+    width: 100%;
+    margin-left: 0.3em;
 
 }
 
@@ -309,9 +320,9 @@ a:hover:not(.active) {
 
 
 /* --------------- SECCION ABOUT 2 ---------------------------------- */
-.about2{
-   
-    padding: 10vw;
+.about2 {
+
+    padding: 6vw;
     padding-top: 0;
     padding-bottom: 0;
     height: 100%;
@@ -320,9 +331,9 @@ a:hover:not(.active) {
     margin: 0;
     background-color: #da9e2e;
 }
-  
 
-.articulo2About{
+
+.articulo2About {
     display: inline-block;
     padding: 10px;
     font-size: 16px;
@@ -540,31 +551,28 @@ div.contenedor {
     .about {
         width: 100%;
         height: calc(100vh - 50px);
-     
 
     }
 
 
-    .about2{
+    .about2 {
         width: 100%;
     }
-    .articulo2About{
+
+    .articulo2About {
 
         height: calc(100vh - 50px);
 
     }
 
-    .pAbout{
+    .pAbout {
 
         text-align: justify;
-       
-    
+        justify-self: center;
+
     }
-        
-      
-        
-     
- 
+
+
 
     #work {
         width: 90%;
@@ -588,7 +596,7 @@ div.contenedor {
         text-align: center;
     }
 
-    .h2Profesion{
+    .h2Profesion {
         justify-self: center;
         text-align: center;
 
