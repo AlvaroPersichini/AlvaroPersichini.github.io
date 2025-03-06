@@ -10,7 +10,7 @@ html:has(:target) {
 * {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
-  
+
 
 }
 
@@ -59,6 +59,7 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
 
+
 }
 
 
@@ -98,7 +99,11 @@ li a {
 .menuVertical>li:not(:first-child) {
     border: 1px solid transparent;
     border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(237, 237, 240, 0.5), rgba(0, 0, 0, 0)) 1;
+
 }
+
+
+
 
 
 a {
@@ -123,18 +128,21 @@ h2 a {
 
 
 a:hover:not(.active) {
-    color: rgb(146, 97, 79);
-    transform: scale(1.5);
+
     font-weight: bold;
     color: #ffcc00;
     transition: all 0.3s ease-in-out;
     letter-spacing: 1px;
-    /* Separa un poco las letras */
     opacity: 0.9;
-    /* Un pequeño cambio en opacidad para suavidad */
     text-shadow: white -3px -3px 30px;
 
 }
+
+
+.iconoVertical:hover {
+    transform: scale(1.5);
+}
+
 
 
 
@@ -168,24 +176,23 @@ a:hover:not(.active) {
 
 .liHorizontal1 {
     display: flex;
-    width: 150px;
-    justify-content: right;
+    width: 160px;
+    justify-content: center;
+
 
 }
 
 .aHorizontal {
 
-    font-size: 1rem;
+    font-size: 17px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     white-space: nowrap;
     color: white;
-
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
         0 0 20px rgba(255, 255, 255, 0.6),
         0 0 30px rgba(255, 255, 255, 0.4);
-
 }
 
 
@@ -241,14 +248,15 @@ a:hover:not(.active) {
 
     padding: 10px;
     border-left: 1px solid black;
-    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(19, 19, 139, 0.5), rgba(0, 0, 0, 0)) 1; 
-    min-height:calc(100vh - 200px); 
- 
-  
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(19, 19, 139, 0.5), rgba(0, 0, 0, 0)) 1;
+    min-height: calc(100vh - 200px);
+
+
 }
 
 article::-webkit-scrollbar {
-    display: none; /* Oculta la barra en Chrome, Safari y Edge */
+    display: none;
+    /* Oculta la barra en Chrome, Safari y Edge */
 }
 
 
@@ -551,7 +559,6 @@ div.contenedor {
 
     }
 
-
     .about2 {
         width: 100%;
     }
@@ -567,8 +574,7 @@ div.contenedor {
         text-align: justify;
         justify-self: center;
         margin-left: 0;
-      
-     
+
     }
 
 
@@ -602,8 +608,8 @@ div.contenedor {
 
     .presentacion {
         margin-left: 0;
-        min-height:calc(100vh - 50px); 
-       
+        min-height: calc(100vh - 50px);
+
     }
 }
 
