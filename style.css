@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    background-color: red;
 
 }
 
@@ -10,6 +11,7 @@ html:has(:target) {
 * {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
+
 
 
 }
@@ -178,16 +180,13 @@ a:hover:not(.active) {
     display: flex;
     width: 160px;
     justify-content: center;
-
-
+    align-items: center;
 }
 
 .aHorizontal {
-
     font-size: 17px;
     display: flex;
     flex-direction: column;
-
     white-space: nowrap;
     color: white;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
@@ -224,7 +223,7 @@ a:hover:not(.active) {
 }
 
 .hamburger:hover span {
-    background-color: #555353;
+    background-color: white;
 }
 
 
@@ -250,9 +249,12 @@ a:hover:not(.active) {
     border-left: 1px solid black;
     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(19, 19, 139, 0.5), rgba(0, 0, 0, 0)) 1;
     min-height: calc(100vh - 200px);
-
+    text-align: start;
 
 }
+
+
+
 
 article::-webkit-scrollbar {
     display: none;
@@ -326,24 +328,74 @@ article::-webkit-scrollbar {
 
 /* --------------- SECCION ABOUT 2 ---------------------------------- */
 .about2 {
-
     padding: 6vw;
     padding-top: 0;
     padding-bottom: 0;
     height: 100%;
-    display: block;
     width: 76%;
     margin: 0;
     background-color: #da9e2e;
+    display: flex;
+    flex-direction: column;
+}
+
+.articulo2About {
+    padding: 10px;
+    text-align: start;
+    min-height: 100vh;
+
+
 }
 
 
-.articulo2About {
-    display: inline-block;
-    padding: 10px;
-    font-size: 16px;
-    text-align: start;
-    height: 100vh;
+.cajaContainerSuperiorAbout2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: solid red 2px;
+ 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 80vh;
+
+}
+
+
+.cajaContainerAbout2 {
+    display: flex;
+    flex-direction: row;
+    border: white solid 2px;
+    min-height: 200px;
+    width: 100%;
+    justify-content: space-around;
+    justify-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+.About2Imagen{
+    width: 400px;
+   
+
+}
+
+.cajasAbout2Imagen {
+    border: solid black 2px;
+   width: 300px;
+   height: 300px;
+  
+    height: 200px;
+    border-radius: 30px;
+
+}
+
+.cajasAbout2Texto {
+    border: solid black 2px;
+    height: inherit;
+   
+    width: 400px;
+
 }
 
 
@@ -564,8 +616,9 @@ div.contenedor {
     }
 
     .articulo2About {
+        margin-left: 0;
 
-        height: calc(100vh - 50px);
+
 
     }
 
@@ -610,6 +663,14 @@ div.contenedor {
         margin-left: 0;
         min-height: calc(100vh - 50px);
 
+    }
+
+
+    .About2Imagen{
+        width: 100%;
+        max-width: 400px;;
+       
+    
     }
 }
 
