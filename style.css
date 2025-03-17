@@ -2,6 +2,11 @@ html {
     scroll-behavior: smooth;
     background-color: red;
 
+    /* esto es para que que safari no aumente el tamaño de fuente*/ 
+    /* ver si funciona! */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+
 }
 
 html:has(:target) {
