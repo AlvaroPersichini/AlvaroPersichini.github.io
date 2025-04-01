@@ -19,6 +19,7 @@ html:has(:target) {
 
 
 
+
 }
 
 body {
@@ -65,8 +66,6 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
-
 }
 
 
@@ -93,7 +92,6 @@ li {
 aside h1 {
     color: white;
     font-size: calc(1.5vw + 1.8vh);
-    /* text-shadow: white -3px -3px 30px; */
     margin: 2vh;
 }
 
@@ -108,8 +106,6 @@ li a {
     border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(237, 237, 240, 0.5), rgba(0, 0, 0, 0)) 1;
 
 }
-
-
 
 
 a {
@@ -176,6 +172,7 @@ a:hover:not(.active) {
     flex-direction: row;
     justify-content: space-between;
     height: 50px;
+    background-color: black;
 
 }
 
@@ -236,7 +233,7 @@ a:hover:not(.active) {
 
 .about {
 
-    padding: 6vw;
+
     padding-top: 0;
     padding-bottom: 0;
     height: 100%;
@@ -245,19 +242,21 @@ a:hover:not(.active) {
     background-color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .presentacion {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
     border-left: 1px solid black;
     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(19, 19, 139, 0.5), rgba(0, 0, 0, 0)) 1;
     min-height: calc(100vh - 200px);
-    text-align: start;
+
 
 }
-
-
 
 
 article::-webkit-scrollbar {
@@ -282,19 +281,19 @@ article::-webkit-scrollbar {
     padding-bottom: 20px;
     margin: 10px;
     display: inline;
-    font-size: 50px;
-    width: 300px;
+    font-size: 45px;
+    width: 100%;
     color: #da9e2e;
 }
 
 .profesion {
 
-    display: block;
+
     font-size: clamp(24px, 3vw, 40px);
-    text-align: left;
+    text-align: center;
     text-indent: 0.2em;
     color: black;
-
+    margin: 30px;
 
 
 }
@@ -313,15 +312,15 @@ article::-webkit-scrollbar {
 
     text-align: justify;
     color: #888;
-    font-size: 16px;
+    font-size: 17px;
     text-align: start;
     word-wrap: break-word;
     max-width: 600px;
     width: 100%;
     margin-left: 0.3em;
 
-}
 
+}
 
 
 .linkContacto {
@@ -330,98 +329,115 @@ article::-webkit-scrollbar {
 }
 
 
-/* --------------- SECCION ABOUT 2 ---------------------------------- */
-.about2 {
+
+.SeparadorNegro {
+    display: none;
+
+
+}
+
+
+
+/* ---------------  ACADEMIC ---------------------------------- */
+
+
+
+.academic {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 60%;
+    max-width: 70%;
+
+
+
+}
+
+.h3-School {
+    position: relative;
+    left: 0;
+    flex: 1;
+    margin-top: 5px;
+    min-width: 230px;
+
+}
+
+.separador {
+    width: 200px;
+}
+
+.feature-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.graduation,
+.languages,
+.software,
+.code {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.feature-icons li {
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    gap: 10px;
+
+}
+
+/* Seudoelemento ::before para agregar el ícono */
+.feature-icons li::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    left: 0;
+    font-size: 35px;
+    color: #8d8b87;
+    width: 35px;
+    content: "\f058";
+}
+
+
+
+
+
+/* --------------- SKILLS ---------------------------------- */
+
+.skills {
+
+    gap: 10px;
+    width: 70%;
+    padding-left: 6vw;
+    padding-right: 6vw;
+
+}
+
+
+/* --------------- WORK SECCION ---------------------------------- */
+
+
+.work {
+
+
     padding: 6vw;
     padding-top: 0;
     padding-bottom: 0;
     height: 100%;
     width: 76%;
     margin: 0;
-    background-color: #da9e2e;
+    background-color: white;
     display: flex;
     flex-direction: column;
-}
-
-.articulo2About {
-    padding: 10px;
-    text-align: start;
-    min-height: 100vh;
-
-
-}
-
-
-.cajaContainerSuperiorAbout2 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border: solid red 2px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    min-height: 80vh;
-
-}
-
-
-.cajaContainerAbout2 {
-    background-color: #c9c8c8;
-    display: flex;
-    flex-direction: row;
-    border: white solid 2px;
-    border-radius: 20px;
-    max-width: 900px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     align-items: center;
-}
-
-.cajasAbout2Imagen {
-    display: flex;
-    border: solid blue 2px;
-    width: 400px;
-    max-height: 300px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px; 
-
-    
-}
-
-
-.cajasAbout2Texto {
-    text-align: center;
-    border: solid black 2px;
-    width: 400px;
-    height: 300px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-}
-
-.About2Imagen {
-    max-height: 100%;
-    height: 300px;
-    /* border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px; */
-
-}
-
-
-
-/* --------------- WORK SECCION ---------------------------------- */
-
-
-#work {
-
-    display: grid;
-    place-items: center;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px;
 }
 
 .workExperience {
@@ -505,28 +521,23 @@ article::-webkit-scrollbar {
 
 
 .logo {
-
     width: 3vw;
     padding-left: 5px;
-
 }
 
 
 
 .logoNombre {
-    font-size: 1.2vw;
+    font-size: 18px;
     align-items: center;
     justify-content: left;
     display: flex;
     height: 45px;
-
 }
 
 div.contenedor {
     margin: 1vh;
 }
-
-
 
 .contenedorWork {
     display: flex;
@@ -537,44 +548,10 @@ div.contenedor {
 
 }
 
-
-
-
-/* --------------- SECCION ACADEMIC ---------------------------------- */
-.academic {
-    position: relative;
-    width: calc(100vw - 27vw);
-    height: 100vh;
-    padding: 30px;
-    box-sizing: border-box;
-    border: #1b1b1b solid;
-}
-
-#academic article h1 {
+.work a {
     color: black;
-    font-size: 3vw;
-    border-bottom: 2px solid transparent;
-    border-image-source: linear-gradient(to right, rgb(13, 13, 14), rgba(14, 14, 14, 0.5), rgba(0, 0, 0, 0));
-    border-image-slice: 1;
-    padding-bottom: 1px;
-}
-
-#academic article h2 {
-    font-size: 2vw;
-}
-
-.skills {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 columnas de igual tamaño */
-    grid-template-rows: repeat(2, auto);
-    /* 2 filas ajustadas al contenido */
-    gap: 10px;
-    /* Espacio entre los elementos */
-    padding: 20px;
 
 }
-
 
 /* --------------- SECCION PORTFOLIO ---------------------------------- */
 .portfolio {
@@ -599,9 +576,7 @@ div.contenedor {
 
 
 
-
-
-@media (max-width: 1317px) {
+@media (max-width: 1000px) {
 
     .site-header {
         display: initial;
@@ -611,7 +586,6 @@ div.contenedor {
         display: none;
     }
 
-
     .aside {
         display: none;
 
@@ -619,7 +593,6 @@ div.contenedor {
 
     .about {
         width: 100%;
-        /* height: calc(100vh - 50px); */
 
     }
 
@@ -633,11 +606,9 @@ div.contenedor {
     }
 
     .pAbout {
-
         text-align: justify;
         justify-self: center;
         margin-left: 0;
-
     }
 
 
@@ -672,17 +643,13 @@ div.contenedor {
     .presentacion {
         margin-left: 0;
         min-height: calc(100vh - 50px);
-
     }
-
-
 
     .cajaContainerSuperiorAbout2 {
 
         border: greenyellow solid 2px;
         flex-direction: row;
         justify-content: space-evenly;
-
     }
 
     .cajaContainerAbout2 {
@@ -693,11 +660,10 @@ div.contenedor {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
         border-top-right-radius: 20px;
-
     }
 
     .About2Imagen {
-     
+
         max-width: 400px;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
@@ -711,21 +677,38 @@ div.contenedor {
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
     }
+
+
+    .SeparadorNegro {
+        display: initial;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+        background-color: black;
+        color: white;
+        align-items: center;
+        width: 100%;
+
+    }
+
+
 }
 
 
 
 
 @media (max-width: 960px) {
-
     .cajaContainerSuperiorAbout2 {
 
         border: brown solid 2px;
         flex-direction: column;
         justify-content: space-evenly;
-
     }
-
 }
 
 
@@ -786,4 +769,103 @@ div.contenedor {
     margin-left: 0;
     margin-right: 0;
     margin-top: 2vh;
+} */
+
+
+
+
+/* --------------- SECCION ABOUT 2 ------------------
+.about2 {
+    padding: 6vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+    width: 76%;
+    margin: 0;
+    background-color: #da9e2e;
+    display: flex;
+    flex-direction: column;
+}
+
+.articulo2About {
+    padding: 10px;
+    text-align: start;
+    min-height: 100vh;
+}
+
+
+.cajaContainerSuperiorAbout2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: solid red 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 80vh;
+}
+
+
+.cajaContainerAbout2 {
+    background-color: #c9c8c8;
+    display: flex;
+    flex-direction: row;
+    border: white solid 2px;
+    border-radius: 20px;
+    max-width: 900px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cajasAbout2Imagen {
+    display: flex;
+    border: solid blue 2px;
+    width: 400px;
+    max-height: 300px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.cajasAbout2Texto {
+    text-align: center;
+    border: solid black 2px;
+    width: 400px;
+    height: 300px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.About2Imagen {
+    max-height: 100%;
+    height: 300px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; 
+    */
+
+
+
+/* 
+.academicDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid red 2px;
+    align-items: center;
+} */
+
+/* #academic article h1 {
+    color: black;
+    font-size: 3vw;
+    border-bottom: 2px solid transparent;
+    border-image-source: linear-gradient(to right, rgb(13, 13, 14), rgba(14, 14, 14, 0.5), rgba(0, 0, 0, 0));
+    border-image-slice: 1;
+    padding-bottom: 1px;
+}
+
+#academic article h2 {
+    font-size: 2vw;
 } */

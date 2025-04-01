@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Academic</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=chevron_right" />
 
 
 </head>
@@ -16,65 +16,202 @@
 
 <body>
 
-    <!-- <button class="menu-toggle">☰</button>  -->
 
+    <div class="encabezado">
+        <div class="encabezadoTexto">ACADEMIC</div>
+    </div>
 
-    <main>
-        <div class="encabezado">
-            <div class="encabezadoTexto">ACADEMIC</div>
-        </div>
+    ASIDE
+    <aside class="aside">
+        <img class="selfie" src="assets/images/selfie-6.png" width="300px" alt="">
+        <h1 class="miNombre"> Alvaro <br> Persichini</h1>
+        <ul class="menuVertical">
+            <li><a href="index.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a class="active" href="#top">Academic</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="iconosMenuVertical">
 
-        <!-- ASIDE -->
-        <aside class="aside">
-            <img class="selfie" src="assets/images/selfie-6.png" width="300px" alt="">
-            <h1 class="miNombre"> Alvaro <br> Persichini</h1>
-            <ul class="menuVertical">
-                <li><a href="index.html">About</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a class="active" href="#top">Academic</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="iconosMenuVertical">
-
-                <!-- <a href="#top">
+            <a href="#top">
                     <i class="fa-solid fa-house" style="text-decoration: none; color:white; font-size: 20px;"></i>
-                </a> -->
-                <a class="iconoVertical" href="https://github.com/AlvaroPersichini" target="_blank">
-                    <i class="fab fa-github" style="text-decoration: none; color:white; font-size: 20px;"></i>
-                </a>
-                <a class="iconoVertical" href="https://www.linkedin.com/in/mechanicalengineerapersichini/"
-                    target="_blank">
-                    <i class="fab fa-linkedin-in" style="text-decoration: none; color:white; font-size: 20px;"></i>
-                </a>
-                <a class="iconoVertical" href="contact.html">
-                    <i class="far fa-envelope" style="text-decoration: none; color:white; font-size: 20px;"></i>
-                </a>
+                </a> 
+            <a class="iconoVertical" href="https://github.com/AlvaroPersichini" target="_blank">
+                <i class="fab fa-github" style="text-decoration: none; color:white; font-size: 20px;"></i>
+            </a>
+            <a class="iconoVertical" href="https://www.linkedin.com/in/mechanicalengineerapersichini/" target="_blank">
+                <i class="fab fa-linkedin-in" style="text-decoration: none; color:white; font-size: 20px;"></i>
+            </a>
+            <a class="iconoVertical" href="contact.html">
+                <i class="far fa-envelope" style="text-decoration: none; color:white; font-size: 20px;"></i>
+            </a>
+        </div>
+    </aside>
+
+    <header class="site-header">
+        <nav class="navHorizontal">
+            <ul class="ulHorizontal">
+                <li class="liHorizontal1"><a class="aHorizontal" href="index.html">Alvaro Persichini</a></li>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </ul>
+        </nav>
+    </header>
+
+
+     
+  
+   
+    <main class="Mainacademic">
+
+        <section class="academic">
+            <ul class="feature-icons">
+                <li class="graduation">
+                    <h3 class="h3-School">Programming Technician</h3>
+                    <div class="separador">
+                        2025 | Technician<br>UTN Regional Rosario
+                    </div>
+                </li>
+
+                <li class="graduation">
+                    <h3 class="h3-School">Mechanical Engineer</h3>
+                    <div class="separador">
+                        2019 | Degree<br>UNR FCEIA Rosario
+                    </div>
+                </li>
+
+                <li class="languages">
+                    <h3 class="h3-School">Spoken Languages</h3>
+                    <div class="separador">
+                        English B2<br>Portuguese
+                    </div>
+                </li>
+
+                <li class="software">
+                    <h3 class="h3-School">Modeling Software</h3>
+                    <div class="separador">
+                        CATIA v5 | Delmia<br>SolidWorks | Teamcenter
+                    </div>
+                </li>
+
+                <li class="code">
+                    <h3 class="h3-School">Programming Languages</h3>
+                    <div class="separador">
+                        C|C++|C#|VB.NET<br> HTML|CSS|JS|GIT
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="academic"> 
+
+            <article class="School">
+                <br>
+                <div class="academicDiv">
+                    <div class="logoNombre">
+                        <img class="logo" src="assets/images/LogoUTN.JPG" alt="">
+                        <h2>Programmer Technician</h2><br>
+                    </div>
+                    <div>
+                        <p>UTN Regional Rosario (ARG) <br>2025 Technician</p>
+                    </div>
+                </div>
+
+                <div class="academicDiv">
+                    <div class="logoNombre">
+                        <img class="logo" src="assets/images/LogoUNR.JPG" alt="">
+                        <h2>Mechanical Engineer</h2><br>
+                    </div>
+                    <div>
+                        <p>UNR FCEIA Rosario (ARG) <br> 2019 | Degree</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="academicDiv">
+                    <div class="logoNombre">
+                        <img class="logo" src="assets/images/logoIdiomas-2.png" alt="">
+                        <h2>Languages</h2>
+                    </div>
+                    <div>
+                        <p>English B2 <br> Portuguese</p>
+                    </div>
+                </div>
+            </article> 
+            <article class="skills">
+                <div class="logoNombre">
+                    <img class="logo" src="assets/images/manufacturingLOGO-2.png" alt="">
+                    <h2 class="empresa">Manufacturing</h2><br>
+                </div>
+                <div class="logoNombre">
+                    <img class="logo" src="assets/images/electri-cars-logo-2.png" alt="">
+                    <h2 class="empresa">EV</h2><br>
+                </div>
+                <div class="logoNombre">
+                    <img class="logo" src="assets/images/bodyshopLOGO-2.png" alt="">
+                    <h2 class="empresa">BodyShop</h2><br>
+                </div>
+                <div class="logoNombre">
+                    <img class="logo" src="assets/images/designLOGO-2.png" alt="">
+                    <h2 class="empresa">3D Modeling</h2><br>
+                </div>
+                <div class="logoNombre">
+                    <img class="logo" src="assets/images/softwareLOGO-2.png" alt="">
+                    <h2 class="empresa">Software</h2><br>
+                </div>
+                <div class="logoNombre">
+                    <img class="logo" src="assets/images/generalAssembly-logo-2.png" alt="">
+                    <h2 class="empresa">Gen Assembly</h2><br>
+                </div>
+
+            </article>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
 
 
 
 
 
-            </div>
-        </aside>
 
-        <header class="site-header">
-            <nav class="navHorizontal">
-                <ul class="ulHorizontal">
-                    <li class="liHorizontal1"><a class="aHorizontal" href="index.html">Alvaro Persichini</a></li>
-                    <button class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </ul>
 
-            </nav>
 
-        </header>
 
-        <!-- ABOUT -->
-        <section class="about">
+
+<section id="portfolio">
+    <article> A bit about me
+        <p> I am a Mechanical Engineer and Programming Technician with experience in the technical, automotive,
+            design, 3D modeling, and simulation fields. <br>
+        </p>
+    </article>
+</section>
+
+<section id="contact">
+    <article> A bit about me
+        <p> I am a Mechanical Engineer and Programming Technician with experience in the technical, automotive,
+            design, 3D modeling, and simulation fields. <br>
+        </p>
+    </article> 
+
+
+
+
+
+
+
+ <section class="about">
             <article class="presentacion">
                 <h1 class="profesion">Mechanical Engineer |&nbsp;Programmer&nbsp;Technician</h1>
                 <h2 class="h2Profesion">3D Parametric Models - 2D Drawings |&nbsp;Machinery&nbsp;Design</h2>
@@ -101,96 +238,4 @@
 
                 </p>
             </article>
-        </section>
-
-        <section class="about2">
-            <article class="articulo2About">
-
-                <h1 class="profesion">Programmer Technician |&nbsp;Portfolio &&nbsp;Technologies</h1>
-
-
-
-            </article>
-        </section>
-
-    </main>
-
-
-</body>
-
-</html>
-
-
-
-
-
-<!-- 
-
-
-        <section id="academic">
-            <article>
-                <h1>Academic Background</h1>
-                <div class="logoNombre">
-                    <img class="logo" src="assets/images/LogoUNR.JPG" width="150px">
-                    <h2 class="empresa">UNR | Mechanical Engineer Degree</h2><br>
-                </div>
-                <br>
-                <div class="logoNombre">
-                    <img class="logo" src="assets/images/LogoUTN.JPG" alt="">
-                    <h2 class="empresa">UTN | Programmer Technician</h2><br>
-                </div>
-                <br>
-                <div class="logoNombre">
-                    <img class="logo" src="assets/images/logoIdiomas-2.png" alt="">
-                    <h2 class="empresa">LAN | English & Portuguese</h2><br>
-                </div>
-                <h1>Skills</h1>
-
-                <article class="skills">
-
-                    <div class="logoNombre">
-                        <img class="logo" src="assets/images/manufacturingLOGO-2.png" alt="">
-                        <h2 class="empresa">Manufacturing</h2><br>
-                    </div>
-                    <div class="logoNombre">
-                        <img class="logo" src="assets/images/electri-cars-logo-2.png" alt="">
-                        <h2 class="empresa">EV</h2><br>
-                    </div>
-                    <div class="logoNombre">
-                        <img class="logo" src="assets/images/bodyshopLOGO-2.png" alt="">
-                        <h2 class="empresa">BodyShop</h2><br>
-                    </div>
-                    <div class="logoNombre">
-                        <img class="logo" src="assets/images/designLOGO-2.png" alt="">
-                        <h2 class="empresa">3D Modeling</h2><br>
-                    </div>
-                    <div class="logoNombre">
-                        <img class="logo" src="assets/images/softwareLOGO-2.png" alt="">
-                        <h2 class="empresa">Software</h2><br>
-                    </div>
-                    <div class="logoNombre">
-                        <img class="logo" src="assets/images/generalAssembly-logo-2.png" alt="">
-                        <h2 class="empresa">Gen Assembly</h2><br>
-                    </div>
-
-
-                </article>
-
-            </article>
-
-        </section>
-
-        <section id="portfolio">
-            <article> A bit about me
-                <p> I am a Mechanical Engineer and Programming Technician with experience in the technical, automotive,
-                    design, 3D modeling, and simulation fields. <br>
-                </p>
-            </article>
-        </section>
-
-        <section id="contact">
-            <article> A bit about me
-                <p> I am a Mechanical Engineer and Programming Technician with experience in the technical, automotive,
-                    design, 3D modeling, and simulation fields. <br>
-                </p>
-            </article>  -->
+        </section> -->
