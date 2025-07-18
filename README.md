@@ -1,11 +1,9 @@
 ## Go and browse through my personal website
-This project is an ongoing website which I upload my professional portfolio.  
 You will find programming and mechanical engineering stuff. 
 
 ## Sections:
 - About
 - Work
-- Academic
 - Portfolio
 - Contact
 
