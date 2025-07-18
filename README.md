@@ -1,6 +1,4 @@
 ## Go and browse through my personal website
-I developed my own web using the usual front-end tools: HTML, CSS and JS.
-
 This project is an ongoing website which I upload my professional portfolio.  
 You will find programming and mechanical engineering stuff. 
 
