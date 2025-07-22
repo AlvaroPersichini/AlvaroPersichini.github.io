@@ -71,6 +71,11 @@ main {
     flex-direction: column;
 }
 
+.itemMenuVertical {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .active {
     color: #da9e2e;
 
@@ -350,21 +355,20 @@ article::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     gap: 5px;
-    
     max-width: 700px;
 }
 
-.graduation,
-.languages,
-.software,
-.code {
+
+.li-academic {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
 }
+
 
 .feature-icons li {
     font-size: 18px;
@@ -390,8 +394,23 @@ article::-webkit-scrollbar {
     .feature-icons li::before {
         content: none;
     }
-}
 
+    .li-academic {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .feature-icons{
+        width: 100%;
+    }
+
+  
+
+   
+
+
+}
 
 
 
@@ -399,15 +418,27 @@ article::-webkit-scrollbar {
 
 .skills {
     gap: 10px;
-    width: 70%;
+    width: 90%;
     padding-left: 6vw;
     padding-right: 6vw;
 }
 
-/*Skills | Experience & Interests */
 .logoSkill {
-    width: 50px;
-    padding-left: 5px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    height: 45px;
+}
+
+.skills>p {
+    width: 100%;
+    margin-top: 1px;
+}
+
+.h2-skill {
+
+    align-self: center;
 }
 
 
