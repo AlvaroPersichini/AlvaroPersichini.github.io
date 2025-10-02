@@ -1,52 +1,33 @@
-// -------- ACADEMIC <li> ------------
-const academicObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('reveal');
-      academicObserver.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.2
-});
-
-document.querySelectorAll('.academic .feature-icons li').forEach(li => {
-  academicObserver.observe(li);
-});
-
-
-// -------- PRESENTACION ------------
-const presentacionItems = document.querySelectorAll('.presentacion .profesion, .presentacion .h2Profesion, .presentacion .pAbout');
-
-const presentacionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      presentacionItems.forEach((el, i) => {
-        setTimeout(() => {
-          el.classList.add('reveal');
-        }, i * 200);
-      });
-      presentacionObserver.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.3
-});
-
-const presentacionContainer = document.querySelector('.presentacion');
-if (presentacionContainer) {
-  presentacionObserver.observe(presentacionContainer);
+function toggleMenu() {
+  const menuOverlay = document.getElementById('menuOverlay');
+  const body = document.body;
+  
+  menuOverlay.classList.toggle('active');
+  body.classList.toggle('no-scroll');
+  
+  // Animación del botón hamburguesa a X
+  const hamburger = document.querySelector('.hamburger');
+  hamburger.classList.toggle('active');
 }
 
-
-
-function toggleMobileMenu() {
-  const menu = document.getElementById("mobileMenu");
-  if (menu.style.display === "flex") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "flex";
+// Cerrar menú al hacer clic fuera del contenido
+document.getElementById('menuOverlay').addEventListener('click', function(e) {
+  if (e.target === this) {
+    toggleMenu();
   }
-}
+});
 
+// Cerrar menú con tecla Escape
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    const menuOverlay = document.getElementById('menuOverlay');
+    if (menuOverlay.classList.contains('active')) {
+      toggleMenu();
+    }
+  }
+});
 
+// Animación para el botón hamburguesa (opcional)
+document.querySelector('.hamburger').addEventListener('click', function() {
+  this.classList.toggle('active');
+});
