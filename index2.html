@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Alvaro Persichini</title>
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+   <header class="site-header">
+    <nav>
+      <ul class="ulHorizontal">
+        <li class="liHorizontal1"><a class="aHorizontal" href="#">Alvaro Persichini</a></li>
+        <button class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </ul>
+      <!-- MENU DESPLEGABLE -->
+      <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+          <button class="close-btn" onclick="toggleMenu()">×</button>
+          <ul class="menu-list">
+            <li><a href="#academic" onclick="toggleMenu()">Academic</a></li>
+            <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section class="about1">
+      <div class="caja1">
+        <img src="assets/images/Selfi-CV_4.png" alt="Alvaro Persichini">
+      </div>
+
+      <div class="caja2">
+        <article class="presentacion">
+          <h2 class="h2Profesion">ALVARO PERSICHINI</h2>
+          <h1 class="profesion">Programmer&nbsp;Technician</h1>
+          <h3>Academic</h3>
+          <h3>Portfolio</h3>
+          <h3>Contact</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- ACADEMIC -->
+    <section class="about">
+      <article class="academic">
+        <ul>
+          <li class="li-academic">
+            <h3 class="h3-School">Programmer Technician</h3>
+            <div class="separador">2025 | Technician<br>UTN Regional Rosario</div>
+          </li>
+          <li class="li-academic">
+            <h3 class="h3-School">Mechanical Engineer</h3>
+            <div class="separador">2019 | Degree<br>UNR FCEIA Rosario</div>
+          </li>
+          <li class="li-academic">
+            <h3 class="h3-School">Spoken Languages</h3>
+            <div class="separador">English B2<br>Portuguese</div>
+          </li>
+          <li class="li-academic">
+            <h3 class="h3-School">Modeling Software</h3>
+            <div class="separador">CATIA v5 | Delmia<br>SolidWorks | Teamcenter</div>
+          </li>
+          <li class="li-academic">
+            <h3 class="h3-School">Languages</h3>
+            <div class="separador">C | C# | VB.NET | Python <br>| HTML | CSS | JS</div>
+          </li>
+          <li class="li-academic">
+            <h3 class="h3-School">Frameworks</h3>
+            <div class="separador">.NET Framework<br>Flask | Django | Node.js</div>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="about">
+      <article class="skills">
+        <div class="logoNombre">
+          <img class="logoSkill" src="assets/images/softwareLOGO-2.png" alt="">
+          <h2 class="h2-skill">Software</h2>
+        </div>
+        <p>Passionate about creating efficient and tailored software solutions...</p>
+
+        <div class="logoNombre">
+          <img class="logoSkill" src="assets/images/designLOGO-2.png" alt="">
+          <h2 class="empresa">3D Modeling</h2>
+        </div>
+        <p>Experienced in 3D modeling and simulation...</p>
+
+        <div class="logoNombre">
+          <img class="logoSkill" src="assets/images/manufacturingLOGO-2.png" alt="">
+          <h2 class="empresa">Manufacturing</h2>
+        </div>
+        <p>I have hands-on experience in manufacturing processes...</p>
+
+        <div class="logoNombre">
+          <img class="logoSkill" src="assets/images/electri-cars-logo-2.png" alt="">
+          <h2 class="empresa">EVs</h2>
+        </div>
+        <p>With a strong background in the automotive industry...</p>
+
+        <div class="logoNombre">
+          <img class="logoSkill" src="assets/images/bodyshopLOGO-2.png" alt="">
+          <h2 class="empresa">BodyShop</h2>
+        </div>
+        <p>Skilled in automotive body shop processes...</p>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Álvaro Persichini</h3>
+        <p>Mechanical Engineer | Programmer Technician</p>
+        <p>Tailored Engineering & Software Solutions</p>
+      </div>
+      <div class="footer-right">
+        <p>+54 341 640 1315</p>
+        <p>alvaro.persichini@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Álvaro Persichini</p>
+    </div>
+  </footer>
+
+
+    <script src="script2.js"></script>
+
+</body>
+
+</html>
