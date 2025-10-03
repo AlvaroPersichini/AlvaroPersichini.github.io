@@ -214,10 +214,10 @@ body {
     .li-academic {
         flex-direction: column;
         align-items: flex-start;
-        /* Alinea a la izquierda en mobile */
         text-align: left;
-        gap: 8px;
-        /* Espacio entre título y contenido */
+        gap: 5px;
+        padding: 5px;
+  
     }
 
     .h3-School {
