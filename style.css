@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -7,6 +8,33 @@ body {
     padding: 0;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
+
+}
+
+* {}
+
+
+main {
+    background-color: red;
+}
+
+
+.inicio {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    z-index: 1000;
+    background-color: #040026;
 }
 
 /* -------- NAV -------- */
@@ -45,7 +73,6 @@ body {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-/* Hamburger */
 .hamburger {
     display: flex;
     flex-direction: column;
@@ -65,24 +92,147 @@ body {
 
 /* -------- ABOUT -------- */
 .about1 {
-    min-height: 100vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     gap: 30px;
+    background-color: white;
 }
+
+
+
+
+.divConector {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #040026;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 550;
+    min-width: auto;
+    width: 100%;
+    padding-right: 0;
+
+}
+
 
 .about {
 
-    min-height: 100vh;
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border-bottom: #333 1px solid;
+    background-color: #E9E9ED;
+    width: 100%;
+    background-color: white;
+
 
 }
+
+.academic {
+    padding: 30px;
+
+}
+
+
+.academicImage {
+
+    max-width: 600px;
+    height: auto;
+    box-sizing: border-box;
+    object-fit: cover;
+    padding: 30px;
+    width: clamp(300px, 100vw, 600px);
+}
+
+
+
+
+
+
+
+.about2 {
+    color: white;
+    min-height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    background-color: #040026;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(200px, 80vw, 550px);
+    padding: 40px;
+}
+
+.h2-skill {
+
+    font-size: clamp(30px, 2.5vw, 500px);
+    align-self: first baseline;
+    margin: 5px;
+
+}
+
+.p-skill {
+
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-self: first baseline;
+
+}
+
+.botonNaranja {
+    align-self: baseline;
+    background-color: #4ffab8d2;
+    width: clamp(120px, 6vw, 150px);
+    height: 54px;
+    border-radius: 3px;
+}
+
+.botonVerMas {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.botonNaranja:hover {
+    background-color: #7ac0b7;
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.cajaImagen {
+    width: clamp(200px, 70vw, 550px);
+    height: auto;
+    transition: width 0.3s ease;
+    padding: 40px;
+}
+
+
+
+
 
 .about1 img {
     max-width: 280px;
@@ -90,16 +240,6 @@ body {
     height: auto;
 }
 
-.about1 {
-
-    border-bottom: #333 1px solid;
-    mask: linear-gradient(90deg,
-            transparent 0%,
-            black 20%,
-            black 80%,
-            transparent 100%);
-
-}
 
 .presentacion {
     position: relative;
@@ -124,9 +264,11 @@ body {
 }
 
 .profesion {
-    font-size: clamp(24px, 3.4vw, 60px);
+    font-size: clamp(30px, 3.4vw, 60px);
     margin: 10px 0;
 }
+
+
 
 
 
@@ -147,6 +289,9 @@ body {
     min-height: 60px;
 }
 
+.li-academic:last-child {
+  border-bottom: none;
+}
 .h3-School {
     min-width: 280px;
     margin: 0;
@@ -180,8 +325,20 @@ body {
 
 
 
+
+
+
+
 /* Para mobile - ajustar alineación */
 @media (max-width: 768px) {
+
+
+    .inicio {
+        display: none;
+    }
+
+
+
 
     .h2Profesion {
         display: none;
@@ -217,7 +374,7 @@ body {
         text-align: left;
         gap: 5px;
         padding: 5px;
-  
+
     }
 
     .h3-School {
@@ -231,7 +388,6 @@ body {
     }
 
 
-    /* Nav solo aparece en mobile */
     .site-header {
         display: block;
     }
@@ -239,16 +395,16 @@ body {
     .about1 {
         flex-direction: column;
         text-align: center;
-        height: auto;
-        border-bottom: #333 1px solid;
-
+        height: 100vh;
 
     }
 
+    .skills {
+        padding-bottom: 0px;
+    }
 
     .about1 img {
-        max-width: 200px;
-        /* Foto más chica en mobile */
+        max-width: 235px;
     }
 
     .presentacion {
@@ -266,17 +422,12 @@ body {
         gap: 15px;
     }
 
-
     .presentacion::before {
-
         background: none;
     }
 }
 
-/* -------- SKILLS -------- */
-.skills {
-    padding: 20px 6vw;
-}
+
 
 .logoNombre {
     display: flex;
@@ -296,16 +447,11 @@ body {
 
     margin-top: 0;
     max-width: 500px;
-    text-align: left;
+    text-align: justify;
 
 
 }
 
-.skills a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: 600;
-}
 
 /* -------- FOOTER -------- */
 .footer {
@@ -446,4 +592,119 @@ body.no-scroll {
     animation-delay: 0.9s;
 }
 
-/* ************************************ */
+
+
+
+
+
+
+/* Boton de Dark Mode */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4b545c;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background-color: #e8e8e8;
+    transition: .4s;
+}
+
+.sun svg {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.moon svg {
+    fill: #73C0FC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+/* .switch:hover */
+.sun svg {
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* .switch:hover */
+.moon svg {
+    animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.input:checked+.slider {
+    background-color: #183153;
+}
+
+.input:focus+.slider {
+    box-shadow: 0 0 1px #183153;
+}
+
+.input:checked+.slider:before {
+    transform: translateX(30px);
+}
