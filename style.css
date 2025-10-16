@@ -243,7 +243,6 @@ main {
     min-width: auto;
     width: 100%;
     padding-right: 0;
-    background: linear-gradient(to top, #003049, #007a7a);
     color: white;
     height: 100px;
     align-items: center;
@@ -267,11 +266,13 @@ main {
 }
 
 .academic {
-   
+
     padding: 10px;
-     padding-top: 0;
+    padding-top: 0;
+  
 
 }
+
 
 
 .academicImage {
@@ -285,6 +286,11 @@ main {
 }
 
 
+/* esto lo agreguen para que no se tape el academic */
+#academic {
+    scroll-margin-top: 80px;
+    /* ajustá este valor a la altura de tu navbar */
+}
 
 
 .about2 {
@@ -471,6 +477,111 @@ main {
     display: block;
     content: "";
     margin-top: 4px;
+}
+
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #222; /* gris oscuro, elegante */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* Hover con línea inferior animada */
+.navbar .nav-links a:hover {
+  color: #008080; /* tono turquesa profesional */
+  border-bottom: 2px solid #008080;
+}
+
+/* Estado activo (opcional, si querés resaltar la sección actual) */
+.navbar .nav-links a.active {
+  color: #008080;
+  border-bottom: 2px solid #008080;
+}
+
+/* Opcional: para mantener el menú centrado y limpio */
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links a:hover {
+  background-color: rgba(0, 128, 128, 0.1);
+  color: #008080;
+}
+
+.contact-section {
+  background: linear-gradient(to right, #f8f9fa, #f1f3f5);
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+  border-top: 1px solid #ddd;
+}
+
+.contact-info {
+  max-width: 400px;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-form {
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #008080;
+}
+
+.contact-form button {
+  background-color: #008080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #006666;
 }
 
 

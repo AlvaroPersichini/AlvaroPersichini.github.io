@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body>
+<body id="top">
 
   <!-- Este menu de header y nav aparecen en mobile -->
   <header class="site-header">
@@ -44,10 +44,10 @@
   <div class="encabezado">
     <img class="logoCabeza" src="/assets/images/StudyingLOGO-2.png" alt="">
     <ul class="nav-links">
-      <li>HOME</li>
-        <li>ACADEMIC</li>
-        <li>PORTFOLIO</li>
-        <li>CONTACT</li>
+      <!-- <li>HOME</li>
+      <li>ACADEMIC</li>
+      <li>PORTFOLIO</li>
+      <li>CONTACT</li> -->
     </ul>
   </div>
 
@@ -55,10 +55,9 @@
   <header class="desktop">
     <nav class="navbar">
       <ul class="nav-links">
-        <li>HOME</li>
-        <li>ACADEMIC</li>
-        <li>PORTFOLIO</li>
-        <li>CONTACT</li>
+        <li><a href="#top">HOME</a></li>
+        <li><a href="#academic">ACADEMIC</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
   </header>
@@ -76,10 +75,18 @@
       <div class="caja2">
         <article class="presentacion">
           <h2 class="h2Profesion">ALVARO PERSICHINI</h2>
-          <h1 class="profesion">Programmer&nbsp;Technician</h1>
-          <h3> <a href="#academic">Academic</a></h3>
+          <h1 class="profesion">Mechanical&nbsp;Engineer</h1>
+          <p>
+            Experience in 3D design for the automotive industry. <br>
+            Skilled in CATIA V5 for machinery design. <br>
+            Strong focus on process optimization using CATIA VBA and simulations. <br>
+            Expanding expertise in programming and software integration. <br>
+
+          </p>
+
+          <!-- <h3> <a href="#academic">Academic</a></h3>
           <h3> <a href="#portfolio">Portfolio</a></h3>
-          <h3> <a href="contact">Contact</a></h3>
+          <h3> <a href="contact">Contact</a></h3> -->
         </article>
       </div>
     </section>
@@ -89,11 +96,13 @@
 
 
     <!-- ACADEMIC -->
-    <div class="divConector">
-      Academic
-    </div>
+
 
     <section class="about">
+      <div id="academic" class="divConector">
+        Academic
+      </div>
+
       <article class="academic">
         <ul>
           <li class="li-academic">
@@ -108,10 +117,17 @@
             <h3 class="h3-School">Spoken Languages</h3>
             <div class="separador">English B2<br>Portuguese</div>
           </li>
-          <li class="li-academic">
+          <!-- <li class="li-academic">
             <h3 class="h3-School">Languages</h3>
             <div class="separador">C | C# | VB.NET | Python <br>| HTML | CSS | JS</div>
+          </li> -->
+
+          <li class="li-academic">
+            <h3 class="h3-School">3D/2D Tools</h3>
+            <div class="separador">CATIA v5 | SolidWorks <br>| NX | TeamCenter</div>
           </li>
+
+
           <li class="li-academic">
             <h3 class="h3-School">Frameworks</h3>
             <div class="separador">.NET Framework<br>Flask | Django | Node.js</div>
@@ -126,17 +142,19 @@
     <!-- SKILLS -->
     <section class="about2">
       <article class="skills">
-        <h2 class="h2-skill">Documentation</h2>
+        <h2 class="h2-skill">Experience and Skills</h2>
         <p class="p-skill">
-          I Develop software solutions that address specific needs and challenges.
-          My focus is on combining technical expertise with a problem-solving mindset to deliver results that provide
-          real value. I Develop software solutions that address specific needs and challenges.
-          I Develop software solutions that address specific needs and challenges.
+          Studies carried out under CATIA V5: Car Chassis studies of ergonomics,
+          fit analysis, welding feasibility, list of raw material. Process Sheets,
+          BOMs, part/process optimization focused on cost.
+          Electric Car Assembly line working with Conveyors using AGV, AMR strategy.
+          3D Design, 2D Drawings, BOM automatic generation, parts and assembly properties,
+          kinematic simulation, technical documentation & user manuals.
           <br>
           <br>
-        <div class="botonNaranja">
+          <!-- <div class="botonNaranja">
           <a class="botonVerMas" href="">Lear More...</a>
-        </div>
+        </div> -->
         </p>
       </article>
       <img class="cajaImagen" src="assets/images/10-consulting-projects-illus-promo-640x480.avif" alt="">
@@ -149,17 +167,41 @@
         <p class="p-skill">
           I Develop software solutions that address specific needs and challenges.
           My focus is on combining technical expertise with a problem-solving mindset to deliver results that provide
-          real value. I Develop software solutions that address specific needs and challenges.
-          I Develop software solutions that address specific needs and challenges.
+          real value.
           <br>
           <br>
-        <div class="botonNaranja">
+          <!-- <div class="botonNaranja">
           <a class="botonVerMas" href="">Ver más...</a>
-        </div>
+        </div> -->
         </p>
       </article>
 
     </section>
+
+    <section class="contact-section">
+      <div class="contact-info">
+        <h3>Let's Get in Touch</h3>
+        <p>
+          If you are interested in discussing potential collaborations or have any technical inquiries,
+          feel free to reach out. I’m always open to new opportunities in engineering, design,
+          and software development.
+        </p>
+      </div>
+
+      <!-- <form class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form> -->
+    </section>
+
 
 
 
@@ -168,21 +210,34 @@
 
 
   <!-- FOOTER -->
-  <footer class="footer">
+
+  <footer id="contact" class="footer">
+    <!-- <div class="footer-bottom">
+      <h2 class="h2-skill">Contact</h2>
+    </div> -->
+
+
     <div class="footer-container">
       <div class="footer-left">
         <h3>Álvaro Persichini</h3>
         <p>Mechanical Engineer | Programmer Technician</p>
         <p>Tailored Engineering & Software Solutions</p>
+        <div class="footer-right">
+          <p>OCT-2025</p>
+          <p>Rosario, Santa Fe, Arg.</p>
+        </div>
       </div>
       <div class="footer-right">
         <p>+54 341 640 1315</p>
         <p>alvaro.persichini@gmail.com</p>
+        <p>linkedin.com/in/mechanicalengineerapersichini</p>
+        <p>https://github.com/AlvaroPersichini</p>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2025 Álvaro Persichini</p>
     </div>
+
   </footer>
 
 
