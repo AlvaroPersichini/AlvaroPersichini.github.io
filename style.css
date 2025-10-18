@@ -715,6 +715,16 @@ main {
     .presentacion::before {
         background: none;
     }
+
+    body {
+    overflow-y: scroll;              /* mantiene el scroll activo */
+    scrollbar-width: none;           /* Firefox */
+    -ms-overflow-style: none;        /* IE y Edge antiguos */
+  }
+
+  body::-webkit-scrollbar {
+    display: none;                   /* Chrome, Safari y Opera */
+  }
 }
 
 
