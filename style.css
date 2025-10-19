@@ -717,11 +717,12 @@ main {
 
 
     .p-about1 {
-    text-align:center;
+    text-align:justify;
+    
     font-size: 16px;
     line-height: 1.6;
     color: black;
-    width: 350px;
+    width: 320px;
     margin: 0;
     padding: 0;
     align-self: first baseline;
