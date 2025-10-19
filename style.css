@@ -326,14 +326,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: clamp(200px, 80vw, 550px);
+    width: clamp(250px, 80vw, 550px);
     padding: 40px;
 }
 
 .h2-skill {
-    font-size: clamp(30px, 2.5vw, 500px);
+    font-size: clamp(32px, 2.8vw, 500px);
     align-self: first baseline;
-    margin: 5px;
+    margin: 10px;
 }
 
 .p-skill {
