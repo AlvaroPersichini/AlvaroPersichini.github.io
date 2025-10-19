@@ -461,7 +461,7 @@ main {
 }
 
 .profesion {
-    font-size: clamp(40px, 3.4vw, 60px);
+    font-size: clamp(35px, 3.4vw, 60px);
     margin: 10px 0;
 }
 
@@ -721,7 +721,7 @@ main {
     font-size: 16px;
     line-height: 1.6;
     color: black;
-    width: 400px;
+    width: 350px;
     margin: 0;
     padding: 0;
     align-self: first baseline;
