@@ -717,16 +717,20 @@ main {
 
 
     .p-about1 {
-    text-align:justify;
-    
-    font-size: 16px;
-    line-height: 1.6;
-    color: black;
-    width: 320px;
-    margin: 0;
-    padding: 0;
-    align-self: first baseline;
-}
+        text-align: justify;
+
+        font-size: 16px;
+        line-height: 1.6;
+        color: black;
+        width: 320px;
+        margin: 0;
+        padding: 0;
+        align-self: first baseline;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
 
 }
 
@@ -778,7 +782,7 @@ body::-webkit-scrollbar {
     display: none;
     /* Chrome, Safari y Opera */
 }
-}
+
 
 
 
