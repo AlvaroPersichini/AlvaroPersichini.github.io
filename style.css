@@ -215,10 +215,11 @@ main {
     transition: 0.3s;
 }
 
+
 /* -------- ABOUT -------- */
 .about1 {
-
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: calc(100vh - 116px);
@@ -226,6 +227,18 @@ main {
     background-color: white;
 }
 
+.caja1 {
+    margin: 20px;
+}
+
+.caja2 {
+    margin: 20px;
+}
+
+.caja1 img {
+    width: clamp(280px, 19vw, 500px);
+    height: auto;
+}
 
 
 
@@ -335,8 +348,6 @@ main {
 }
 
 .p-about1 {
-
-
     text-align: start;
     font-size: 16px;
     line-height: 1.6;
@@ -345,11 +356,10 @@ main {
     margin: 0;
     padding: 0;
     align-self: first baseline;
-
-
-
 }
 
+
+/********* BOTON NARANJA *****************/
 .botonNaranja {
     align-self: baseline;
     background-color: #4ffab8d2;
@@ -376,6 +386,37 @@ main {
 }
 
 
+
+/********* BOTON 2*****************/
+.cajaBoton2 {
+    align-self: baseline;
+    background: linear-gradient(to bottom, #4c8daf, #007a7a);
+    width: clamp(100px, 7vw, 200px);
+    height: 50px;
+    border-radius: 3px;
+}
+
+.boton2 {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.cajaBoton2:hover {
+    background: none;
+    background-color: #7ac0b7;
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
 .cajaImagen {
     width: clamp(200px, 85vw, 550px);
     height: auto;
@@ -394,11 +435,7 @@ main {
 
 
 
-.about1 img {
-    max-width: 280px;
-    width: 100%;
-    height: auto;
-}
+
 
 
 .presentacion {
@@ -424,7 +461,7 @@ main {
 }
 
 .profesion {
-    font-size: clamp(30px, 3.4vw, 60px);
+    font-size: clamp(40px, 3.4vw, 60px);
     margin: 10px 0;
 }
 
@@ -603,7 +640,7 @@ main {
 
 
 /* Para mobile - ajustar alineación */
-@media (max-width: 768px) {
+@media (max-width: 810px) {
 
 
     .inicio {
@@ -672,59 +709,74 @@ main {
     }
 
     .about1 {
+        align-content: center;
         flex-direction: column;
         text-align: center;
         height: 100vh;
-
     }
 
-    .skills {
-        padding-bottom: 0px;
-    }
 
-    .about1 img {
-        max-width: 235px;
-    }
+    .p-about1 {
+    text-align:center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    align-self: first baseline;
+}
 
-    .presentacion {
-        border: none;
-        padding: 0;
-    }
+}
 
-    .li-academic {
-        flex-direction: column;
-        text-align: center;
-    }
+.skills {
+    padding-bottom: 0px;
+}
 
-    .cajaImagen {
 
-        padding-top: 0;
+.presentacion {
+    border: none;
+    padding: 0;
+}
 
-    }
+.li-academic {
+    flex-direction: column;
+    text-align: center;
+}
 
-    .cajaImagen2 {
-        padding-bottom: 0;
-        margin: 10px;
-    }
+.cajaImagen {
 
-    .footer-container {
-        flex-direction: column;
-        gap: 15px;
-    }
+    padding-top: 0;
 
-    .presentacion::before {
-        background: none;
-    }
+}
 
-    body {
-    overflow-y: scroll;              /* mantiene el scroll activo */
-    scrollbar-width: none;           /* Firefox */
-    -ms-overflow-style: none;        /* IE y Edge antiguos */
-  }
+.cajaImagen2 {
+    padding-bottom: 0;
+    margin: 10px;
+}
 
-  body::-webkit-scrollbar {
-    display: none;                   /* Chrome, Safari y Opera */
-  }
+.footer-container {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.presentacion::before {
+    background: none;
+}
+
+body {
+    overflow-y: scroll;
+    /* mantiene el scroll activo */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE y Edge antiguos */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari y Opera */
+}
 }
 
 
@@ -748,8 +800,6 @@ main {
     margin-top: 0;
     max-width: 500px;
     text-align: justify;
-
-
 }
 
 
