@@ -732,6 +732,19 @@ main {
         display: none;
     }
 
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    html,
+    body {
+        overflow-y: auto;
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
 }
 
 .skills {
