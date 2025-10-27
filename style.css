@@ -39,7 +39,7 @@ main {
 .encabezado {
 
     display: flex;
-    justify-content: left;
+    justify-content: right;
     align-items: center;
     font-weight: bold;
     font-size: 1.2rem;
@@ -53,7 +53,7 @@ main {
 
 .logoCabeza {
     width: 50px;
-    margin-left: 20px;
+
 }
 
 .navEncabezado {
@@ -73,6 +73,7 @@ main {
     list-style: none;
     padding-left: 6px;
     padding-bottom: 8px;
+
 
 
 }
@@ -122,7 +123,7 @@ main {
     height: 40px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 8px 40px;
     background-color: #00002A;
     background-color: white;
@@ -144,6 +145,9 @@ main {
     display: flex;
     list-style: none;
     gap: 30px;
+    padding: 5px;
+    margin-right: 20px;
+
 }
 
 /* Links */
@@ -158,6 +162,7 @@ main {
 
 .nav-links li:hover {
     color: #5afdbfd2;
+      
 }
 
 /* --------------------------------------------------------- */
@@ -519,29 +524,16 @@ main {
 }
 
 
+
 .navbar .nav-links a {
     text-decoration: none;
-    color: #222;
-    /* gris oscuro, elegante */
+    color: black;
     font-weight: 500;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-    padding: 6px 10px;
-    border-radius: 6px;
+
 }
 
-/* Hover con línea inferior animada */
-.navbar .nav-links a:hover {
-    color: #008080;
-    /* tono turquesa profesional */
-    border-bottom: 2px solid #008080;
-}
 
-/* Estado activo (opcional, si querés resaltar la sección actual) */
-.navbar .nav-links a.active {
-    color: #008080;
-    border-bottom: 2px solid #008080;
-}
+
 
 /* Opcional: para mantener el menú centrado y limpio */
 .navbar .nav-links {
@@ -550,10 +542,11 @@ main {
     gap: 30px;
     margin: 0;
     padding: 0;
+
 }
 
 .navbar .nav-links a:hover {
-    background-color: rgba(0, 128, 128, 0.1);
+
     color: #008080;
 }
 
