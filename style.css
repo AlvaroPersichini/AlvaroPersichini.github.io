@@ -13,6 +13,8 @@ body {
 
 
 
+
+
 main {
     background-color: red;
 }
@@ -541,7 +543,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-content: center;
     color: white;
     height: 100vh;
 
@@ -549,7 +551,8 @@ main {
 
 .contact {
     padding: 20px;
-    height: 500px;
+    margin-bottom: 50px;
+
 }
 
 .contact-info {
@@ -562,8 +565,8 @@ main {
     font-size: clamp(32px, 2.8vw, 500px);
     align-self: first baseline;
     margin-left: 0px;
-
     padding-right: 10px;
+    margin-top: 5px;
 
 }
 
@@ -627,152 +630,6 @@ main {
     background-color: #006666;
 }
 
-
-
-
-
-
-
-/* Para mobile - ajustar alineación */
-@media (max-width: 810px) {
-
-
-    .inicio {
-        display: none;
-    }
-    .desktop {
-        display: none;
-    }
-    .encabezado {
-        display: none;
-    }
-
-    .ulHorizontal {
-        display: flex;
-    }
-
-    .hamburger.active {
-        margin-left: 10px;
-    }
-
-
-
-    /************************************************************************/
-    /* Todo esto es para lograr la X del boton amburguesa */
-    /************************************************************************/
-    :root {
-        --offsetPx: 7.5px;
-    }
-    .hamburger.active span:nth-child(1) {
-        top: 50%;
-        transform: translate(-50%, calc(-50% + var(--offsetPx))) rotate(45deg);
-    }
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-        /* transform: translateX(-50%) translateX(-20px);  */
-    }
-    .hamburger.active span:nth-child(3) {
-        top: 50%;
-        bottom: auto;
-        transform: translate(-50%, calc(-50% - var(--offsetPx))) rotate(-45deg);
-    }
-    /************************************************************************/
-
-
-
-
-
-    .h2Profesion {
-        display: none;
-    }
-
-    .li-academic {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        min-height: auto;
-    }
-
-    .h3-School {
-        min-width: auto;
-        width: 100%;
-        padding-right: 0;
-        font-size: 22px;
-    }
-
-    .h2Profesion {
-        font-size: 20px;
-    }
-
-    .separador {
-        width: 100%;
-        font-size: 15px;
-    }
-
-
-    .li-academic {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        gap: 5px;
-        padding: 5px;
-
-    }
-
-    .h3-School {
-        min-width: auto;
-        width: 100%;
-    }
-
-    .separador {
-        width: 100%;
-        text-align: left;
-    }
-
-
-    .site-header {
-        display: block;
-    }
-
-    .about1 {
-        align-content: center;
-        flex-direction: column;
-        text-align: center;
-        height: 100vh;
-    }
-
-
-    .p-about1 {
-        text-align: justify;
-
-        font-size: 16px;
-        line-height: 1.6;
-        color: black;
-        width: 320px;
-        margin: 0;
-        padding: 0;
-        align-self: first baseline;
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    html,
-    body {
-        overflow-x: hidden;
-        width: 100%;
-    }
-
-    html,
-    body {
-        overflow-y: auto;
-        scrollbar-width: none;
-        /* Firefox */
-
-    }
-
-}
 
 .skills {
     padding-bottom: 0px;
@@ -898,8 +755,6 @@ body::-webkit-scrollbar {
     text-align: center;
     position: relative;
     width: 100%;
-
-
 }
 
 .close-btn {
@@ -955,149 +810,181 @@ body.no-scroll {
 
 
 
-/* ****** Animación base ************ */
-@keyframes slideUpFade {
-    0% {
+/**************   MOBILE ***************/
+@media (max-width: 810px) {
+
+
+    .inicio {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .encabezado {
+        display: none;
+    }
+
+    .ulHorizontal {
+        display: flex;
+    }
+
+    .hamburger.active {
+        margin-left: 10px;
+    }
+
+
+
+
+    /************************************************************************/
+    /* Todo esto es para lograr la X del boton amburguesa */
+    /************************************************************************/
+    :root {
+        --offsetPx: 7.8px;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, calc(-50% + var(--offsetPx))) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
         opacity: 0;
-        transform: translateY(40px);
+        /* transform: translateX(-50%) translateX(-20px);  */
     }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.presentacion h3 {
-    opacity: 0;
-    animation: slideUpFade 0.8s ease forwards;
-}
-
-.presentacion h3:nth-of-type(1) {
-    animation-delay: 0.3s;
-}
-
-.presentacion h3:nth-of-type(2) {
-    animation-delay: 0.6s;
-}
-
-.presentacion h3:nth-of-type(3) {
-    animation-delay: 0.9s;
-}
-
-
-
-
-
-
-
-/* Boton de Dark Mode */
-.switch {
-    font-size: 17px;
-    position: relative;
-    display: inline-block;
-    width: 64px;
-    height: 34px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #4b545c;
-    transition: .4s;
-    border-radius: 30px;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 30px;
-    width: 30px;
-    border-radius: 20px;
-    left: 2px;
-    bottom: 2px;
-    z-index: 2;
-    background-color: #e8e8e8;
-    transition: .4s;
-}
-
-.sun svg {
-    position: absolute;
-    top: 6px;
-    left: 36px;
-    z-index: 1;
-    width: 24px;
-    height: 24px;
-}
-
-.moon svg {
-    fill: #73C0FC;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    z-index: 1;
-    width: 24px;
-    height: 24px;
-}
-
-/* .switch:hover */
-.sun svg {
-    animation: rotate 15s linear infinite;
-}
-
-@keyframes rotate {
-
-    0% {
-        transform: rotate(0);
+    .hamburger.active span:nth-child(3) {
+        top: 50%;
+        bottom: auto;
+        transform: translate(-50%, calc(-50% - var(--offsetPx))) rotate(-45deg);
     }
 
-    100% {
-        transform: rotate(360deg);
-    }
-}
+    /************************************************************************/
 
-/* .switch:hover */
-.moon svg {
-    animation: tilt 5s linear infinite;
-}
 
-@keyframes tilt {
 
-    0% {
-        transform: rotate(0deg);
+
+
+    .h2Profesion {
+        display: none;
     }
 
-    25% {
-        transform: rotate(-10deg);
+    .li-academic {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        min-height: auto;
     }
 
-    75% {
-        transform: rotate(10deg);
+    .h3-School {
+        min-width: auto;
+        width: 100%;
+        padding-right: 0;
+        font-size: 22px;
     }
 
-    100% {
-        transform: rotate(0deg);
+    .h2Profesion {
+        font-size: 20px;
     }
-}
 
-.input:checked+.slider {
-    background-color: #183153;
-}
+    .separador {
+        width: 100%;
+        font-size: 15px;
+    }
 
-.input:focus+.slider {
-    box-shadow: 0 0 1px #183153;
-}
+    .li-academic {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 5px;
+        padding: 5px;
 
-.input:checked+.slider:before {
-    transform: translateX(30px);
+    }
+
+    .h3-School {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .separador {
+        width: 100%;
+        text-align: left;
+    }
+
+
+    .site-header {
+        display: block;
+    }
+
+    .about1 {
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+    }
+
+
+    .p-about1 {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 1.6;
+        color: black;
+        width: 320px;
+        margin: 0;
+        padding: 0;
+        align-self: first baseline;
+    }
+
+
+
+    /*********** CONTACT  ***************************/
+
+    .contact-section {
+        background: #111;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        color: white;
+        min-height: 100vh;
+    }
+
+    .contact {
+        margin-top: 100px;
+        max-width: 400px;
+        margin-bottom: 20px;
+
+
+    }
+
+    .contact p {
+        width: 100%;
+    }
+
+    .contact-info {
+        margin-bottom: 100px;
+      
+    }
+
+  
+
+
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    html,
+    body {
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
 }
