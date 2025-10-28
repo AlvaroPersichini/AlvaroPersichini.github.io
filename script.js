@@ -4,11 +4,7 @@ function toggleMenu() {
   
   menuOverlay.classList.toggle('active');
   body.classList.toggle('no-scroll');
-  
-  // Animación del botón hamburguesa a X
-  const hamburger = document.querySelector('.hamburger');
-  hamburger.classList.toggle('active');
-}
+  }
 
 // Cerrar menú al hacer clic fuera del contenido
 document.getElementById('menuOverlay').addEventListener('click', function(e) {
@@ -27,7 +23,3 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
-// Animación para el botón hamburguesa (opcional)
-document.querySelector('.hamburger').addEventListener('click', function() {
-  this.classList.toggle('active');
-});

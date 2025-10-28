@@ -14,25 +14,42 @@
 
   <!-- Este menu de header y nav aparecen en mobile -->
   <header class="site-header">
+
     <nav>
+
       <ul class="ulHorizontal">
-        <li class="liHorizontal1"><a class="aHorizontal" href="#">ALVARO PERSICHINI</a></li>
-        <button class="hamburger" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <li>
+          <button class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </li>
+
+        <li class="liHorizontal1">
+          <a class="aHorizontal" href="#">ALVARO PERSICHINI</a>
+        </li>
       </ul>
+
+
       <!-- MENU DESPLEGABLE -->
       <div class="menu-overlay" id="menuOverlay">
+
         <div class="menu-content">
-          <button class="close-btn" onclick="toggleMenu()">×</button>
+
+          <!-- <button class="close-btn" onclick="toggleMenu()">X</button> -->
+
           <ul class="menu-list">
+            <li><a href="#" onclick="toggleMenu()">Home</a></li>
             <li><a href="#academic" onclick="toggleMenu()">Academic</a></li>
             <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+            <li><a target="_blank" href="/assets/pdf/cvPersichini_R28_Eng.pdf" onclick="toggleMenu()">Download CV</a>
+            </li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </ul>
+
         </div>
+
       </div>
     </nav>
   </header>
@@ -42,14 +59,20 @@
 
 
   <div class="encabezado">
-    <img class="logoCabeza" src="/assets/images/StudyingLOGO-2.png" alt="">
-    <ul class="nav-links">
-      <li>Download Resume</li>
 
-       <!-- <li>Brocheur</li>
+    <img class="logoCabeza" src="/assets/images/StudyingLOGO-2.png" alt="">
+
+    <ul class="nav-links">
+
+      <li><a target="_blank" href="/assets/pdf/cvPersichini_R28_Eng.pdf">Download Resume</a></li>
+
+      <!-- <li>Brocheur</li>
       <li>PORTFOLIO</li>
-      <li>CONTACT</li>   -->
+      <li>CONTACT</li> -->
+
+
     </ul>
+
   </div>
 
 
@@ -58,6 +81,7 @@
       <ul class="nav-links">
         <li><a href="#top">HOME</a></li>
         <li><a href="#academic">ACADEMIC</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
@@ -84,12 +108,6 @@
             Skilled in CATIA V5 for machinery design and simulation.
             Focus on integrate software solutions to the industry.
           </p>
-          <!-- <div class="cajaBoton2">
-            <a class="boton2" href="">See More...</a>
-          </div> -->
-          <!-- <h3> <a href="#academic">Academic</a></h3>
-          <h3> <a href="#portfolio">Portfolio</a></h3>
-          <h3> <a href="contact">Contact</a></h3> -->
         </article>
       </div>
     </section>
@@ -100,12 +118,7 @@
 
     <!-- ACADEMIC -->
 
-
-    <section class="about">
-      <div id="academic" class="divConector">
-        Academic
-      </div>
-
+    <section id="academic" class="about">
       <article class="academic">
         <ul>
           <li class="li-academic">
@@ -143,9 +156,9 @@
 
 
     <!-- SKILLS -->
-    <section class="about2">
+    <section id="portfolio" class="about2">
       <article class="skills">
-        <h2 class="h2-skill">Experience</h2>
+        <h2 class="h2-skill">Portfolio</h2>
         <p class="p-skill">
           Studies carried out under CATIA V5: Car chassis studies of ergonomics,
           fit analysis, welding feasibility, list of raw material. Process Sheets,
@@ -170,48 +183,52 @@
         <p class="p-skill">
           I develop solutions for integrating engineering knowledge with programming
           to optimize processes, automate tasks, and improve efficiency in technical environments.
-          <br>
-          <br>
+        </p>
+        <br>
+        <br>
         <div class="botonNaranja">
           <a class="botonVerMas" href="">See More...</a>
         </div>
-        </p>
+
       </article>
     </section>
 
 
 
     <!-- CONTACT -->
-    <section class="contact-section">
-      <article class="skills">
-        <h2 class="h2-skill">Contact</h2>
-        <p class="p-skill">
+    <section id="contact" class="contact-section">
+
+      <article class="contact">
+        <h2>Contact</h2>
+        <p>
           If you are interested in discussing potential collaborations or have any technical inquiries,
           feel free to reach out. I’m always open to new opportunities in engineering, design,
           and software development.
         </p>
       </article>
+
       <div class="contact-info">
         <form class="contact-form">
           <div class="form-group">
-            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder=" Name" required>
           </div>
           <div class="form-group">
-            <input type="email" placeholder="Your Email" required>
+            <input type="email" placeholder=" Email" required>
           </div>
           <div class="form-group">
-            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <textarea rows="10" placeholder=" Message" required></textarea>
           </div>
           <button type="submit">Send Message</button>
         </form>
       </div>
+
     </section>
 
   </main>
 
 
   <!-- FOOTER -->
-  <footer id="contact" class="footer">
+  <footer class="footer">
     <!-- <div class="footer-bottom">
       <h2 class="h2-skill">Contact</h2>
     </div> -->
@@ -286,3 +303,11 @@
           <h2 class="empresa">EVs</h2>
         </div>
         <p>With a strong background in the automotive industry...</p> -->
+
+
+<!-- <div class="cajaBoton2">
+            <a class="boton2" href="">See More...</a>
+          </div> -->
+<!-- <h3> <a href="#academic">Academic</a></h3>
+          <h3> <a href="#portfolio">Portfolio</a></h3>
+          <h3> <a href="contact">Contact</a></h3> -->

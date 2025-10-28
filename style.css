@@ -12,6 +12,7 @@ body {
 }
 
 
+
 main {
     background-color: red;
 }
@@ -39,7 +40,7 @@ main {
 .encabezado {
 
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     font-weight: bold;
     font-size: 1.2rem;
@@ -53,6 +54,7 @@ main {
 
 .logoCabeza {
     width: 50px;
+    margin-left: 20px;
 
 }
 
@@ -160,9 +162,14 @@ main {
     font-weight: 500;
 }
 
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
 .nav-links li:hover {
     color: #5afdbfd2;
-      
 }
 
 /* --------------------------------------------------------- */
@@ -191,6 +198,7 @@ main {
     background-color: black;
 }
 
+
 .liHorizontal1 {
     display: flex;
     align-items: center;
@@ -201,6 +209,7 @@ main {
     text-decoration: none;
     color: white;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    margin-right: 30px;
 }
 
 .hamburger {
@@ -245,23 +254,6 @@ main {
     height: auto;
 }
 
-
-
-.divConector {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 550;
-    min-width: auto;
-    width: 100%;
-    padding-right: 0;
-    color: white;
-    height: 100px;
-    align-items: center;
-}
-
-
 .about {
 
     flex-wrap: wrap;
@@ -269,18 +261,15 @@ main {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    background-color: #E9E9ED;
     width: 100%;
-    background-color: white;
     background: linear-gradient(to bottom, #003049, #007a7a);
     color: white;
-}
-
-.academic {
-    padding: 10px;
-    padding-top: 0;
+    min-height: 100vh;
+   
+    padding-top: 50px;
 
 }
+
 
 
 
@@ -291,19 +280,16 @@ main {
     object-fit: cover;
     padding: 30px;
     width: clamp(300px, 100vw, 600px);
+
 }
 
 
-/* esto lo agreguen para que no se tape el academic */
-#academic {
-    scroll-margin-top: 80px;
-    /* ajustá este valor a la altura de tu navbar */
-}
+
 
 
 .about2 {
     color: white;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -420,8 +406,6 @@ main {
 }
 
 
-
-
 .cajaImagen {
     width: clamp(200px, 85vw, 550px);
     height: auto;
@@ -437,10 +421,6 @@ main {
     padding: 40px;
 
 }
-
-
-
-
 
 
 .presentacion {
@@ -550,54 +530,75 @@ main {
     color: #008080;
 }
 
+
+
+
+/*********** CONTACT ****************/
+
 .contact-section {
     background: #111;
-    padding: 60px 20px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-
+    justify-content: space-evenly;
+    align-items: center;
     color: white;
+    height: 100vh;
 
+}
+
+.contact {
+    padding: 20px;
+    height: 500px;
 }
 
 .contact-info {
-
-    width: 600px;
-    padding: 40px;
-    width: clamp(200px, 80vw, 550px);
-    padding: 40px;
+    padding: 20px;
 }
 
-.contact-info h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: white;
-    text-align: left;
+
+.contact h2 {
+
+    font-size: clamp(32px, 2.8vw, 500px);
+    align-self: first baseline;
+    margin-left: 0px;
+
+    padding-right: 10px;
+
 }
 
-.contact-info p {
-    font-size: 1rem;
-    color: white;
+.contact p {
+    text-align: justify;
+    font-size: 16px;
     line-height: 1.6;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-self: first baseline;
+    width: clamp(100px, 80vw, 450px)
 }
+
+
 
 .contact-form {
     max-width: 400px;
     width: 100%;
+    width: clamp(250px, 80vw, 550px)
 }
 
 .form-group {
     margin-bottom: 15px;
+    width: 100%;
 }
+
 
 .contact-form input,
 .contact-form textarea {
 
     width: 100%;
-    padding: 10px 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-family: "Lato", sans-serif;
@@ -648,6 +649,11 @@ main {
         display: none;
     }
 
+
+
+    .ulHorizontal {
+        display: flex;
+    }
 
     .h2Profesion {
         display: none;
@@ -736,6 +742,7 @@ main {
         overflow-y: auto;
         scrollbar-width: none;
         /* Firefox */
+
     }
 
 }
@@ -845,34 +852,32 @@ body::-webkit-scrollbar {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 2000;
+    height: calc(100vh - 50px);
+    margin-top: 50px;
+    background-color: #0f1e46;
     display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
 .menu-overlay.active {
     display: flex;
-    opacity: 1;
     justify-content: center;
     align-items: center;
 }
 
 .menu-content {
-    background: white;
+
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 2px;
     text-align: center;
     position: relative;
-    min-width: 300px;
+    width: 100%;
+
+
 }
 
 .close-btn {
-    position: absolute;
+
     top: 15px;
-    right: 20px;
     background: none;
     border: none;
     font-size: 30px;
@@ -892,14 +897,14 @@ body::-webkit-scrollbar {
 
 .menu-list a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-size: 24px;
     font-weight: 700;
     transition: color 0.3s ease;
 }
 
 .menu-list a:hover {
-    color: #007bff;
+    color: #5afdbfd2;
 }
 
 
