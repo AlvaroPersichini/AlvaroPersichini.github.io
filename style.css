@@ -193,7 +193,7 @@ main {
     list-style: none;
     margin: 0;
     padding: 0 15px;
-    display: flex;
+    display: none;
     justify-content: flex-start;
     align-items: center;
     height: 50px;
@@ -835,47 +835,21 @@ body.no-scroll {
 
     .ulHorizontal {
         display: flex;
-    }
-
-    .hamburger.active {
-        margin-left: 10px;
+        /* background-color: #003049; */
     }
 
 
-
-
-    /************************************************************************/
-    /* Todo esto es para lograr la X del boton amburguesa */
-    /************************************************************************/
-    :root {
-        --offsetPx: 7.8px;
+    .liHorizontal1 {
+        border-left: solid #5afdbfd2 1px;
+        padding-left: 10px;
     }
 
-    .hamburger.active span:nth-child(1) {
-        top: 50%;
-        transform: translate(-50%, calc(-50% + var(--offsetPx))) rotate(45deg);
+
+    .menu-content {
+        padding-top: 5px;
+        padding-left: 25px;
     }
 
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-        /* transform: translateX(-50%) translateX(-20px);  */
-    }
-
-    .hamburger.active span:nth-child(3) {
-        top: 50%;
-        bottom: auto;
-        transform: translate(-50%, calc(-50% - var(--offsetPx))) rotate(-45deg);
-    }
-
-    /************************************************************************/
-
-
-
-  .liHorizontal1 {
-    border-left: solid #5afdbfd2 1px;
-    padding-left: 10px;
-  }
-    
 
     .menu-list {
         align-items: flex-start;
@@ -883,7 +857,20 @@ body.no-scroll {
         border-bottom: 1px solid #5afdbfd2;
     }
 
+    .menu-list li {
+        margin: 12px;
+        margin-left: 0;
+    }
 
+    .menu-overlay.active {
+        align-items: flex-start;
+    }
+
+  
+
+    .menu-list a {
+        font-size: 17px;
+    }
 
 
     .h2Profesion {
@@ -987,8 +974,6 @@ body.no-scroll {
         margin-bottom: 100px;
 
     }
-
-
 
 
 
