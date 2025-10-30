@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -8,10 +7,7 @@ body {
     padding: 0;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
-
 }
-
-
 
 
 
@@ -33,14 +29,12 @@ main {
     align-items: center;
     height: 10vh;
     z-index: 1000;
-
 }
 
 /* -------- NAV -------- */
 
 
 .encabezado {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,8 +71,6 @@ main {
     list-style: none;
     padding-left: 6px;
     padding-bottom: 8px;
-
-
 
 }
 
@@ -197,13 +189,25 @@ main {
     justify-content: flex-start;
     align-items: center;
     height: 50px;
-    background-color: black;
+
+    background-color: #010436;
 }
+
+.menu-content ul.menu-list:first-of-type {
+    font-size: 1.2rem;
+    color: #fff;
+    border-bottom: none;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
 
 
 .liHorizontal1 {
     display: flex;
     align-items: center;
+      border-left: solid 1px #5afdbfd2;
 }
 
 .aHorizontal {
@@ -212,8 +216,11 @@ main {
     color: white;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     margin-right: 30px;
-    margin-left: 10px;
+    margin-left: 1px;
+  
 }
+
+/* **************** BOTON AMBURGUESA *******************/
 
 .hamburger {
     display: flex;
@@ -222,7 +229,8 @@ main {
     background: none;
     border: none;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 10px;
+    background: none;
 }
 
 .hamburger span {
@@ -231,6 +239,12 @@ main {
     background-color: white;
     transition: 0.3s;
 }
+
+
+
+
+
+
 
 
 /* -------- ABOUT -------- */
@@ -731,23 +745,63 @@ body::-webkit-scrollbar {
 
 
 
-/* -------- MENU DESPLEGABLE -------- */
-.menu-overlay {
+/* *************** MENU DESPLEGABLE ****************** */
+/* .menu-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: calc(100vh - 50px);
+
+
     margin-top: 50px;
     background-color: #0f1e46;
     display: none;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+
 }
 
 .menu-overlay.active {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transform: translateY(0);
+    opacity: 1;
+} */
+
+.menu-overlay {
+    position: fixed;
+    top: 50px;
+    /* ya tenías margin-top:50px */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 50px);
+
+    background-color: #0f1e46;
+
+    /* oculto inicialmente con animación */
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.4s ease, opacity 0.4s ease, visibility 0s 0.4s;
 }
+
+.menu-overlay.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    transition: transform 0.4s ease, opacity 0.4s ease, visibility 0s 0s;
+}
+
+
 
 .menu-content {
 
@@ -762,6 +816,11 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
 }
 
 .close-btn {
@@ -774,11 +833,7 @@ body::-webkit-scrollbar {
     color: #333;
 }
 
-.menu-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+
 
 .menu-list li {
     margin: 25px 0;
@@ -788,14 +843,13 @@ body::-webkit-scrollbar {
     text-decoration: none;
     color: white;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .menu-list a:hover {
     color: #5afdbfd2;
 }
-
 
 body.no-scroll {
     overflow: hidden;
@@ -817,9 +871,9 @@ body.no-scroll {
 
 
 
+
 /**************   MOBILE ***************/
 @media (max-width: 810px) {
-
 
     .inicio {
         display: none;
@@ -835,15 +889,16 @@ body.no-scroll {
 
     .ulHorizontal {
         display: flex;
-        /* background-color: #003049; */
+
     }
+
+
 
 
     .liHorizontal1 {
-        border-left: solid #5afdbfd2 1px;
+
         padding-left: 10px;
     }
-
 
     .menu-content {
         padding-top: 5px;
@@ -854,22 +909,61 @@ body.no-scroll {
     .menu-list {
         align-items: flex-start;
         padding: 15px 0;
-        border-bottom: 1px solid #5afdbfd2;
+        border-bottom: none;
+        box-shadow: inset 0 -0.5px 0 0 #5afdbfd2;
     }
+
 
     .menu-list li {
         margin: 12px;
         margin-left: 0;
     }
 
+
+
     .menu-overlay.active {
         align-items: flex-start;
     }
 
-  
+
 
     .menu-list a {
         font-size: 17px;
+    }
+
+    .menu-list li a {
+        position: relative;
+        padding-right: 15px;
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+
+
+    /* ***  BOTON AMBURGUESA */
+
+    .hamburger .cruz {
+        display: none;
+        font-size: 20px;
+        color: #333;
+        line-height: 0;
+        background: none;
+    }
+
+    .hamburger.active span {
+        display: none;
+    }
+
+    .hamburger.active .cruz {
+        display: inline;
+        color: white;
+        margin-top: 4px;
+    }
+
+    .hamburger.active .line {
+        display: none !important;
     }
 
 

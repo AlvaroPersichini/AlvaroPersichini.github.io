@@ -14,44 +14,40 @@
 
   <!-- Este menu de header y nav aparecen en mobile -->
   <header class="site-header">
-
     <nav>
-
       <ul class="ulHorizontal">
-        <li>
+        <li class="lineasBurga">
           <button class="hamburger" id="hamburger" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
+            <span class="cruz">X</span>
           </button>
         </li>
-
         <li class="liHorizontal1">
           <a class="aHorizontal" href="#">ALVARO PERSICHINI</a>
         </li>
       </ul>
-     
+
 
 
       <!-- MENU DESPLEGABLE -->
       <div class="menu-overlay" id="menuOverlay">
 
         <div class="menu-content">
-        
-          
+          <ul class="menu-list">
+            Engineering and Software Solutions
+          </ul>
+
 
           <ul class="menu-list">
-
             <li><a href="#" onclick="toggleMenu()">Home</a></li>
             <li><a href="#academic" onclick="toggleMenu()">Academic</a></li>
             <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
-            <li><a target="_blank" href="/assets/pdf/cvPersichini_R28_Eng.pdf" onclick="toggleMenu()">Download CV</a></li>
+            <li><a target="_blank" href="/assets/pdf/cvPersichini_R28_Eng.pdf" onclick="toggleMenu()">Download CV</a>
+            </li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
 
-          </ul>
-           <ul class="menu-list">
-
-  
           </ul>
 
         </div>
