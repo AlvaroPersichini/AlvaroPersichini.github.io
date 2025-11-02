@@ -10,26 +10,11 @@ body {
 }
 
 
-
 main {
     background-color: red;
 }
 
 
-.inicio {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    z-index: 1000;
-}
 
 /* -------- NAV -------- */
 
@@ -54,57 +39,7 @@ main {
 
 }
 
-.navEncabezado {
-    font-weight: bold;
-    font-size: 1.6rem;
-    list-style: none;
-    padding-left: 0;
-}
 
-.tituloEncabezado:hover {
-    color: #5afdbfd2;
-}
-
-.nav-links1 {
-
-    display: flex;
-    list-style: none;
-    padding-left: 6px;
-    padding-bottom: 8px;
-
-}
-
-.nav-links1 li {
-    cursor: pointer;
-    position: relative;
-    padding: 0;
-    font-size: 1.3rem;
-    transition: color 0.2s;
-    font-weight: 500;
-}
-
-.nav-links1 li:hover {
-    color: #5afdbfd2;
-}
-
-
-
-.caja3 {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 50px;
-    border-radius: 3px;
-}
-
-
-.caja3-1 {
-    background-color: #5afdbfd2;
-    text-decoration: none;
-    height: 100%;
-    margin-left: 20px;
-}
 
 
 .desktop {
@@ -128,13 +63,6 @@ main {
 
 }
 
-/* Logo */
-.logo {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-right: 40px;
-    width: 100%;
-}
 
 /* Lista de links */
 .nav-links {
@@ -178,18 +106,13 @@ main {
 }
 
 .ulHorizontal {
-    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     list-style: none;
     margin: 0;
-    padding: 0 15px;
     display: none;
-    justify-content: flex-start;
     align-items: center;
     height: 50px;
-
     background-color: #010436;
 }
 
@@ -203,11 +126,10 @@ main {
 
 
 
-
 .liHorizontal1 {
     display: flex;
     align-items: center;
-      border-left: solid 1px #5afdbfd2;
+    border-left: solid 1px #5afdbfd2;
 }
 
 .aHorizontal {
@@ -216,8 +138,8 @@ main {
     color: white;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     margin-right: 30px;
-    margin-left: 1px;
-  
+    margin-left: 20px;
+
 }
 
 /* **************** BOTON AMBURGUESA *******************/
@@ -229,7 +151,7 @@ main {
     background: none;
     border: none;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 0;
     background: none;
 }
 
@@ -302,8 +224,6 @@ main {
 
 
 
-
-
 .about2 {
     color: white;
     min-height: 100vh;
@@ -316,22 +236,8 @@ main {
     background-color: #040026;
 }
 
-.about3 {
-    color: white;
-    min-height: 75vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    box-sizing: border-box;
-    background-color: #7e7d85;
-
-}
-
-
 .skills {
-    display: flex;
+
     flex-direction: column;
     align-items: center;
     width: clamp(250px, 80vw, 550px);
@@ -342,6 +248,7 @@ main {
     font-size: clamp(32px, 2.8vw, 500px);
     align-self: first baseline;
     margin: 10px;
+    margin-left: 0;
 }
 
 .p-skill {
@@ -353,7 +260,10 @@ main {
     margin: 0;
     padding: 0;
     align-self: first baseline;
+    margin-bottom: 40px;
 }
+
+
 
 .p-about1 {
     text-align: start;
@@ -367,14 +277,15 @@ main {
 }
 
 
-/********* BOTON NARANJA *****************/
-.botonNaranja {
-    align-self: baseline;
-    background-color: #4ffab8d2;
-    width: clamp(100px, 7vw, 200px);
+/********* BOTON Ver Mas *****************/
+
+.cajaBotonVerMas {
+    background-color: #5afdbfd2;
+    width: 100px;
     height: 50px;
-    border-radius: 3px;
+    border-radius: 2px;
 }
+
 
 .botonVerMas {
     color: white;
@@ -387,40 +298,24 @@ main {
     font-weight: bold;
 }
 
-.botonNaranja:hover {
-    background-color: #7ac0b7;
-    transform: scale(1.03);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+.skills:nth-child(2) {
+    align-content: flex-start;
 }
+
+.cajaBotonVerMas:hover {
+    background-color: #93e9e9;
+}
+
+
+
+
+
+
 
 
 
 /********* BOTON 2*****************/
-.cajaBoton2 {
-    align-self: baseline;
-    background: linear-gradient(to bottom, #4c8daf, #007a7a);
-    width: clamp(100px, 7vw, 200px);
-    height: 50px;
-    border-radius: 3px;
-}
-
-.boton2 {
-    color: white;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
-
-.cajaBoton2:hover {
-    background: none;
-    background-color: #7ac0b7;
-    transform: scale(1.03);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
 
 
 .cajaImagen {
@@ -431,13 +326,6 @@ main {
 
 }
 
-.cajaImagen2 {
-    width: clamp(200px, 85vw, 550px);
-    height: auto;
-    transition: width 0.3s ease;
-    padding: 40px;
-
-}
 
 
 .presentacion {
@@ -561,13 +449,11 @@ main {
     align-content: center;
     color: white;
     height: 100vh;
-
 }
 
 .contact {
     padding: 20px;
     margin-bottom: 50px;
-
 }
 
 .contact-info {
@@ -576,13 +462,11 @@ main {
 
 
 .contact h2 {
-
     font-size: clamp(32px, 2.8vw, 500px);
     align-self: first baseline;
     margin-left: 0px;
     padding-right: 10px;
     margin-top: 5px;
-
 }
 
 .contact p {
@@ -596,7 +480,6 @@ main {
     align-self: first baseline;
     width: clamp(100px, 80vw, 450px)
 }
-
 
 
 .contact-form {
@@ -613,7 +496,6 @@ main {
 
 .contact-form input,
 .contact-form textarea {
-
     width: 100%;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -650,7 +532,6 @@ main {
     padding-bottom: 0px;
 }
 
-
 .presentacion {
     border: none;
     padding: 0;
@@ -662,14 +543,7 @@ main {
 }
 
 .cajaImagen {
-
     padding-top: 0;
-
-}
-
-.cajaImagen2 {
-    padding-bottom: 0;
-    margin: 10px;
 }
 
 .footer-container {
@@ -683,41 +557,15 @@ main {
 
 body {
     overflow-y: scroll;
-    /* mantiene el scroll activo */
     scrollbar-width: none;
-    /* Firefox */
     -ms-overflow-style: none;
-    /* IE y Edge antiguos */
 }
 
 body::-webkit-scrollbar {
     display: none;
-    /* Chrome, Safari y Opera */
 }
 
 
-
-
-.logoNombre {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    gap: 2px;
-    margin-top: 1px;
-}
-
-.logoSkill {
-    height: 45px;
-    width: auto;
-}
-
-.skills p {
-
-    margin-top: 0;
-    max-width: 500px;
-    text-align: justify;
-}
 
 
 /* -------- FOOTER -------- */
@@ -746,51 +594,19 @@ body::-webkit-scrollbar {
 
 
 /* *************** MENU DESPLEGABLE ****************** */
-/* .menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 50px);
-
-
-    margin-top: 50px;
-    background-color: #0f1e46;
-    display: none;
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: transform 0.4s ease, opacity 0.4s ease;
-
-}
-
-.menu-overlay.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transform: translateY(0);
-    opacity: 1;
-} */
-
 .menu-overlay {
     position: fixed;
     top: 50px;
-    /* ya tenías margin-top:50px */
     left: 0;
     width: 100%;
     height: calc(100vh - 50px);
-
     background-color: #0f1e46;
-
-    /* oculto inicialmente con animación */
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     transition: transform 0.4s ease, opacity 0.4s ease, visibility 0s 0.4s;
 }
 
@@ -801,16 +617,18 @@ body::-webkit-scrollbar {
     transition: transform 0.4s ease, opacity 0.4s ease, visibility 0s 0s;
 }
 
-
-
 .menu-content {
 
     padding: 40px;
+    padding-left: 25px;
+    padding-top: 0px;
     border-radius: 2px;
     text-align: center;
     position: relative;
     width: 100%;
 }
+
+
 
 .menu-list {
     display: flex;
@@ -819,21 +637,7 @@ body::-webkit-scrollbar {
     list-style: none;
     padding: 0;
     margin: 0;
-
-
 }
-
-.close-btn {
-
-    top: 15px;
-    background: none;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: #333;
-}
-
-
 
 .menu-list li {
     margin: 25px 0;
@@ -851,21 +655,6 @@ body::-webkit-scrollbar {
     color: #5afdbfd2;
 }
 
-body.no-scroll {
-    overflow: hidden;
-}
-
-.presentacion h3 a {
-    text-decoration: none;
-    color: #1b1b1b;
-    transition: color 0.3s ease;
-    cursor: pointer;
-}
-
-.presentacion h3 a:hover {
-    color: #d40d0d;
-}
-
 
 
 
@@ -875,10 +664,6 @@ body.no-scroll {
 /**************   MOBILE ***************/
 @media (max-width: 810px) {
 
-    .inicio {
-        display: none;
-    }
-
     .desktop {
         display: none;
     }
@@ -887,32 +672,81 @@ body.no-scroll {
         display: none;
     }
 
+
+    .site-header {
+
+        padding: 0;
+
+    }
+
+
+
     .ulHorizontal {
+        position: fixed;
+        box-sizing: border-box;
+        width: 100%;
         display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
 
+    }
+
+    /* Los dos primeros elementos <li>  */
+    .ulHorizontal li:nth-child(1),
+    .ulHorizontal li:nth-child(2) {
+        margin-right: 8px;
+
+    }
+
+    /* El tercer <li>  */
+    .ulHorizontal li:nth-child(3) {
+        margin-right: 20px;
+        margin-left: auto;
+        border: none;
     }
 
 
 
 
-    .liHorizontal1 {
+    /************ MENU LIST ********************/
 
-        padding-left: 10px;
+    .menu-overlay.active {
+        align-items: flex-start;
     }
 
-    .menu-content {
-        padding-top: 5px;
-        padding-left: 25px;
-    }
+
+    
+   .menu-content {
+    height: 100vh;
+    position: relative;
+    padding-bottom: 60px; /* deja espacio para el último ul */
+}
+
+
+
+
 
 
     .menu-list {
         align-items: flex-start;
-        padding: 15px 0;
+        padding: 2px 0;
         border-bottom: none;
         box-shadow: inset 0 -0.5px 0 0 #5afdbfd2;
     }
 
+    .menu-list:nth-child(2) {
+        padding: 0;
+    }
+
+
+
+    .menu-list p {
+        color: white;
+    }
 
     .menu-list li {
         margin: 12px;
@@ -921,29 +755,43 @@ body.no-scroll {
 
 
 
-    .menu-overlay.active {
-        align-items: flex-start;
-    }
-
-
-
     .menu-list a {
         font-size: 17px;
     }
 
+
     .menu-list li a {
         position: relative;
-        padding-right: 15px;
         text-decoration: none;
         color: white;
+    }
+
+    .liHorizontal1 img {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        transition: opacity 0.3s ease;
+
+    }
+
+
+    .liHorizontal1 .img-hover {
+        opacity: 0;
+    }
+
+    .liHorizontal1:hover .img-hover {
+        opacity: 1;
+    }
+
+    .liHorizontal1:hover .img-normal {
+        opacity: 0;
     }
 
 
 
 
 
-    /* ***  BOTON AMBURGUESA */
-
+    /***********BOTON AMBURGUESA*********/
     .hamburger .cruz {
         display: none;
         font-size: 20px;
@@ -962,9 +810,8 @@ body.no-scroll {
         margin-top: 4px;
     }
 
-    .hamburger.active .line {
-        display: none !important;
-    }
+    /*************************************/
+
 
 
     .h2Profesion {
@@ -1000,7 +847,6 @@ body.no-scroll {
         text-align: left;
         gap: 5px;
         padding: 5px;
-
     }
 
     .h3-School {
@@ -1025,7 +871,6 @@ body.no-scroll {
         height: 100vh;
     }
 
-
     .p-about1 {
         text-align: justify;
         font-size: 16px;
@@ -1040,7 +885,6 @@ body.no-scroll {
 
 
     /*********** CONTACT  ***************************/
-
     .contact-section {
         background: #111;
         display: flex;
@@ -1057,7 +901,6 @@ body.no-scroll {
         max-width: 400px;
         margin-bottom: 20px;
 
-
     }
 
     .contact p {
@@ -1068,8 +911,6 @@ body.no-scroll {
         margin-bottom: 100px;
 
     }
-
-
 
     ::-webkit-scrollbar {
         display: none;
