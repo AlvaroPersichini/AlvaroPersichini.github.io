@@ -139,8 +139,13 @@ main {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     margin-right: 30px;
     margin-left: 20px;
-
 }
+
+.aHorizontal:hover {
+    color: #5afdbfd2;
+}
+
+
 
 /* **************** BOTON AMBURGUESA *******************/
 
@@ -664,6 +669,8 @@ body::-webkit-scrollbar {
 /**************   MOBILE ***************/
 @media (max-width: 810px) {
 
+
+
     .desktop {
         display: none;
     }
@@ -709,6 +716,9 @@ body::-webkit-scrollbar {
         border: none;
     }
 
+    .no-scroll {
+        overflow: hidden;
+    }
 
 
 
@@ -718,16 +728,18 @@ body::-webkit-scrollbar {
         align-items: flex-start;
     }
 
-
-    
-   .menu-content {
-    height: 100vh;
-    position: relative;
-    padding-bottom: 60px; /* deja espacio para el último ul */
-}
+    .no-scroll {
+        overflow: hidden;
+    }
 
 
 
+    .menu-content {
+        height: 100vh;
+        position: relative;
+        padding-bottom: 60px;
+        /* deja espacio para el último ul */
+    }
 
 
 
@@ -741,7 +753,6 @@ body::-webkit-scrollbar {
     .menu-list:nth-child(2) {
         padding: 0;
     }
-
 
 
     .menu-list p {
@@ -768,10 +779,9 @@ body::-webkit-scrollbar {
 
     .liHorizontal1 img {
         position: absolute;
-        top: 5px;
+        top: 8px;
         right: 20px;
-        transition: opacity 0.3s ease;
-
+        width: 33px;
     }
 
 
@@ -916,15 +926,7 @@ body::-webkit-scrollbar {
         display: none;
     }
 
-    html,
-    body {
-        overflow-x: hidden;
-        width: 100%;
-    }
 
-    html,
-    body {
-        overflow-y: auto;
-        scrollbar-width: none;
-    }
+   
+  
 }
