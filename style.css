@@ -7,11 +7,14 @@ body {
     padding: 0;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
+    /* background: linear-gradient(to bottom, #003049, #007a7a); */
+    background-color: #0f1e46;
+
 }
 
 
 main {
-    background-color: red;
+    /* background-color: red; */
 }
 
 
@@ -57,8 +60,8 @@ main {
     justify-content: center;
     padding: 8px 40px;
     background-color: #00002A;
-    background-color: white;
-    color: #00002A;
+    /* background-color: white; */
+    color: white;
 
 
 }
@@ -71,6 +74,8 @@ main {
     gap: 30px;
     padding: 5px;
     margin-right: 20px;
+    color: white;
+
 
 }
 
@@ -82,11 +87,13 @@ main {
     font-size: 0.95rem;
     transition: color 0.2s;
     font-weight: 500;
+    color: white;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: inherit;
+    color: white;
+
 
 }
 
@@ -180,9 +187,13 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 116px);
+    height: calc(100vh - 40px);
     gap: 30px;
-    background-color: white;
+    background-image: url("/assets/images/Fondo-azulTechno.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+
 }
 
 .caja1 {
@@ -191,6 +202,7 @@ main {
 
 .caja2 {
     margin: 20px;
+    color: white;
 }
 
 .caja1 img {
@@ -199,25 +211,42 @@ main {
 }
 
 .about {
-
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
-    background: linear-gradient(to bottom, #003049, #007a7a);
     color: white;
     min-height: 100vh;
+    background-image: url("/assets/images/Fondo-azulTechno.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    transform: scaleY(-1);
 
-    padding-top: 50px;
+}
+
+.about>* {
+    transform: scaleY(-1);
+}
+
+.about article.academic {
+    transform: scaleY(-1);
+    margin-left: -150px;
 
 }
 
 
 
 
-.academicImage {
+
+
+
+
+
+
+/* .academicImage {
     max-width: 600px;
     height: auto;
     box-sizing: border-box;
@@ -225,7 +254,7 @@ main {
     padding: 30px;
     width: clamp(300px, 100vw, 600px);
 
-}
+} */
 
 
 
@@ -274,7 +303,7 @@ main {
     text-align: start;
     font-size: 16px;
     line-height: 1.6;
-    color: black;
+
     width: 400px;
     margin: 0;
     padding: 0;
@@ -417,7 +446,7 @@ main {
 
 .navbar .nav-links a {
     text-decoration: none;
-    color: black;
+
     font-weight: 500;
 
 }
@@ -437,7 +466,7 @@ main {
 
 .navbar .nav-links a:hover {
 
-    color: #008080;
+    color: #5afdbfd2;
 }
 
 
@@ -828,6 +857,10 @@ body::-webkit-scrollbar {
         display: none;
     }
 
+    .about article.academic {
+           margin-left: 0;
+    }
+
     .li-academic {
         flex-direction: column;
         align-items: flex-start;
@@ -879,54 +912,57 @@ body::-webkit-scrollbar {
         flex-direction: column;
         text-align: center;
         height: 100vh;
-    }
-
-    .p-about1 {
-        text-align: justify;
-        font-size: 16px;
-        line-height: 1.6;
-        color: black;
-        width: 320px;
-        margin: 0;
-        padding: 0;
-        align-self: first baseline;
-    }
-
-
-
-    /*********** CONTACT  ***************************/
-    .contact-section {
-        background: #111;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-content: center;
-        color: white;
-        min-height: 100vh;
-    }
-
-    .contact {
-        margin-top: 100px;
-        max-width: 400px;
-        margin-bottom: 20px;
+     
 
     }
+}
 
-    .contact p {
-        width: 100%;
-    }
-
-    .contact-info {
-        margin-bottom: 100px;
-
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
+.p-about1 {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    align-self: first baseline;
+}
 
 
-   
-  
+
+/*********** CONTACT  ***************************/
+.contact-section {
+    background: #111;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    color: white;
+    min-height: 100vh;
+}
+
+.contact {
+    margin-top: 100px;
+    max-width: 400px;
+    margin-bottom: 20px;
+
+}
+
+.contact p {
+    width: 100%;
+}
+
+.contact-info {
+    margin-bottom: 100px;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
 }
