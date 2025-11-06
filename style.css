@@ -422,8 +422,6 @@ body::-webkit-scrollbar {
     font-weight: 500;
 }
 
-
-/* Opcional: para mantener el menú centrado y limpio */
 .navbar .nav-links {
     list-style: none;
     display: flex;
@@ -448,8 +446,8 @@ body::-webkit-scrollbar {
     align-content: center;
     align-items: baseline;
     color: white;
-    height: 100vh;
     background: linear-gradient(to bottom, #040026, #007d7d);
+    height: 100vh;
 }
 
 
@@ -463,6 +461,7 @@ body::-webkit-scrollbar {
     max-width: 400px;
     margin-bottom: 20px;
     padding: 30px;
+    padding-bottom: 0;
 }
 
 .contact p {
@@ -521,7 +520,7 @@ body::-webkit-scrollbar {
 }
 
 .contact-form button {
-    background-color: #008080;
+    background-color: #2db3b3;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -532,7 +531,7 @@ body::-webkit-scrollbar {
 }
 
 .contact-form button:hover {
-    background-color: #2623ca;
+    background-color: #40fd6f;
 }
 
 /***************************************************/
@@ -899,5 +898,6 @@ body::-webkit-scrollbar {
 
     .contact-section {
         background: linear-gradient(to bottom, #040026, #007d7d);
+        height: 100vh;
     }
 }
