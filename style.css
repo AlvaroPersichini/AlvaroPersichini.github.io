@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -7,14 +8,19 @@ body {
     padding: 0;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
-    background: linear-gradient(to bottom, #003049, #007a7a);
-
+    background: red;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     /* background-color: #0f1e46; */
-
     /* background-image: url("/assets/images/Fondo-techno1.png"); 
     background-repeat: no-repeat; */
-
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 
 /* -------- NAV -------- */
@@ -46,13 +52,16 @@ body {
 }
 
 .navbar {
+    position: fixed;
+    width: 100%;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 8px 40px;
-    background-color: #00002A;
+    background-color: #040438;
     color: white;
+    z-index: 1000;
 
 
 }
@@ -159,20 +168,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    align-content: center;
     justify-content: center;
     height: calc(100vh - 40px);
     gap: 30px;
     background-color: #040026;
-
-    background-image: url("/assets/images/Fondo-techno1.png");
+    /* background-image: url("/assets/images/Fondo-techno1.png");
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;
-
-
-
-
-
+    background-blend-mode: darken; */
 }
 
 .caja1 {
@@ -190,16 +194,18 @@ body {
 }
 
 .p-about1 {
-    text-align: start;
+    text-align: justify;
     font-size: 16px;
     line-height: 1.6;
-    width: 400px;
+    max-width: 500px;
     margin: 0;
     padding: 0;
     align-self: first baseline;
+    margin-bottom: 30px;
 }
 
 /* *********************************************/
+
 
 
 
@@ -216,16 +222,11 @@ body {
     min-height: 100vh;
     background-color: #040026;
 
-    background-image: url("/assets/images/Fondo-techno1.png");
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;
-
-    /* background-image: url("/assets/images/Fondo-techno1.png");  */
+    /* background-image: url("/assets/images/Fondo-techno1.png"); */
     /* background-size: cover;
     background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;
-    background-color: #040026; */
+    background-blend-mode: darken; */
+
 }
 
 .cajaImagen {
@@ -330,7 +331,7 @@ body {
     padding-left: 20px;
 }
 
-.presentacion::before {
+/* .presentacion::before {
     content: "";
     position: absolute;
     top: 0;
@@ -338,7 +339,7 @@ body {
     left: 0;
     width: 1px;
     background: linear-gradient(to bottom, transparent, black, transparent);
-}
+} */
 
 .presentacion h3 {
     font-size: 20px;
@@ -439,46 +440,54 @@ body {
 
 
 /*********** CONTACT ****************/
-
 .contact-section {
-    background: #111;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
+    align-items: baseline;
     color: white;
     height: 100vh;
+    background: linear-gradient(to bottom, #040026, #007d7d);
 }
+
 
 .contact {
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(250px, 80vw, 550px);
+    margin-top: 100px;
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding: 30px;
 }
+
+.contact p {
+    width: 100%;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    align-self: first baseline;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 .contact-info {
-    padding: 20px;
+   padding: 50px;
+   padding-top: 0;
 }
-
 
 .contact h2 {
     font-size: clamp(32px, 2.8vw, 500px);
     align-self: first baseline;
     margin-left: 0px;
-    padding-right: 10px;
-    margin-top: 5px;
-}
-
-.contact p {
-    text-align: justify;
-    font-size: 16px;
-    line-height: 1.6;
-    color: white;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    align-self: first baseline;
-    width: clamp(100px, 80vw, 450px)
+    margin-bottom: 0;
 }
 
 
@@ -492,7 +501,6 @@ body {
     margin-bottom: 15px;
     width: 100%;
 }
-
 
 .contact-form input,
 .contact-form textarea {
@@ -524,8 +532,15 @@ body {
 }
 
 .contact-form button:hover {
-    background-color: #006666;
+    background-color: #2623ca;
 }
+
+/***************************************************/
+
+
+
+
+
 
 
 .skills {
@@ -547,19 +562,7 @@ body {
     gap: 15px;
 }
 
-.presentacion::before {
-    background: none;
-}
 
-body {
-    overflow-y: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-body::-webkit-scrollbar {
-    display: none;
-}
 
 
 
@@ -650,49 +653,10 @@ body::-webkit-scrollbar {
 }
 
 
-.p-about1 {
-    text-align: justify;
-    font-size: 16px;
-    line-height: 1.6;
-    color: white;
-    min-width: 350;
-    margin: 0;
-    padding: 0;
-    align-self: first baseline;
-}
 
 
 
-/*********** CONTACT  ***************************/
-.contact-section {
-    background: #111;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    color: white;
-    min-height: 100vh;
-}
 
-.contact {
-    margin-top: 100px;
-    max-width: 400px;
-    margin-bottom: 20px;
-}
-
-.contact p {
-    width: 100%;
-}
-
-.contact-info {
-    margin-bottom: 100px;
-
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
 
 
 
@@ -702,6 +666,17 @@ body::-webkit-scrollbar {
 
 /**************   MOBILE ***************/
 @media (max-width: 810px) {
+
+    html,
+    body {
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+        display: none;
+    }
 
     .desktop {
         display: none;
@@ -727,16 +702,15 @@ body::-webkit-scrollbar {
         padding: 0;
         padding-left: 20px;
         padding-right: 20px;
+        z-index: 1000;
     }
 
-    /* Los dos primeros elementos <li>  */
+
     .ulHorizontal li:nth-child(1),
     .ulHorizontal li:nth-child(2) {
         margin-right: 8px;
-
     }
 
-    /* El tercer <li>  */
     .ulHorizontal li:nth-child(3) {
         margin-right: 20px;
         margin-left: auto;
@@ -747,6 +721,11 @@ body::-webkit-scrollbar {
         overflow: hidden;
     }
 
+    .caja1 img {
+        width: clamp(250px, 19vw, 500px);
+        height: auto;
+        padding-top: 50px;
+    }
 
 
     /************ MENU LIST ********************/
@@ -763,7 +742,6 @@ body::-webkit-scrollbar {
         height: 100vh;
         position: relative;
         padding-bottom: 60px;
-        /* deja espacio para el último ul */
     }
 
     .menu-list {
@@ -777,7 +755,6 @@ body::-webkit-scrollbar {
         padding: 0;
     }
 
-
     .menu-list p {
         color: white;
     }
@@ -787,11 +764,9 @@ body::-webkit-scrollbar {
         margin-left: 0;
     }
 
-
     .menu-list a {
         font-size: 17px;
     }
-
 
     .menu-list li a {
         position: relative;
@@ -805,7 +780,6 @@ body::-webkit-scrollbar {
         right: 20px;
         width: 33px;
     }
-
 
     .liHorizontal1 .img-hover {
         opacity: 0;
@@ -845,9 +819,19 @@ body::-webkit-scrollbar {
     /*************************************/
 
 
+    .academic {
+        padding-left: 0;
+    }
 
     .h2Profesion {
         display: none;
+    }
+
+
+    /***********Academic*******************/
+
+    .about {
+        padding-top: 40px;
     }
 
     .about article.academic {
@@ -866,13 +850,17 @@ body::-webkit-scrollbar {
         padding: 5px;
     }
 
-
-
     .h3-School {
         min-width: auto;
         width: 100%;
         padding-right: 0;
         font-size: 22px;
+    }
+
+    .p-about1 {
+
+        max-width: 320px;
+        margin-bottom: 30px;
     }
 
     .h2Profesion {
@@ -883,8 +871,6 @@ body::-webkit-scrollbar {
         width: 100%;
         font-size: 15px;
     }
-
-
 
     .h3-School {
         min-width: auto;
@@ -908,5 +894,10 @@ body::-webkit-scrollbar {
         height: 100vh;
 
 
+    }
+
+
+    .contact-section {
+        background: linear-gradient(to bottom, #040026, #007d7d);
     }
 }
