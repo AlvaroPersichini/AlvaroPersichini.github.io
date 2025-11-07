@@ -587,7 +587,9 @@ body::-webkit-scrollbar {
 
 
 
-
+.menu-overlay{
+    display: none;
+}
 
 
 
