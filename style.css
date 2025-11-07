@@ -198,6 +198,7 @@ body::-webkit-scrollbar {
     align-self: first baseline;
     margin-bottom: 30px;
 }
+
 /* *********************************************/
 
 
@@ -383,9 +384,6 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
-
-
-
 .li-academic:last-child {
     border-bottom: none;
 }
@@ -417,7 +415,6 @@ body::-webkit-scrollbar {
     content: "";
     margin-top: 4px;
 }
-
 
 .navbar .nav-links a {
     text-decoration: none;
@@ -837,15 +834,38 @@ body::-webkit-scrollbar {
     /***********Academic*******************/
     .academic {
         padding-left: 0;
+     
+       
+
     }
+
+  
 
     .h2Profesion {
         display: none;
     }
 
-    .about {
+    /* .about {
         padding-top: 40px;
-    }
+    } */
+    .about {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    min-height: 100vh;
+    background-color: #040026;
+
+    /* height: calc(100vh + 40px); */
+    /* background-image: url("/assets/images/Fondo-techno1.png"); */
+    /* background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken; */
+
+}
 
     .about article.academic {
         margin-left: 0;
