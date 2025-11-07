@@ -165,21 +165,22 @@ body::-webkit-scrollbar {
     align-content: center;
     justify-content: center;
     height: calc(100vh - 40px);
-    gap: 30px;
+    padding-top: 60px;
     background-color: #040026;
-    /* background-image: url("/assets/images/Fondo-techno1.png");
+
+    /*background-color: #040026;
+    /*background-image: url("/assets/images/Fondo-techno1.png");
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken; */
 }
 
-.caja1 {
-    margin: 20px;
-}
-
+.caja1,
 .caja2 {
-    margin: 20px;
+    box-sizing: border-box;
     color: white;
+    margin: 0 10px;
+    padding: 0 10px;
 }
 
 .caja1 img {
@@ -197,7 +198,6 @@ body::-webkit-scrollbar {
     align-self: first baseline;
     margin-bottom: 30px;
 }
-
 /* *********************************************/
 
 
@@ -216,6 +216,7 @@ body::-webkit-scrollbar {
     min-height: 100vh;
     background-color: #040026;
 
+    /* height: calc(100vh + 40px); */
     /* background-image: url("/assets/images/Fondo-techno1.png"); */
     /* background-size: cover;
     background-color: rgba(0, 0, 0, 0.4);
@@ -223,12 +224,11 @@ body::-webkit-scrollbar {
 
 }
 
-.cajaImagen {
-    width: clamp(200px, 85vw, 550px);
-    height: auto;
-    transition: width 0.3s ease;
-    padding: 40px;
+#academic {
+    scroll-margin-top: 40px;
 }
+
+
 
 
 
@@ -246,13 +246,21 @@ body::-webkit-scrollbar {
     background-color: #040026;
 }
 
+#portfolio {
+    scroll-margin-top: 0px;
+    /* ajustá el valor según la altura del menú */
+}
+
 .skills {
 
     flex-direction: column;
     align-items: center;
     width: clamp(250px, 80vw, 550px);
     padding: 40px;
+    padding-right: 5px;
 }
+
+
 
 .h2-skill {
     font-size: clamp(32px, 2.8vw, 500px);
@@ -266,12 +274,21 @@ body::-webkit-scrollbar {
     font-size: 16px;
     line-height: 1.6;
     color: white;
-    width: 100%;
+    width: 90%;
     margin: 0;
     padding: 0;
     align-self: first baseline;
     margin-bottom: 40px;
 }
+
+.cajaImagen {
+    width: clamp(200px, 80vw, 500px);
+    height: auto;
+    transition: width 0.3s ease;
+    padding: 40px;
+    padding-left: 0;
+}
+
 
 
 
@@ -310,15 +327,6 @@ body::-webkit-scrollbar {
 
 
 
-
-/********* BOTON 2*****************/
-
-.cajaImagen {
-    width: clamp(200px, 85vw, 550px);
-    height: auto;
-    transition: width 0.3s ease;
-    padding: 40px;
-}
 
 .presentacion {
     position: relative;
@@ -587,13 +595,9 @@ body::-webkit-scrollbar {
 
 
 
-.menu-overlay{
+.menu-overlay {
     display: none;
 }
-
-
-
-
 
 
 
@@ -705,13 +709,13 @@ body::-webkit-scrollbar {
         border-radius: 2px;
 
         text-align: center;
-      
+
         width: 100%;
-        
+
         position: relative;
-        
+
         height: 100vh;
-     
+
     }
 
     .menu-content ul.menu-list:first-of-type {
@@ -765,16 +769,16 @@ body::-webkit-scrollbar {
     .menu-content>.menu-list:last-of-type p {
         margin: 1px 0;
         line-height: 1.4;
-         box-shadow: none;
+        box-shadow: none;
         align-self: center;
         font-size: 14px;
-        
+
     }
 
     .menu-content>.menu-list:last-of-type {
         box-shadow: none !important;
         border-bottom: none !important;
-    } 
+    }
 
 
 
@@ -899,6 +903,7 @@ body::-webkit-scrollbar {
         flex-direction: column;
         text-align: center;
         height: 100vh;
+        padding-top: 0;
     }
 
 
