@@ -219,13 +219,11 @@ body::-webkit-scrollbar {
     color: white;
     margin: 0 10px;
     padding: 0 10px;
-
 }
 
 .caja1 img {
     width: clamp(280px, 19vw, 500px);
     height: auto;
-
 }
 
 .p-about1 {
@@ -244,7 +242,52 @@ body::-webkit-scrollbar {
     padding: 0;
 }
 
-/* *********************************************/
+/* *****************************************/
+
+
+
+
+/********* Separador ***********************/
+.separator {
+    background-color: white;
+    color: black;
+    padding: 30px 40px;
+
+
+
+
+}
+
+.separator-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.separator-text {
+    flex: 1;
+    text-align: left;
+}
+
+.separator-text h3 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.separator-text p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.cajaBotonVerMas {
+    flex-shrink: 0;
+}
+
+
 
 
 
@@ -252,6 +295,7 @@ body::-webkit-scrollbar {
 
 /* ------------------ about ---------------- */
 .about {
+    position: relative;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
@@ -261,16 +305,30 @@ body::-webkit-scrollbar {
     color: white;
     min-height: 100vh;
     background-color: #040026;
-
-    /* background-image: url("/assets/images/Fondo-techno1.png"); 
-     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;  */
+    background-image: url("/assets/images/Autopista1.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.about::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 40, 0.6);
+    z-index: 1;
+}
+
+.about>* {
+    position: relative;
+    z-index: 2;
+}
+
 
 #academic {
     scroll-margin-top: 40px;
 }
+
 
 
 
@@ -828,6 +886,7 @@ body::-webkit-scrollbar {
         width: 100%;
         color: white;
         min-height: 100vh;
+        background-image: none;
         background-color: #040026;
 
         /* background-image: url("/assets/images/Fondo-techno1.png"); */
@@ -835,6 +894,10 @@ body::-webkit-scrollbar {
          background-color: rgba(0, 0, 0, 0.4);
          background-blend-mode: darken; */
 
+    }
+
+    .about .academic .cajaBotonVerMas {
+        margin-left: 0;
     }
 
     .about article.academic {
