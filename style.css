@@ -23,6 +23,14 @@ body::-webkit-scrollbar {
 
 
 
+/* eL MENU DE MOBILE NO SE TIENE QUE VER EN DESKTOP */
+.menu-overlay {
+    display: none;
+}
+
+
+
+
 /* -------- NAV -------- */
 .encabezado {
     display: flex;
@@ -167,7 +175,6 @@ body::-webkit-scrollbar {
     height: calc(100vh - 40px);
     padding-top: 60px;
     background-color: #040026;
-
     /*background-color: #040026;
     /*background-image: url("/assets/images/Fondo-techno1.png");
     background-size: cover;
@@ -199,6 +206,11 @@ body::-webkit-scrollbar {
     margin-bottom: 30px;
 }
 
+.presentacion {
+    border: none;
+    padding: 0;
+}
+
 /* *********************************************/
 
 
@@ -216,13 +228,11 @@ body::-webkit-scrollbar {
     color: white;
     min-height: 100vh;
     background-color: #040026;
-
     /* height: calc(100vh + 40px); */
     /* background-image: url("/assets/images/Fondo-techno1.png"); */
     /* background-size: cover;
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken; */
-
 }
 
 #academic {
@@ -234,7 +244,7 @@ body::-webkit-scrollbar {
 
 
 
-/* ------------------ about2 ---------------- */
+/* ------------------ about2 PORTFOLIO ---------------- */
 .about2 {
     color: white;
     min-height: 100vh;
@@ -249,7 +259,6 @@ body::-webkit-scrollbar {
 
 #portfolio {
     scroll-margin-top: 0px;
-    /* ajustá el valor según la altura del menú */
 }
 
 .skills {
@@ -259,8 +268,8 @@ body::-webkit-scrollbar {
     width: clamp(250px, 80vw, 550px);
     padding: 40px;
     padding-right: 5px;
+    padding-bottom: 0px;
 }
-
 
 
 .h2-skill {
@@ -288,6 +297,7 @@ body::-webkit-scrollbar {
     transition: width 0.3s ease;
     padding: 40px;
     padding-left: 0;
+    padding-top: 0;
 }
 
 
@@ -331,7 +341,7 @@ body::-webkit-scrollbar {
 
 .presentacion {
     position: relative;
-    padding-left: 20px;
+
 }
 
 /* .presentacion::before {
@@ -343,7 +353,6 @@ body::-webkit-scrollbar {
     width: 1px;
     background: linear-gradient(to bottom, transparent, black, transparent);
 } */
-
 .presentacion h3 {
     font-size: 20px;
     margin: 0 0 3px 0;
@@ -358,9 +367,8 @@ body::-webkit-scrollbar {
 
 
 
+
 /* -------- ACADEMIC  -------- */
-
-
 .academic {
 
     padding-left: 40px;
@@ -409,7 +417,6 @@ body::-webkit-scrollbar {
     justify-content: flex-start;
 }
 
-/* Para asegurar que el contenido de separador esté alineado */
 .separador br {
     display: block;
     content: "";
@@ -432,6 +439,7 @@ body::-webkit-scrollbar {
 .navbar .nav-links a:hover {
     color: #5afdbfd2;
 }
+
 
 
 
@@ -541,24 +549,10 @@ body::-webkit-scrollbar {
 
 
 
-.skills {
-    padding-bottom: 0px;
-}
-
-.presentacion {
-    border: none;
-    padding: 0;
-}
 
 
-.cajaImagen {
-    padding-top: 0;
-}
 
-.footer-container {
-    flex-direction: column;
-    gap: 15px;
-}
+
 
 
 
@@ -579,6 +573,8 @@ body::-webkit-scrollbar {
     max-width: 900px;
     margin: 0 auto;
     padding: 10px;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .footer-bottom {
@@ -590,11 +586,6 @@ body::-webkit-scrollbar {
 
 
 
-
-
-.menu-overlay {
-    display: none;
-}
 
 
 
@@ -662,6 +653,14 @@ body::-webkit-scrollbar {
 
 
 
+    /********* PORTFOLIO*********/
+    .cajaImagen {
+        padding: 0;
+    }
+
+    /*****************************/
+
+
 
 
     /* *************** MENU DESPLEGABLE ****************** */
@@ -695,25 +694,22 @@ body::-webkit-scrollbar {
         align-items: flex-start;
     }
 
+  
+
     .menu-content {
         display: flex;
         flex-direction: column;
-
         padding-left: 25px;
-
         padding-top: 0px;
-
         border-radius: 2px;
-
         text-align: center;
-
         width: 100%;
-
         position: relative;
-
-        height: 100vh;
-
+        height: 100%;
+        box-sizing: border-box;
     }
+
+
 
     .menu-content ul.menu-list:first-of-type {
         font-size: 1.2rem;
@@ -770,11 +766,19 @@ body::-webkit-scrollbar {
         align-self: center;
         font-size: 14px;
 
+
     }
 
     .menu-content>.menu-list:last-of-type {
-        box-shadow: none !important;
-        border-bottom: none !important;
+        box-shadow: none;
+        border-bottom: none;
+
+
+    }
+
+    .menu-content .menu-list:last-child {
+        margin-top: auto;
+        margin-bottom: 20px;
     }
 
 
@@ -834,38 +838,30 @@ body::-webkit-scrollbar {
     /***********Academic*******************/
     .academic {
         padding-left: 0;
-     
-       
-
     }
-
-  
 
     .h2Profesion {
         display: none;
     }
 
-    /* .about {
-        padding-top: 40px;
-    } */
     .about {
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    width: 100%;
-    color: white;
-    min-height: 100vh;
-    background-color: #040026;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+        color: white;
+        min-height: 100vh;
+        background-color: #040026;
 
-    /* height: calc(100vh + 40px); */
-    /* background-image: url("/assets/images/Fondo-techno1.png"); */
-    /* background-size: cover;
+        /* height: calc(100vh + 40px); */
+        /* background-image: url("/assets/images/Fondo-techno1.png"); */
+        /* background-size: cover;
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken; */
 
-}
+    }
 
     .about article.academic {
         margin-left: 0;
@@ -928,10 +924,10 @@ body::-webkit-scrollbar {
 
 
 
-
     /**********  Contact **********/
     .contact-section {
         background: linear-gradient(to bottom, #040026, #007d7d);
         height: 100vh;
     }
+
 }
