@@ -249,13 +249,12 @@ body::-webkit-scrollbar {
 
 /********* Separador ***********************/
 .separator {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: white;
     color: black;
-    padding: 30px 40px;
-
-
-
-
+    padding: 15px 50px;
 }
 
 .separator-content {
@@ -287,6 +286,10 @@ body::-webkit-scrollbar {
     flex-shrink: 0;
 }
 
+
+.separator a.botonVerMas {
+  color: #040026;
+}
 
 
 
