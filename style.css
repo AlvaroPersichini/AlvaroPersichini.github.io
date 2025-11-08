@@ -97,9 +97,12 @@ body::-webkit-scrollbar {
 }
 
 .nav-links li:first-child {
-  border-right: 1px solid #5afdbfd2; /* color y transparencia */
-  padding-right: 30px; /* espacio entre texto y borde */
-  margin-right: 1px;  /* espacio después del borde */
+    border-right: 1px solid #5afdbfd2;
+    /* color y transparencia */
+    padding-right: 30px;
+    /* espacio entre texto y borde */
+    margin-right: 1px;
+    /* espacio después del borde */
 }
 
 
@@ -114,7 +117,7 @@ body::-webkit-scrollbar {
 
 .nav-links li:hover {
     color: #5afdbfd2;
-    
+
 
 }
 
@@ -191,16 +194,12 @@ body::-webkit-scrollbar {
     height: calc(100vh - 40px);
     padding-top: 60px;
     background-color: #040026;
-
-    background: linear-gradient(to bottom, #007d7d, #040026);
-
-
-    /*   
+    /* background: linear-gradient(to bottom, #007d7d, #040026); 
+    background: linear-gradient(to bottom, #040438, #007d7d);    
     background-image: url("/assets/images/Fondo-techno1.png");
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;
-   */
+    background-blend-mode: darken; */
 }
 
 .caja1,
@@ -209,11 +208,13 @@ body::-webkit-scrollbar {
     color: white;
     margin: 0 10px;
     padding: 0 10px;
+
 }
 
 .caja1 img {
     width: clamp(280px, 19vw, 500px);
     height: auto;
+
 }
 
 .p-about1 {
@@ -287,8 +288,8 @@ body::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
     width: clamp(250px, 80vw, 550px);
-    padding: 40px;
-    padding-right: 5px;
+
+    padding-left: 40px;
     padding-bottom: 0px;
 }
 
@@ -316,8 +317,8 @@ body::-webkit-scrollbar {
     width: clamp(200px, 80vw, 500px);
     height: auto;
     transition: width 0.3s ease;
-    padding: 40px;
-    padding-left: 0;
+
+    padding-right: 40px;
     padding-top: 0;
 }
 
@@ -568,48 +569,6 @@ body::-webkit-scrollbar {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------- FOOTER -------- */
-/* .footer {
-    background: #111;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 10px;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.footer-bottom {
-    margin-top: 10px;
-    border-top: 1px solid #444;
-    padding-top: 10px;
-    font-size: 14px;
-} */
-
-
-
-
-
-
 /**************   MOBILE ***************/
 @media (max-width: 810px) {
 
@@ -684,6 +643,7 @@ body::-webkit-scrollbar {
 
 
 
+
     /* *************** MENU DESPLEGABLE ****************** */
     .no-scroll {
         overflow: hidden;
@@ -715,8 +675,6 @@ body::-webkit-scrollbar {
         align-items: flex-start;
     }
 
-
-
     .menu-content {
         display: flex;
         flex-direction: column;
@@ -729,8 +687,6 @@ body::-webkit-scrollbar {
         height: 100%;
         box-sizing: border-box;
     }
-
-
 
     .menu-content ul.menu-list:first-of-type {
         font-size: 1.2rem;
@@ -829,7 +785,6 @@ body::-webkit-scrollbar {
 
 
 
-
     /***********BOTON AMBURGUESA*********/
     .hamburger .cruz {
         display: none;
@@ -876,11 +831,10 @@ body::-webkit-scrollbar {
         min-height: 100vh;
         background-color: #040026;
 
-        /* height: calc(100vh + 40px); */
         /* background-image: url("/assets/images/Fondo-techno1.png"); */
         /* background-size: cover;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken; */
+         background-color: rgba(0, 0, 0, 0.4);
+         background-blend-mode: darken; */
 
     }
 
@@ -935,6 +889,9 @@ body::-webkit-scrollbar {
         display: block;
     }
 
+
+
+
     .about1 {
         align-content: center;
         flex-direction: column;
@@ -951,6 +908,20 @@ body::-webkit-scrollbar {
         height: 100vh;
     }
 
+
+
+    /**********  Footer **********/
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+
 }
 
 
@@ -961,108 +932,95 @@ body::-webkit-scrollbar {
 
 /* === FOOTER === */
 .footer {
-  background: linear-gradient(180deg, #0f1e46 0%, #080b26 100%);
-  padding: 50px 60px 20px;
-  color: #fff;
+    background: linear-gradient(180deg, #0f1e46 0%, #080b26 100%);
+    padding: 50px 60px 20px;
+    color: #fff;
 }
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .footer-col {
-  min-width: 180px;
-  flex: 1;
+    min-width: 180px;
+    flex: 1;
 }
 
 .footer-col h4,
 .brand h3 {
-  margin-bottom: 15px;
-  font-size: 18px;
-  color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #fff;
 }
 
 .footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-col ul li {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .footer-col ul li a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.2s;
-  color: white;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s;
+    color: white;
 }
 
 .footer-col ul li a:hover {
-  color: #00c3ff;
+    color: #00c3ff;
 }
 
 .brand .subtitle {
-  color: #00c3ff;
-  font-size: 20px;
-  margin-bottom: 15px;
+    color: #00c3ff;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .social-icons {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .social-icons a {
-  margin-right: 20px;
-  color: #fff;
-  font-size: 25px;
-  transition: color 0.2s;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 25px;
+    transition: color 0.2s;
 }
 
 .social-icons a:hover {
-  color: #00c3ff;
+    color: #00c3ff;
 }
 
 hr {
-  border: 0;
-  border-top: 1px solid #222a52;
-  margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #222a52;
+    margin: 30px 0;
 }
 
 .footer-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 13px;
-  color: #bbb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #bbb;
 }
 
 .footer-bottom a {
-  color: #bbb;
-  text-decoration: none;
-  margin-left: 15px;
-  transition: color 0.2s;
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.2s;
 }
 
 .footer-bottom a:hover {
-  color: #00c3ff;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
+    color: #00c3ff;
 }
