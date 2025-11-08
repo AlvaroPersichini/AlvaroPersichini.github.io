@@ -12,8 +12,8 @@ body {
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    /* background-color: #0f1e46; */
-    /* background-image: url("/assets/images/Fondo-techno1.png"); 
+    /* background-color: #0f1e46;
+    background-image: url("/assets/images/Fondo-techno1.png");
     background-repeat: no-repeat; */
 }
 
@@ -175,11 +175,12 @@ body::-webkit-scrollbar {
     height: calc(100vh - 40px);
     padding-top: 60px;
     background-color: #040026;
-    /*background-color: #040026;
-    /*background-image: url("/assets/images/Fondo-techno1.png");
+/*   
+    background-image: url("/assets/images/Fondo-techno1.png");
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken; */
+    background-blend-mode: darken;
+   */
 }
 
 .caja1,
@@ -228,11 +229,11 @@ body::-webkit-scrollbar {
     color: white;
     min-height: 100vh;
     background-color: #040026;
-    /* height: calc(100vh + 40px); */
-    /* background-image: url("/assets/images/Fondo-techno1.png"); */
-    /* background-size: cover;
+
+     /* background-image: url("/assets/images/Fondo-techno1.png"); 
+     background-size: cover;
     background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken; */
+    background-blend-mode: darken;  */
 }
 
 #academic {
@@ -694,7 +695,7 @@ body::-webkit-scrollbar {
         align-items: flex-start;
     }
 
-  
+
 
     .menu-content {
         display: flex;
