@@ -259,11 +259,14 @@ body::-webkit-scrollbar {
 
 .separator-content {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 30px;
+    gap: 5px;
 }
 
 .separator-text {
@@ -280,17 +283,31 @@ body::-webkit-scrollbar {
 .separator-text p {
     font-size: 15px;
     line-height: 1.5;
+    min-width: 300px;
 }
 
-.cajaBotonVerMas {
-    flex-shrink: 0;
+.cajaBotonVerSeparador {
+    width: 100px;
+    height: 50px;
+    background-color: #5afdbfd2;
+    border-radius: 2px;
 }
 
-
-.separator a.botonVerMas {
-  color: #040026;
+.botonSeparador {
+    text-decoration: none;
+    background-color: #5afdbfd2;
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
+.cajaBotonVerSeparador:hover {
+    background-color: #d1930e;
+}
 
 
 
