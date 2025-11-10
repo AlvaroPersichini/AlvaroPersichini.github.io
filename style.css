@@ -719,9 +719,7 @@ body {
 
 
     /* *************** MENU DESPLEGABLE ****************** */
-    .no-scroll {
-        overflow: hidden;
-    }
+ 
 
     body.no-scroll,
     html.no-scroll {
