@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 body {
@@ -11,16 +12,11 @@ body {
     background-color: #010436;
     overflow-y: scroll;
     scrollbar-width: none;
-    -ms-overflow-style: none;
+
     /* background-color: #0f1e46;
     background-image: url("/assets/images/Fondo-techno1.png");
     background-repeat: no-repeat; */
 }
-
-body::-webkit-scrollbar {
-    display: none;
-}
-
 
 
 /* eL MENU DE MOBILE NO SE TIENE QUE VER EN DESKTOP */
@@ -255,6 +251,7 @@ body::-webkit-scrollbar {
     background-color: white;
     color: black;
     padding: 15px 50px;
+
 }
 
 .separator-content {
@@ -266,12 +263,13 @@ body::-webkit-scrollbar {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 5px;
+
 }
 
 .separator-text {
     flex: 1;
     text-align: left;
+    padding-right: 30px;
 }
 
 .separator-text h3 {
@@ -539,10 +537,6 @@ body::-webkit-scrollbar {
 
 
 
-
-
-
-
 /*********** CONTACT ****************/
 .contact-section {
     display: flex;
@@ -578,9 +572,7 @@ body::-webkit-scrollbar {
     align-self: first baseline;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
+
 
 
 .contact-info {
@@ -755,7 +747,7 @@ body::-webkit-scrollbar {
     .menu-content {
         display: flex;
         flex-direction: column;
-        padding-left: 25px;
+        padding-left: 0px;
         padding-top: 0px;
         border-radius: 2px;
         text-align: center;
@@ -763,6 +755,7 @@ body::-webkit-scrollbar {
         position: relative;
         height: 100%;
         box-sizing: border-box;
+        width: 85%;
     }
 
     .menu-content ul.menu-list:first-of-type {
@@ -774,6 +767,7 @@ body::-webkit-scrollbar {
     }
 
     .menu-list {
+
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -785,6 +779,39 @@ body::-webkit-scrollbar {
         border-bottom: none;
         box-shadow: inset 0 -0.5px 0 0 #5afdbfd2;
     }
+
+
+
+
+
+    /* aca se controla los iconos sociales */
+    .menu-content ul:nth-of-type(3) {
+        flex-direction: row;
+        align-self: center;
+        justify-content: space-between;
+        box-shadow: none;
+        gap: 30px;
+    }
+
+    .menu-content ul:nth-of-type(3) li {
+        display: inline-block;
+        margin-right: 12px;
+        padding-top: 40px;
+    }
+
+    .menu-content ul:nth-of-type(3) a {
+        font-size: 25px;
+        color: white;
+        transition: color 0.3s ease;
+    }
+
+    .menu-content ul:nth-of-type(3) a:hover {
+        color: #5afdbfd2;
+    }
+
+
+
+
 
     .menu-list li {
         margin: 10px 0;
@@ -812,22 +839,17 @@ body::-webkit-scrollbar {
         font-weight: 800;
     }
 
-
     .menu-content>.menu-list:last-of-type p {
         margin: 1px 0;
         line-height: 1.4;
         box-shadow: none;
         align-self: center;
         font-size: 14px;
-
-
     }
 
     .menu-content>.menu-list:last-of-type {
         box-shadow: none;
         border-bottom: none;
-
-
     }
 
     .menu-content .menu-list:last-child {
