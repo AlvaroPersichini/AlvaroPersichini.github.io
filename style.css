@@ -115,7 +115,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .nav-links li:first-child a {
@@ -123,9 +123,9 @@ body {
     font-size: 22px;
 }
 
-.nav-links li:last-child a {
+/* .nav-links li:last-child a {
     font-size: 22px;
-}
+} */
 
 
 
