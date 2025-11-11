@@ -28,3 +28,58 @@ document.addEventListener('keydown', function (e) {
 
 
 
+// animaciones.js ////
+/////////////////////////////////////////////////////////////////////
+// Evita que el navegador mueva el scroll al recargar
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const animatedElements = document.querySelectorAll('[data-anim]');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // solo se anima una vez
+      }
+    });
+  }, {
+    threshold: 0.1 // se activa cuando el 10% del elemento es visible
+  });
+
+  animatedElements.forEach(el => observer.observe(el));
+});
+/////////////////////////////////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////////////
+
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".li-academic");
+
+  // alterna dirección de entrada
+  items.forEach((item, index) => {
+    if (index % 2 === 0) item.classList.add("from-left");
+  });
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  items.forEach(item => observer.observe(item));
+});
+
+/////////////////////////////////////////////////////
+
+
+
+
+

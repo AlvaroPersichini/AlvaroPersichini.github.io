@@ -198,7 +198,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    height: calc(100vh - 40px);
+    height: calc(100vh - 180px);
     padding-top: 60px;
     background-color: #040026;
     /* background: linear-gradient(to bottom, #007d7d, #040026); 
@@ -245,51 +245,50 @@ body {
 
 /********* Separador ***********************/
 .separator {
-    display: flex;
+    box-sizing: border-box;
+    /* display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     background-color: white;
     color: black;
     padding: 15px 50px;
-
+    justify-content: center;
 }
 
 .separator-content {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-
+    width: 100%;
 }
 
 .separator-text {
-    flex: 1;
     text-align: left;
-    padding-right: 30px;
-}
-
-.separator-text h3 {
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-.separator-text p {
-    font-size: 15px;
-    line-height: 1.5;
-    min-width: 300px;
+    margin-right: 30px;
 }
 
 .cajaBotonVerSeparador {
+
     width: 100px;
     height: 50px;
     background-color: #5afdbfd2;
     border-radius: 2px;
+
 }
+
+.separator-text h3 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.separator-text p {
+    font-size: 17px;
+    line-height: 1.5;
+    min-width: 300px;
+}
+
 
 .botonSeparador {
     text-decoration: none;
@@ -707,6 +706,18 @@ body {
 
 
 
+
+    .separator-content {
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .separator-text {
+        text-align: center;
+        margin-right: 30px;
+    }
+
     /********* PORTFOLIO*********/
     .cajaImagen {
         padding: 0;
@@ -719,7 +730,7 @@ body {
 
 
     /* *************** MENU DESPLEGABLE ****************** */
- 
+
 
     body.no-scroll,
     html.no-scroll {
@@ -1013,6 +1024,7 @@ body {
         text-align: center;
         height: 100vh;
         padding-top: 0;
+        gap: 20px;
     }
 
 

@@ -1,0 +1,32 @@
+/* Estado inicial: oculto y desplazado hacia abajo */
+[data-anim="fade-up"] {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+/* Estado visible: aparece suavemente */
+[data-anim="fade-up"].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+.li-academic {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease-out;
+}
+
+.li-academic.from-left {
+  transform: translateX(-100px);
+}
+
+.li-academic.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
