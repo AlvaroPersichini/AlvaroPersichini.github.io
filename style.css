@@ -269,12 +269,9 @@ body {
 }
 
 .cajaBotonVerSeparador {
-
     width: 100px;
     height: 50px;
-    background-color: #5afdbfd2;
     border-radius: 2px;
-
 }
 
 .separator-text h3 {
@@ -292,18 +289,18 @@ body {
 
 .botonSeparador {
     text-decoration: none;
-    background-color: #5afdbfd2;
+    background-color:  #040026;
     width: 100%;
     height: 100%;
-    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    color: white;
 }
 
-.cajaBotonVerSeparador:hover {
-    background-color: #d1930e;
+.botonSeparador:hover {
+    background-color: #5afdbfd2;
 }
 
 
@@ -374,7 +371,6 @@ body {
     flex-direction: column;
     align-items: center;
     width: clamp(250px, 80vw, 550px);
-
     padding-left: 40px;
     padding-bottom: 0px;
 }
@@ -403,10 +399,36 @@ body {
     width: clamp(200px, 80vw, 500px);
     height: auto;
     transition: width 0.3s ease;
-
     padding-right: 40px;
     padding-top: 0;
 }
+
+.contenedorBotones {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.contenedorBotones .cajaBotonVerMas:nth-child(2) {
+  background-color: transparent;
+  width: 150px;
+  border: solid 2px white;
+  height: 46px;
+  border-radius: 0;
+}
+
+.contenedorBotones .cajaBotonVerMas:nth-child(2) a {
+
+  color: white;
+}
+
+.contenedorBotones .cajaBotonVerMas:nth-child(2):hover {
+    background-color: #4c495f;
+}
+
+
 
 
 
@@ -422,7 +444,7 @@ body {
 }
 
 .botonVerMas {
-    color: white;
+    color: #040026;
     text-decoration: none;
     width: 100%;
     height: 100%;
@@ -452,15 +474,6 @@ body {
 
 }
 
-/* .presentacion::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 1px;
-    background: linear-gradient(to bottom, transparent, black, transparent);
-} */
 .presentacion h3 {
     font-size: 20px;
     margin: 0 0 3px 0;
