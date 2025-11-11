@@ -285,11 +285,12 @@ body {
 
 /********* Separador2 ***********************/
 .separator2 {
+    background-color: #040026;
     scroll-margin-top: 60px;
     box-sizing: border-box;
     /* background-color: white; */
-    background: linear-gradient(to bottom, #040026, #007d7d);
-    color: black;
+    /* background: linear-gradient(to bottom, #040026, #007d7d); */
+
     padding: 15px 50px;
     justify-content: center;
     color: white;
@@ -447,12 +448,8 @@ body {
 
 /* TARJETAS */
 
-
 .ContenedorTarjetas {
-    /* background-color: #040026; */
-    /* background: linear-gradient(to bottom, #040026, #007d7d); */
-    background: linear-gradient(to bottom, #007d7d, #040026);
-
+    background-color: #040026;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
@@ -471,31 +468,89 @@ body {
     justify-content: center;
 }
 
+.tarjeta-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
 .tarjeta {
     height: 500px;
-    background-color: #0f1e46;
     color: white;
     text-align: center;
-    padding: 40px;
-
+    padding: 10px;
     font-size: 1.5rem;
-    transition: transform 0.3s ease;
     box-sizing: border-box;
     min-height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+.tarjeta:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    border-color: #00e6e6;
+}
+
+
+.tarjeta-image img {
+    width: 100%;
+    height: 200px;
+    object-fit:contain;
+    display: block;
+    background-color: white;
+}
+
+.tarjeta-content {
+    padding: 20px;
+    background-color: #00224b;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.tarjeta-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.tarjeta-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #d0d8e0;
+}
+
+.arrow {
+    align-self: flex-end;
+    font-size: 2rem;
+    color: #00e6e6;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .tarjeta:hover {
-    transform: translateY(-5px);
+    color: #00e6e6;
 }
 
-/* 🔸 Pasá a 2 columnas antes de que se achiquen demasiado */
+.tarjeta:hover .arrow {
+    transform: translateX(8px);
+}
+
+
+
 @media (max-width: 1050px) {
     .fila {
         grid-template-columns: repeat(2, minmax(280px, 1fr));
     }
 }
 
-/* 🔸 Pasá a 1 columna un poco antes que antes */
 @media (max-width: 700px) {
     .fila {
         grid-template-columns: 1fr;
