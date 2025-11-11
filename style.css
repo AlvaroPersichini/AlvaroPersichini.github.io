@@ -268,12 +268,6 @@ body {
     margin-right: 30px;
 }
 
-.cajaBotonVerSeparador {
-    width: 100px;
-    height: 50px;
-    border-radius: 2px;
-}
-
 .separator-text h3 {
     font-weight: 800;
     font-size: 20px;
@@ -287,21 +281,45 @@ body {
 }
 
 
-.botonSeparador {
-    text-decoration: none;
-    background-color:  #040026;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+
+
+/********* Separador2 ***********************/
+.separator2 {
+    scroll-margin-top: 60px;
+    box-sizing: border-box;
+    /* background-color: white; */
+    background: linear-gradient(to bottom, #040026, #007d7d);
+    color: black;
+    padding: 15px 50px;
     justify-content: center;
-    font-weight: bold;
     color: white;
 }
 
-.botonSeparador:hover {
-    background-color: #5afdbfd2;
+.separator2-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
+
+.separator2-text {
+    text-align: left;
+    margin-right: 30px;
+}
+
+.separator2-text h3 {
+    font-weight: 800;
+    font-size: clamp(1.4rem, 4vw, 2.5rem);
+    margin-bottom: 8px;
+}
+
+.separator2-text p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
 
 
 
@@ -367,14 +385,12 @@ body {
 }
 
 .skills {
-
     flex-direction: column;
     align-items: center;
     width: clamp(250px, 80vw, 550px);
     padding-left: 40px;
     padding-bottom: 0px;
 }
-
 
 .h2-skill {
     font-size: clamp(32px, 2.8vw, 500px);
@@ -412,16 +428,16 @@ body {
 
 
 .contenedorBotones .cajaBotonVerMas:nth-child(2) {
-  background-color: transparent;
-  width: 150px;
-  border: solid 2px white;
-  height: 46px;
-  border-radius: 0;
+    background-color: transparent;
+    width: 150px;
+    border: solid 2px white;
+    height: 46px;
+    border-radius: 0;
 }
 
 .contenedorBotones .cajaBotonVerMas:nth-child(2) a {
 
-  color: white;
+    color: white;
 }
 
 .contenedorBotones .cajaBotonVerMas:nth-child(2):hover {
@@ -429,8 +445,62 @@ body {
 }
 
 
+/* TARJETAS */
 
 
+.ContenedorTarjetas {
+    /* background-color: #040026; */
+    /* background: linear-gradient(to bottom, #040026, #007d7d); */
+    background: linear-gradient(to bottom, #007d7d, #040026);
+
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1300px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.tarjeta {
+    height: 500px;
+    background-color: #0f1e46;
+    color: white;
+    text-align: center;
+    padding: 40px;
+
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    min-height: 400px;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+/* 🔸 Pasá a 2 columnas antes de que se achiquen demasiado */
+@media (max-width: 1050px) {
+    .fila {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+}
+
+/* 🔸 Pasá a 1 columna un poco antes que antes */
+@media (max-width: 700px) {
+    .fila {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
@@ -558,7 +628,8 @@ body {
     align-content: center;
     align-items: baseline;
     color: white;
-    background: linear-gradient(to bottom, #040026, #007d7d);
+    background-color: #040026;
+    /* background: linear-gradient(to bottom, #040026, #007d7d); */
     height: 100vh;
 }
 
