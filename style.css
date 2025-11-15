@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    background: transparent;
 }
 
 
@@ -398,10 +399,6 @@ body {
     min-height: 60px;
     flex-direction: row;
 
-}
-
-.li-academic:last-child {
-    border-bottom: none;
 }
 
 
@@ -828,8 +825,8 @@ body {
     body {
         overflow-y: scroll;
         scrollbar-width: none;
-        background: none !important;
         padding-bottom: env(safe-area-inset-bottom);
+        background: transparent;
 
     }
 
@@ -844,10 +841,10 @@ body {
 
 
     header {
-  padding-top: env(safe-area-inset-top);
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
-}
+        padding-top: env(safe-area-inset-top);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
 
 
     .desktop {
