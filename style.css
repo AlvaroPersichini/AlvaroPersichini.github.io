@@ -1,20 +1,16 @@
 html {
     scroll-behavior: smooth;
-    background: transparent;
-}
 
+}
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
-    background: transparent !important;
     overflow-y: scroll;
     scrollbar-width: none;
-
 }
-
 
 .menu-overlay {
     display: none;
@@ -825,7 +821,8 @@ body {
     body {
         overflow-y: scroll;
         scrollbar-width: none;
-        padding-bottom: env(safe-area-inset-bottom);
+        background-color: #040026;
+        padding-bottom: calc(20px + env(safe-area-inset-bottom));
     }
 
 
