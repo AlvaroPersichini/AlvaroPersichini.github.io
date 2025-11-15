@@ -201,7 +201,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    height: calc(100vh - 190px);
+    height: calc(100vh - 210px);
     padding-top: 60px;
     background-color: #040026;
     /* background: linear-gradient(to bottom, #007d7d, #040026); 
@@ -271,7 +271,7 @@ body {
 
 .separator-text h3 {
     font-weight: 800;
-    font-size: 20px;
+    font-size: clamp(1rem, 2.2vw, 1.8rem);
     margin-bottom: 8px;
 }
 
@@ -884,7 +884,7 @@ body {
         padding-left: 10px;
         padding-right: 10px;
     }
-    
+
     .separator-content {
         justify-content: space-evenly;
         align-items: center;
@@ -921,6 +921,96 @@ body {
 
     /*****************************/
 
+
+
+    /* Tarjetas*/
+    /* TARJETAS */
+    /* .ContenedorTarjetas {
+    background-color: #040026;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+
+} */
+
+    .fila {
+        /* display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    gap: 40px; */
+        width: 100%;
+
+        max-width: 1300px;
+        /* box-sizing: border-box;
+    justify-content: center; */
+    }
+
+    /* .tarjeta-link {
+    text-decoration: none;
+    display: inline-block;
+
+} */
+
+    .tarjeta {
+
+        /* color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    min-height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; */
+        height: 450px;
+        border-radius: 15px;
+
+    }
+
+
+
+
+
+    .tarjeta-image img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        display: block;
+        background-color: white;
+    }
+
+    .tarjeta-content {
+        padding: 20px;
+        background-color: #00224b;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .arrow {
+        align-self: center;
+    }
+
+    .tarjeta-content h3 {
+        margin: 0 0 10px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .tarjeta-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: #d0d8e0;
+        text-align: center;
+    }
 
 
 
@@ -1138,6 +1228,7 @@ body {
     }
 
     .about {
+
         flex-wrap: wrap;
         display: flex;
         align-items: center;
@@ -1145,7 +1236,9 @@ body {
         box-sizing: border-box;
         width: 100%;
         color: white;
-        min-height: 100vh;
+        /* min-height: 100vh; */
+        min-height: calc(100vh - 90px);
+    height: auto;
         background-image: none;
         background-color: #040026;
     }
@@ -1189,6 +1282,8 @@ body {
     .separador {
         width: 100%;
         font-size: 15px;
+        width: 100%;
+        text-align: center;
     }
 
     .h3-School {
@@ -1196,17 +1291,11 @@ body {
         width: 100%;
     }
 
-    .separador {
-        width: 100%;
-        text-align: left;
-    }
+
 
     .site-header {
         display: block;
     }
-
-
-
 
 
     .separator2-content {
