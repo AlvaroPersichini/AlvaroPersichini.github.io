@@ -214,12 +214,6 @@ body {
     height: calc(100vh - 200px);
     padding-top: 60px;
     background-color: #040026;
-    /* background: linear-gradient(to bottom, #007d7d, #040026); 
-    background: linear-gradient(to bottom, #040438, #007d7d);    
-    background-image: url("/assets/images/Fondo-techno1.png");
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken; */
 }
 
 .caja1,
@@ -822,7 +816,7 @@ body {
         overflow-y: scroll;
         scrollbar-width: none;
         background-color: transparent;
-      
+
     }
 
 
@@ -1323,9 +1317,7 @@ body {
         flex-direction: column;
         text-align: center;
         height: 100vh;
-        padding-top: 0;
-         gap: 20px; 
-
+        justify-content: flex-start;
     }
 
     .separator .separator-text p {
