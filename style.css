@@ -821,8 +821,8 @@ body {
     body {
         overflow-y: scroll;
         scrollbar-width: none;
-        background-color: #040026;
-        padding-bottom: calc(20px + env(safe-area-inset-bottom));
+        background-color: transparent;
+      
     }
 
 
