@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    background: transparent;
 
 }
 
@@ -1317,17 +1318,19 @@ body {
         align-content: center;
         flex-direction: column;
         text-align: center;
-       
+
         justify-content: flex-start;
-      
 
-         height: 100svh; /* ocupa toda la pantalla en iPhone */
-        padding-top: 0; /* opcional si quieres que quede centrado */
 
-         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        height: 100svh;
+        /* ocupa toda la pantalla en iPhone */
+        padding-top: 0;
+        /* opcional si quieres que quede centrado */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .separator .separator-text p {
