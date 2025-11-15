@@ -211,7 +211,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    height: calc(100vh - 210px);
+    height: calc(100vh - 200px);
     padding-top: 60px;
     background-color: #040026;
     /* background: linear-gradient(to bottom, #007d7d, #040026); 
@@ -1324,7 +1324,7 @@ body {
         text-align: center;
         height: 100vh;
         padding-top: 0;
-        gap: 20px;
+         gap: 20px; 
 
     }
 
