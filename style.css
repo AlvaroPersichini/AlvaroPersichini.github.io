@@ -8,7 +8,7 @@ body {
     padding: 0;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
-    background-color: #010436;
+ 
     overflow-y: scroll;
     scrollbar-width: none;
      background-color: rgba(255, 255, 255, 0.9); /* ejemplo de transparencia */
