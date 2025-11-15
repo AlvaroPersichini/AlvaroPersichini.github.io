@@ -816,6 +816,7 @@ body {
         overflow-y: scroll;
         scrollbar-width: none;
         background-color: transparent;
+        height: 100%;
 
     }
 
@@ -1316,9 +1317,17 @@ body {
         align-content: center;
         flex-direction: column;
         text-align: center;
-        height: 100vh;
+       
         justify-content: flex-start;
-        padding-top: 50px;
+      
+
+         height: 100svh; /* ocupa toda la pantalla en iPhone */
+        padding-top: 0; /* opcional si quieres que quede centrado */
+
+         display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
 
     .separator .separator-text p {
