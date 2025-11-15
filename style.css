@@ -829,7 +829,14 @@ body {
         overflow-y: scroll;
         scrollbar-width: none;
         padding-bottom: env(safe-area-inset-bottom);
+        background: transparent !important;
+        padding-bottom: env(safe-area-inset-bottom);
+        background-color: #0f1e46;
     }
+
+
+
+
 
     html::-webkit-scrollbar,
     body::-webkit-scrollbar {
