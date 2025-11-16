@@ -5,11 +5,11 @@
 
 
   <meta charset="UTF-8">
- 
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Alvaro Persichini</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="animaciones.css">
+  <!-- <link rel="stylesheet" href="animaciones.css"> -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -39,10 +39,13 @@
       <div class="menu-overlay" id="menuOverlay">
         <div class="menu-content">
           <ul class="menu-list">
-            Engineering & Software Solutions
+            <li>
+              Engineering & Software Solutions
+            </li>
+
           </ul>
           <ul class="menu-list">
-            <li><a href="#" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#top" onclick="toggleMenu()">Home</a></li>
             <li><a href="#academic" onclick="toggleMenu()">Academic</a></li>
             <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
             <li><a target="_blank" href="/assets/pdf/cvPersichini_R28_Eng.pdf" onclick="toggleMenu()">Download CV</a>
@@ -50,9 +53,9 @@
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </ul>
           <ul class="menu-list">
-            <li><a href="https://github.com/AlvaroPersichini"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/alvaropersichini/"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="#"> <i class="fas fa-envelope"></i></a></li>
+            <li><a target="_blank" href="https://github.com/AlvaroPersichini"><i class="fab fa-github"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/alvaropersichini/"><i class="fab fa-linkedin-in"></i></a></li>
+            <!-- <li><a href="#"> <i class="fas fa-envelope"></i></a></li> -->
           </ul>
           <ul class="menu-list">
             <li>
@@ -264,7 +267,7 @@
             <div class="tarjeta-content">
               <h3>3D Models</h3>
               <p>
-                3D models for parts, assemblies, and mechanisms, focusing on geometry quality and manufacturability
+                3D models for parts, assemblies, and mechanisms, focusing on cost and manufacturability
 
               </p>
               <div class="arrow">
@@ -273,13 +276,14 @@
             </div>
           </div>
         </a>
+
         <a href="#" class="tarjeta-link">
           <div class="tarjeta">
             <div class="tarjeta-image">
               <img src="/assets/images/Tailored.png" alt="Digital Enterprise">
             </div>
             <div class="tarjeta-content">
-              <h3>Tailored Engineering Solutions</h3>
+              <h3>Machinery Design</h3>
               <p>
                 Custom mechanical solutions designed to fit specific project requirements.
 
@@ -296,9 +300,9 @@
               <img src="/assets/images/WEST3.png" alt="Digital Enterprise">
             </div>
             <div class="tarjeta-content">
-              <h3>Technical Documentation</h3>
+              <h3>Documentation</h3>
               <p>
-                Clear and organized technical documentation for manufacturing, assembly, and maintenance.
+                Technical documentation for manufacturing, assembly, and maintenance.
               </p>
               <div class="arrow">
                 <i class="fa-solid fa-arrow-right"></i>
@@ -312,10 +316,10 @@
               <img src="/assets/images/Modulo-sellado1.png" alt="Digital Enterprise">
             </div>
             <div class="tarjeta-content">
-              <h3>Automated 3D & 2D Drawings</h3>
+              <h3>2D Drawings</h3>
               <p>
-                Custom .NET tools to generate parts, assemblies, and 2D drawings.
-                Fast and consistent BOM extraction, drawings, and user manuals.
+                .NET tools to generate parts, assemblies and final 2D drawings.
+                BOM extraction, and user manuals.
               </p>
               <div class="arrow">
                 <i class="fa-solid fa-arrow-right"></i>
@@ -326,14 +330,12 @@
         <a href="#" class="tarjeta-link">
           <div class="tarjeta">
             <div class="tarjeta-image">
-              <img src="/assets/images/manual-usuario-.png" alt="Digital Enterprise">
+              <img src="/assets/images/kinematics1.png" alt="Digital Enterprise">
             </div>
             <div class="tarjeta-content">
-              <h3>Ingeniería de Detalle</h3>
+              <h3>Kinematics Analysis</h3>
               <p>
-                Confidently enter a new era of production and accelerate your digital transformation
-                by becoming a Digital enterprise. Seamlessly combine your factory floor with
-
+                Simulation-driven evaluation of motion, fits, and interactions between components.
               </p>
               <div class="arrow">
                 <i class="fa-solid fa-arrow-right"></i>
@@ -349,9 +351,8 @@
             <div class="tarjeta-content">
               <h3>CATIA v5 .NET Framework</h3>
               <p>
-                .NET applications using the Infrasctructure Object Automation to speed up repetitive tasks, integrate
-                data,
-                and enhance design workflows.
+                .NET Framework Infrasctructure Object Automation to
+                enhance design workflows.
 
               </p>
               <div class="arrow">
@@ -437,7 +438,7 @@
     <div class="footer-container">
       <div class="footer-col brand">
         <h3>ALVARO PERSICHINI</h3>
-        <p class="subtitle">Mechanical Ingineer</p>
+        <p class="subtitle">Mechanical Engineer</p>
         <div class="social-icons">
           <a target="_blank" href="https://www.linkedin.com/in/alvaropersichini/"><i class="fab fa-linkedin-in"></i></a>
           <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
@@ -448,17 +449,17 @@
         </div>
       </div>
       <div class="footer-col">
-        <h4>Software Portfolio</h4>
+        <h4>Portfolio</h4>
         <ul>
-          <li><a href="#">Simulation</a></li>
-          <li><a href="#">Manufacturing PLM</a></li>
-          <li><a href="#">CATIA V5 Automation</a></li>
-          <li><a href="#">.NET & Manufacturing</a></li>
-          <li><a href="#">Automated 3D</a></li>
-          <li><a href="#">2D Drawing Services</a></li>
+          <li><a href="#">3D Models</a></li>
+          <li><a href="#">Machinery Design</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">2D Drawings</a></li>
+          <li><a href="#">Kinematic Analysis</a></li>
+          <li><a href="#">CATIA v5 .NET Framework</a></li>
         </ul>
       </div>
-      <div class="footer-col">
+      <!-- <div class="footer-col">
         <h4>Industrial Porfolio</h4>
         <ul>
           <li><a href="#">Kinematics</a></li>
@@ -467,7 +468,7 @@
           <li><a href="#">Selection Sets</a></li>
           <li><a href="#">BOM with .NEW</a></li>
         </ul>
-      </div>
+      </div> -->
       <div class="footer-col">
         <h4>Site</h4>
         <ul>
@@ -480,7 +481,7 @@
       </div>
     </div>
     <hr>
-    <p></p>
+    
     <p>&#169; Alvaro Persichini 2025</p>
 
   </footer>

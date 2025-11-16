@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    background: transparent;
+
 
 }
 
@@ -25,7 +25,6 @@ body {
     align-items: center;
     font-weight: bold;
     font-size: 1.2rem;
-    height: 80px;
     width: 100%;
     z-index: 1000;
     background: linear-gradient(to bottom, #003049, #007a7a);
@@ -221,7 +220,7 @@ body {
 .caja2 {
     box-sizing: border-box;
     color: white;
-    margin: 0 10px;
+    margin: 0 20px;
     padding: 0 10px;
 
 }
@@ -258,7 +257,7 @@ body {
     background-color: white;
     color: black;
     padding: 15px 50px;
-    justify-content: center;
+  
 }
 
 .separator-content {
@@ -292,7 +291,7 @@ body {
 /********* Separador ***********************/
 .separator2 {
     display: flex;
-    justify-content: center;
+  
     box-sizing: border-box;
     background-color: #040026;
     color: white;
@@ -444,7 +443,7 @@ body {
 }
 
 .h2-skill {
-    font-size: clamp(32px, 2.8vw, 500px);
+    font-size: clamp(32px, 2.8vw, 60px);
     align-self: baseline;
     margin: 10px;
     margin-left: 0;
@@ -557,16 +556,11 @@ body {
     flex-direction: column;
     justify-content: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 40px;
+
 
 }
 
 
-.tarjeta:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-    border-color: #00e6e6;
-}
 
 
 .tarjeta-image img {
@@ -588,8 +582,8 @@ body {
 }
 
 .tarjeta-content h3 {
-    margin: 0 0 10px;
-    font-size: 1.6rem;
+    /* margin: 0 0 10px; */
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
@@ -611,6 +605,12 @@ body {
 
 .tarjeta:hover .arrow {
     transform: translateX(8px);
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(211, 204, 204, 0.4);
+    color: #00e6e6;
 }
 
 
@@ -814,9 +814,8 @@ body {
 
     html,
     body {
-        overflow-y: scroll;
+        overflow-y: auto;
         scrollbar-width: none;
-        background-color: transparent;
         height: 100%;
 
     }
@@ -1193,6 +1192,8 @@ body {
         opacity: 0;
     }
 
+}
+
 
 
 
@@ -1279,8 +1280,11 @@ body {
     }
 
     .p-about1 {
-        max-width: 320px;
+        
+        max-width:500px;
         margin-bottom: 30px;
+        
+        margin-right: 10px;
     }
 
     .h2Profesion {
@@ -1318,15 +1322,9 @@ body {
         align-content: center;
         flex-direction: column;
         text-align: center;
-
         justify-content: flex-start;
-
-
         height: 100svh;
-        /* ocupa toda la pantalla en iPhone */
         padding-top: 0;
-        /* opcional si quieres que quede centrado */
-
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1346,6 +1344,7 @@ body {
     /**********  Footer **********/
     .footer-container {
         flex-direction: column;
+        
     }
 
     .footer-bottom {
@@ -1354,7 +1353,7 @@ body {
         gap: 10px;
     }
 
-}
+
 
 
 
