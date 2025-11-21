@@ -211,28 +211,11 @@ body {
     height: auto;
 }
 
-.p-about1 {
-    text-align: justify;
-    font-size: 16px;
-    line-height: 1.6;
-    max-width: 500px;
-    margin: 0;
+.presentacion {
+    border: none;
     padding: 0;
-    align-self: baseline;
-    margin-bottom: 30px;
-    max-width: 500px;
-    margin-bottom: 30px;
-    margin-right: 10px;
-      opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.9s ease, transform 1s ease;
 }
 
-
-.p-about1.show{
-     opacity: 1;
-    transform: translateY(0);
-}
 
 
 .h2Profesion {
@@ -260,17 +243,29 @@ body {
     transform: translateY(0);
 }
 
-
-
-
-
-
-
-
-.presentacion {
-    border: none;
+.p-about1 {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0;
     padding: 0;
+    align-self: baseline;
+    margin-bottom: 30px;
+    max-width: 500px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+      opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 1s ease;
 }
+
+.p-about1.show{
+     opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 /* *****************************************/
 
