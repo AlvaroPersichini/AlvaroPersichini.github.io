@@ -223,19 +223,48 @@ body {
     max-width: 500px;
     margin-bottom: 30px;
     margin-right: 10px;
+      opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 1s ease;
 }
+
+
+.p-about1.show{
+     opacity: 1;
+    transform: translateY(0);
+}
+
 
 .h2Profesion {
     font-size: 25px;
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 1s ease;
 }
 
 .h2Profesion.show {
     opacity: 1;
     transform: translateY(0);
 }
+
+.profesion {
+    font-size: clamp(35px, 3.4vw, 60px);
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 1s ease;
+}
+
+.profesion.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
 
 
 .presentacion {
@@ -665,11 +694,6 @@ body {
     color: #1b1b1b;
 }
 
-.profesion {
-    font-size: clamp(35px, 3.4vw, 60px);
-    margin: 10px 0;
-}
-
 
 
 
@@ -790,12 +814,6 @@ body {
 }
 
 
-.p-about1 {
-
-    max-width: 500px;
-    margin-bottom: 30px;
-    margin-right: 10px;
-}
 
 
 
