@@ -29,14 +29,20 @@ document.addEventListener('keydown', function (e) {
 
 
 
-const hamburger = document.getElementById("hamburger-btn");
-const menu = document.querySelector(".menu-overlay");
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  menu.classList.toggle("active");
-  document.body.classList.toggle("no-scroll");
+// ANIMACIÓN DEL TEXTO DESLIZANDOSE HACIA ARRIBA
+document.addEventListener("DOMContentLoaded", () => {
+  const texto = document.querySelector(".h2Profesion");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          texto.classList.add("show");
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  observer.observe(texto);
 });
-
-
-
-

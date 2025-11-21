@@ -12,6 +12,9 @@ body {
     background-color: #040026;
 }
 
+.menu-overlay {
+    display: none;
+}
 
 
 .desktop {
@@ -201,7 +204,6 @@ body {
     color: white;
     margin: 0 20px;
     padding: 20px 10px;
-
 }
 
 .caja1 img {
@@ -218,7 +220,23 @@ body {
     padding: 0;
     align-self: baseline;
     margin-bottom: 30px;
+    max-width: 500px;
+    margin-bottom: 30px;
+    margin-right: 10px;
 }
+
+.h2Profesion {
+    font-size: 25px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.h2Profesion.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .presentacion {
     border: none;
@@ -763,12 +781,6 @@ body {
     padding-left: 0;
 }
 
-.h2Profesion {
-    display: none;
-}
-
-
-
 .about .academic .cajaBotonVerMas {
     margin-left: 0;
 }
@@ -778,20 +790,12 @@ body {
 }
 
 
-
-
 .p-about1 {
 
     max-width: 500px;
     margin-bottom: 30px;
     margin-right: 10px;
 }
-
-.h2Profesion {
-    font-size: 20px;
-}
-
-
 
 
 
@@ -954,7 +958,6 @@ hr {
 
 /* *************** MENU DESPLEGABLE ****************** */
 .menu-overlay {
-    display: none;
     position: fixed;
     top: 50px;
     left: 0;
@@ -963,22 +966,21 @@ hr {
     background-color: #0f1e46;
     display: flex;
     justify-content: center;
+    align-items: center;
     z-index: 1000;
-    transform: translateY(-1000px);
-    transition: transform 0.9s ease;
+    transform: translateY(-2000px);
+    transition: transform 0.6s ease;
 }
 
 .menu-overlay.active {
-    align-items: flex-start;
     transform: translateY(0);
-    opacity: 1;
     visibility: visible;
     transition: transform 0.4s ease, opacity 0.4s ease, visibility 0s 0s;
 }
 
-
-
-
+.menu-overlay.active {
+    align-items: flex-start;
+}
 
 .menu-content {
     display: flex;
