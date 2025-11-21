@@ -203,11 +203,11 @@ body {
     box-sizing: border-box;
     color: white;
     margin: 0 20px;
-    padding: 20px 10px;
+    padding: 10px 10px;
 }
 
 .caja1 img {
-    width: clamp(280px, 19vw, 500px);
+    width: clamp(220px, 19vw, 500px);
     height: auto;
 }
 
@@ -216,10 +216,8 @@ body {
     padding: 0;
 }
 
-
-
 .h2Profesion {
-    font-size: 25px;
+    font-size: clamp(1rem, 2vw, 1.6rem);
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.9s ease, transform 1s ease;
@@ -231,7 +229,7 @@ body {
 }
 
 .profesion {
-    font-size: clamp(35px, 3.4vw, 60px);
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
     margin: 10px 0;
     opacity: 0;
     transform: translateY(40px);
@@ -255,17 +253,15 @@ body {
     max-width: 500px;
     margin-bottom: 30px;
     margin-right: 10px;
-      opacity: 0;
+    opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.9s ease, transform 1s ease;
 }
 
-.p-about1.show{
-     opacity: 1;
+.p-about1.show {
+    opacity: 1;
     transform: translateY(0);
 }
-
-
 
 /* *****************************************/
 
@@ -410,6 +406,18 @@ body {
     margin: 10px 0;
     padding: 35px 10px;
     border-bottom: 1px solid #317217;
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.li-academic:nth-child(even) {
+    transform: translateX(80px);
+}
+
+.li-academic.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .h3-School {
@@ -427,6 +435,11 @@ body {
     font-size: 18px;
     text-align: left;
 }
+
+/**************************************************/
+
+
+
 
 
 
@@ -1214,16 +1227,12 @@ hr {
     }
 
 
-
-
-
     .about1 {
         height: 100dvh;
     }
 
     .caja1 img {
-        width: clamp(250px, 19vw, 500px);
-        height: auto;
+
         padding-top: 50px;
     }
 

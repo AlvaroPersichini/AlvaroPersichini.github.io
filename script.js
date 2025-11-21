@@ -2,8 +2,6 @@ function toggleMenu() {
   const menuOverlay = document.getElementById('menuOverlay');
   const btn = document.getElementById('hamburger');
   const body = document.body;
-
-
   menuOverlay.classList.toggle('active');
   btn.classList.toggle('active');
   body.classList.toggle('no-scroll');
@@ -27,8 +25,6 @@ document.addEventListener('keydown', function (e) {
 });
 
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const textos = document.querySelectorAll(".animarTexto");
   const observer = new IntersectionObserver((entries) => {
@@ -44,3 +40,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.3 });
   textos.forEach(texto => observer.observe(texto));
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".li-academic");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.4 });
+  items.forEach(item => observer.observe(item));
+});
+
