@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -82,7 +87,7 @@ body {
 .contenedorBotones .btn-container:first-child .learn-btn:hover {
     color: #5afdbfd2;
     background-color: #040026;
-  
+
     border: none;
 }
 
@@ -108,4 +113,9 @@ body {
     .card h3 {
         font-size: 1.4rem;
     }
+
+
+
+
+
 }

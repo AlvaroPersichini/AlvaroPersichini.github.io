@@ -436,6 +436,34 @@ body {
     text-align: left;
 }
 
+
+.contenedorBotones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.learn-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+
+.btn-container {
+    margin-top: 10px;
+    padding: 5px;
+    padding-top: 35px;
+    text-align: left;
+}
+
+
 /**************************************************/
 
 
@@ -635,15 +663,13 @@ body {
 }
 
 
- #BomWithNet {
+#BomWithNet {
     scroll-margin-top: 110px;
 }
 
 #KinematicAnalysis {
     scroll-margin-top: 110px;
 }
- 
-
 
 
 
