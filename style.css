@@ -539,11 +539,6 @@ body {
     background-color: rgb(202, 202, 202);
 }
 
-
-
-
-
-
 /* TARJETAS */
 .ContenedorTarjetas {
     background-color: #040026;
@@ -635,23 +630,13 @@ body {
 
 .tarjeta:hover {
     transform: translateY(-10px) scale(1.02);
+    color: #5afdbfd2;
 
 
 }
 
 
 
-@media (max-width: 1050px) {
-    .fila {
-        grid-template-columns: repeat(2, minmax(280px, 1fr));
-    }
-}
-
-@media (max-width: 700px) {
-    .fila {
-        grid-template-columns: 1fr;
-    }
-}
 
 
 
@@ -1140,6 +1125,17 @@ hr {
 
 
 
+@media (max-width: 1050px) {
+    .fila {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .fila {
+        grid-template-columns: 1fr;
+    }
+}
 
 /**************   MOBILE ***************/
 @media (max-width: 810px) {
