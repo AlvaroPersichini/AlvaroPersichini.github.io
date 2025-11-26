@@ -1,5 +1,10 @@
+* {
+     scroll-behavior: smooth;
+}
+
 html {
     scroll-behavior: smooth;
+    
 }
 
 body {
@@ -7,7 +12,6 @@ body {
     padding: 0;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
-
     scrollbar-width: none;
     background-color: #040026;
 }
@@ -466,9 +470,112 @@ body {
 
 /**************************************************/
 
+.MasterContainer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+}
+
+.BomWithNet {
+
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.subtitle {
+    color: #5afdbfd2;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.title {
+
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.card {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #5afdbfd2;
+}
+
+.card h3 {
+
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.contenedorBotones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.btn-container {
+    margin-top: 10px;
+    padding: 5px;
+    text-align: left;
+}
+
+
+.learn-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.contenedorBotones .btn-container:first-child .learn-btn:hover {
+    color: #5afdbfd2;
+    background-color: #040026;
+
+    border: none;
+}
+
+.learn-btn:hover {
+    background: #fff;
+    color: #000;
+}
 
 
 
+
+@media (min-width: 768px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        font-size: 3.2rem;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+
+
+}
 
 
 
@@ -488,7 +595,7 @@ body {
 }
 
 #portfolio {
-    scroll-margin-top: 20px;
+     scroll-margin-top: 50px; 
 }
 
 .skills {
