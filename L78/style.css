@@ -137,12 +137,16 @@ body {
 }
 
 .aHorizontal {
-    font-size: 17px;
+    font-size: 20px;
     text-decoration: none;
     color: white;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     margin-right: 30px;
     margin-left: 20px;
+}
+
+.aHorizontal img {
+    width: 100px;
 }
 
 .aHorizontal:hover {
@@ -395,6 +399,19 @@ body {
     margin-bottom: 10px;
 }
 
+.Proyectos-title {
+    background-color: #2b2b2b;
+    font-size: 3rem;
+    color: #f4d03f;
+    font-weight: 800;
+    margin-bottom: 10px;
+    padding: 10px 6%;
+    margin: 0;
+    text-align: left;
+
+}
+
+
 .about-subtitle {
     font-size: 1.8rem;
     font-weight: 600;
@@ -416,7 +433,7 @@ body {
 .about-img {
     width: 100%;
     max-width: 500px;
-    border-radius: 6px;
+    border-radius: 3px;
     object-fit: cover;
 }
 
@@ -447,6 +464,10 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+}
+
+.values-section a{
+    text-decoration: none;
 }
 
 .value-card {
@@ -933,6 +954,7 @@ a .industry-card {
     padding: 60px 20px;
     background-color: rgba(83, 86, 93);
     color: white;
+
 }
 
 
@@ -1572,11 +1594,17 @@ a .industry-card {
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-top: 25px;
 }
 
 .brand-row img {
     width: 40px;
     height: auto;
+}
+
+.brand-row img:hover {
+    transform: rotate(116deg);
+    transition: 0.5s;
 }
 
 .footer-logo {
@@ -2028,10 +2056,14 @@ hr {
 /************ MENU LIST ********************/
 .liHorizontal1 img {
     position: absolute;
-    top: 8px;
+    top: 11px;
     right: 20px;
     width: 33px;
+    filter:
+        drop-shadow(0 0 10px rgba(211, 211, 200, 0.9)) drop-shadow(0 0 25px rgb(215, 238, 86));
 }
+
+
 
 .liHorizontal1 .img-hover {
     opacity: 0;
