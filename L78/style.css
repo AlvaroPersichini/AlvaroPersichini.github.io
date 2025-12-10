@@ -1,8 +1,7 @@
 * {
     scroll-behavior: smooth;
-
-
-
+border: solid red 1px;
+ 
 }
 
 html {
@@ -390,6 +389,7 @@ body {
 
 .about-text {
     color: #ffffff;
+    min-width: 350px;
 }
 
 .about-title {
@@ -399,17 +399,6 @@ body {
     margin-bottom: 10px;
 }
 
-.Proyectos-title {
-    background-color: #2b2b2b;
-    font-size: 3rem;
-    color: #f4d03f;
-    font-weight: 800;
-    margin-bottom: 10px;
-    padding: 10px 6%;
-    margin: 0;
-    text-align: left;
-
-}
 
 
 .about-subtitle {
@@ -419,23 +408,50 @@ body {
 }
 
 .about-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #dcdcdc;
     line-height: 1.6;
     margin-bottom: 18px;
+    text-align: justify;
+    max-width: 650px;
 }
+
+
 
 .about-img-container {
     display: flex;
     justify-content: center;
+ 
+   
 }
 
 .about-img {
     width: 100%;
-    max-width: 500px;
-    border-radius: 3px;
-    object-fit: cover;
+    max-width: 650px;      /* tamaño máximo recomendado */
+    height: auto;          /* 🔥 ya no rompe el layout */
+    aspect-ratio: 16/10;   /* 🔥 mantiene proporción limpia */
+    object-fit: contain;
+    border-radius: 2px;
 }
+
+
+
+.Proyectos-title {
+    background-color: #2b2b2b;
+    font-size: 3rem;
+    color: #f4d03f;
+    font-weight: 800;
+    margin-bottom: 10px;
+    padding: 10px 6%;
+    margin: 0;
+    text-align: justify;
+
+}
+
+
+
+
+
 
 /* RESPONSIVE ABOUT */
 @media (max-width: 900px) {
@@ -452,6 +468,17 @@ body {
     .about-img-container {
         order: -1;
     }
+
+
+    .about-img {
+        max-width: 400px;
+
+    }
+
+
+    .about-description {
+       font-size: 16px; 
+    }
 }
 
 
@@ -466,7 +493,7 @@ body {
     gap: 30px;
 }
 
-.values-section a{
+.values-section a {
     text-decoration: none;
 }
 
@@ -502,136 +529,6 @@ body {
 
 
 
-/* 
-
-.about-section {
-    background: #2b2b2b;
-    padding: 90px 6%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
-}
-
-
-.about-text {
-    color: #ffffff;
-}
-
-.about-title {
-    font-size: 3rem;
-    color: #f4d03f;
-    font-weight: 800;
-    margin-bottom: 10px;
-}
-
-.about-subtitle {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 25px;
-}
-
-.about-description {
-    font-size: 1.1rem;
-    color: #dcdcdc;
-    line-height: 1.6;
-    margin-bottom: 18px;
-}
-
-
-.about-img-container {
-    display: flex;
-    justify-content: center;
-}
-
-.about-img {
-    width: 100%;
-    max-width: 550px;
-    border-radius: 6px;
-    object-fit: cover;
-}
-
-
-.about-values {
-    grid-column: span 2;
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-}
-
-.value-card {
-    background: #1f1f1f;
-    padding: 25px;
-    border-left: 4px solid #f4d03f;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.value-card:hover {
-    background: #968c65;
-
-}
-
-.value-card h4 {
-    font-size: 1.3rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.value-card p {
-    color: #cfcfcf;
-    font-size: 1rem;
-    line-height: 1.4;
-}
-
-.about-values a.value-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-.value-card {
-    cursor: pointer;
-}
-
-
-
-@media (max-width: 1000px) {
-    .about-section {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .about-img-container {
-        order: -1;
-    }
-
-    .about-values {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about-title {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .about-values {
-        grid-template-columns: 1fr;
-    }
-
-    .about-title {
-        font-size: 2rem;
-    }
-
-    .about-subtitle {
-        font-size: 1.4rem;
-    }
-} */
-
-/*--------------------------------------------------*/
-
 /* ----- CONTENEDOR GENERAL ----- */
 .industries-section {
     background: #222;
@@ -655,13 +552,11 @@ body {
     margin: 0 auto 50px auto;
 }
 
-/* ----- GRID DE INDUSTRIAS ----- */
 .industries-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 35px;
 }
-
 
 
 .industries-grid a {
@@ -671,11 +566,10 @@ body {
 
 a .industry-card {
     text-decoration: none;
-
     cursor: pointer;
 }
 
-/* ----- TARJETAS ----- */
+
 .industry-card {
     background: #1a1a1a;
     border-radius: 6px;
@@ -683,6 +577,7 @@ a .industry-card {
     border-top: 4px solid #f4d03f;
     transition: 0.3s;
     cursor: default;
+    min-height: 500px;
 
 }
 
