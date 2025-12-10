@@ -678,23 +678,25 @@ body {
 }
 
 .seccion-texto {
-    max-width: 600px;
-    min-width: 0;
+    width: 600px;
 }
 
 .seccion-texto h2 img {
-    width: 50px;          /* tamaño ideal para icono dentro del título */
+    width: 50px;
     height: auto;
-    vertical-align: middle;   /* alinea la imagen con el texto */
+    vertical-align: middle;
     margin-left: 10px;
-    margin-bottom: 10px;        /* separa del texto */
+    margin-bottom: 10px;
     object-fit: contain;
 }
 
 
 .seccion-innerImage {
     width: clamp(350px, 40vw, 500px);
+
 }
+
+
 
 .seccion-texto h2 {
     font-size: clamp(1.5rem, 3.6vw, 2.4rem);
@@ -720,7 +722,7 @@ body {
     list-style: none;
     display: block;
     max-width: 520px;
-  
+
 }
 
 .seccion-bullets li {
@@ -729,7 +731,7 @@ body {
     margin-bottom: 10px;
     color: #e7e7e7;
     font-size: 1rem;
-      text-align: left;
+    text-align: left;
 }
 
 
@@ -744,6 +746,14 @@ body {
     border-radius: 50%;
     transform: translateY(-50%);
     display: inline-block;
+}
+
+
+.seccion-texto h2 .canooImage {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 
 
@@ -842,9 +852,11 @@ body {
 
 
     .seccion-texto {
-      
+
         text-align: center;
+        width: 380px;
     }
+
 
 
     .seccion-texto p {
@@ -905,3 +917,7 @@ body {
 
 
 }
+
+
+
+
