@@ -1,7 +1,5 @@
 * {
     scroll-behavior: smooth;
-border: solid red 1px;
- 
 }
 
 html {
@@ -15,7 +13,6 @@ body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
     scrollbar-width: none;
-
 }
 
 .menu-overlay {
@@ -110,8 +107,6 @@ body {
     transform: rotate(180deg);
 
 }
-
-
 
 
 
