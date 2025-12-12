@@ -828,7 +828,7 @@ body {
 }
 
 .main-image {
-    width: 400px;
+    width: 300px;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -880,9 +880,9 @@ body {
     }
 
     #lightbox-img {
-        width: 400px;
-        height: 300px;
-        max-height: 70vh;
+        width: 300px;
+        height: 200px;
+      
     }
 
     .prev,
@@ -1088,10 +1088,6 @@ body {
     .presentacion-texto {
         font-size: 1rem;
     }
-
-
-
-
 
 
     /**************************/
