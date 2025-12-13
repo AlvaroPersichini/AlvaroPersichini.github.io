@@ -97,6 +97,33 @@ document.addEventListener("DOMContentLoaded", function () {
             lightbox.style.display = "none";
         }
     });
+
+
+
+    /* Animación sección presentación */
+    const wrapper = document.querySelector('.presentacion-wrapper');
+
+    if (wrapper) {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    wrapper.classList.add('animate');
+                    observer.disconnect();
+                }
+            });
+        });
+
+        observer.observe(wrapper);
+    }
+
+
+
+
+
+
+
+
+
 });
 
 
