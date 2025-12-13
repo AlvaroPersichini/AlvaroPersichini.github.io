@@ -286,7 +286,7 @@ body {
 
     margin: 0;
     text-align: left;
-    font-size: clamp(2.2rem, 3vw, 4rem);
+    font-size: clamp(2rem, 3vw, 4rem);
     color: white;
     opacity: 0;
     transform: translateY(40px);
@@ -424,7 +424,7 @@ body {
     aspect-ratio: 16/10;
     object-fit: contain;
     border-radius: 2px;
-    min-width: 400px;
+  
   
 }
 
@@ -1966,12 +1966,12 @@ hr {
 
     .p-about1 {
         margin-top: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-        max-width: 400px;
-        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 350px;
+        text-align: justify;
         justify-self: center;
-        width: 100%;
+     
         display: block;
 
     }
