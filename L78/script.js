@@ -97,4 +97,97 @@ setTimeout(mover, tiempoQuieto);
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const aboutSection = document.querySelector(".about-section");
+  if (!aboutSection) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        aboutSection.classList.add("animate");
+        observer.unobserve(aboutSection);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(aboutSection);
+});
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const wrapper = document.querySelector(".proyectos-wrapper");
+  const title = document.querySelector(".Proyectos-title");
+  const values = document.querySelector(".values-section");
+
+  if (!wrapper || !title || !values) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        title.classList.add("animate");
+        values.classList.add("animate");
+        observer.unobserve(wrapper);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(wrapper);
+});
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+  const aboutSection = document.querySelector(".about-section");
+
+  if (!counters.length || !aboutSection) return;
+
+  const animateCounter = (counter) => {
+    const target = +counter.dataset.target;
+    const duration = 1600;
+    const startTime = performance.now();
+
+    const update = (time) => {
+      const progress = Math.min((time - startTime) / duration, 1);
+      const value = Math.floor(progress * target);
+
+      counter.textContent = value.toLocaleString("es-AR");
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        counter.textContent = target.toLocaleString("es-AR");
+      }
+    };
+
+    requestAnimationFrame(update);
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        counters.forEach(counter => animateCounter(counter));
+        observer.unobserve(aboutSection);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  observer.observe(aboutSection);
+});
+
+
+
+
+
+
+
 

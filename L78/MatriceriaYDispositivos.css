@@ -934,11 +934,20 @@ body {
     z-index: 99999 !important;
 }
 
-.main-image {
+/* .main-image {
     width: 300px;
     cursor: pointer;
     border-radius: 5px;
     height: 210px;
+    
+} */
+
+.main-image {
+    max-width: 370px;
+    height: auto;
+    display: block;
+      cursor: pointer;
+      border-radius: 3px;
 }
 
 
