@@ -272,7 +272,7 @@ body {
 .caja2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-left: 20px;
 }
 
@@ -1170,7 +1170,7 @@ a .industry-card {
 
 
 /********* BOTON Ver Mas *****************/
-.cajaBotonVerMas {
+/* .cajaBotonVerMas {
     background-color: #5afdbfd2;
     width: 100px;
     height: 50px;
@@ -1194,7 +1194,7 @@ a .industry-card {
 
 .cajaBotonVerMas:hover {
     background-color: #93e9e9;
-}
+} */
 
 /*******************************************/
 
@@ -1214,11 +1214,6 @@ a .industry-card {
     font-weight: 400;
     color: #1b1b1b;
 }
-
-
-
-
-
 
 
 
@@ -1440,15 +1435,11 @@ a .industry-card {
     margin-left: 0;
 }
 
-
-
-
 .site-header {
     display: none;
 }
 
 
-/* FOOTER */
 
 
 /* ===== FOOTER GENERAL ===== */
@@ -1468,7 +1459,6 @@ a .industry-card {
     gap: 40px;
 }
 
-/* ===== COLUMNAS ===== */
 .footer-col {
     flex: 1;
     min-width: 180px;
@@ -1479,7 +1469,6 @@ a .industry-card {
     margin-bottom: 15px;
     font-weight: 600;
     color: #f1c40f;
-    /* Amarillo suave */
 }
 
 .footer-col ul {
@@ -1777,12 +1766,9 @@ hr {
 
 
 .fila {
-
     width: 100%;
     max-width: 1300px;
-
 }
-
 
 .tarjeta {
     height: 450px;
@@ -1935,18 +1921,14 @@ hr {
     margin-bottom: 20px;
 }
 
-
 .menu-content ul:nth-of-type(2) {
     box-shadow: none;
 }
 
 
-
 .menu-content ul:nth-of-type(4) {
     box-shadow: none;
 }
-
-
 
 
 
@@ -1972,8 +1954,6 @@ hr {
 .liHorizontal1:hover .img-normal {
     opacity: 0;
 }
-
-
 
 
 @media (max-width: 1050px) {
@@ -2003,7 +1983,6 @@ hr {
         display: none;
     }
 
-
     .desktop {
         display: none;
     }
@@ -2015,7 +1994,6 @@ hr {
     .site-header {
         display: block;
         padding: 0;
-
     }
 
     .ulHorizontal {
@@ -2052,31 +2030,22 @@ hr {
         left: 0;
     }
 
-
     .titulotarjetas {
         text-align: center;
     }
 
-
-
     .li-academic {
-
         align-items: center;
         justify-content: center;
-
-
     }
 
     .h3-School {
-
         text-align: center;
     }
 
     .separador {
-
         text-align: center;
     }
-
 
     .about1 {
         height: 100dvh;
@@ -2085,7 +2054,6 @@ hr {
         align-items: center;
         justify-content: center;
         background-color: grey;
-
     }
 
     .caja2 {
@@ -2094,9 +2062,6 @@ hr {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
-
-
-
     }
 
     .p-about1 {
@@ -2106,11 +2071,8 @@ hr {
         max-width: 350px;
         text-align: justify;
         justify-self: center;
-
         display: block;
-
     }
-
 
     .h2Profesion {
         text-align: center;
@@ -2119,11 +2081,8 @@ hr {
     }
 
     .caja1 img {
-
         padding-top: 10px;
     }
-
-
 
     .separator {
         padding-left: 10px;
@@ -2157,9 +2116,6 @@ hr {
         margin-right: 0;
     }
 
-
-
-
     .cajaImagen {
         padding: 0;
     }
@@ -2168,10 +2124,7 @@ hr {
         margin-top: 30px;
     }
 
-
-
 }
-
 
 
 
@@ -2191,7 +2144,6 @@ hr {
     .about-img-container {
         order: -1;
     }
-
 
     .about-img {
         max-width: 400px;

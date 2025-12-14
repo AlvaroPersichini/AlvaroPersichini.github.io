@@ -539,12 +539,11 @@ body {
 .matriceria-nav .nav-link {
     text-decoration: none;
     color: #f0f0f0;
-    font-size: 0.90rem;
+    font-size: 0.95rem;
     padding: 6px 10px;
     border-radius: 4px;
     transition: background 0.2s ease, color 0.2s ease;
 }
-
 
 .matriceria-nav .nav-link:hover {
     background-color: #333;

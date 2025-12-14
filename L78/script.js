@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const animateCounter = (counter) => {
     const target = +counter.dataset.target;
-    const duration = 1600;
+    const duration = 2000;
     const startTime = performance.now();
 
     const update = (time) => {
