@@ -1,10 +1,10 @@
 * {
-     scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 html {
     scroll-behavior: smooth;
-    
+
 }
 
 body {
@@ -97,7 +97,6 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 
 
@@ -272,6 +271,8 @@ body {
 
 
 
+
+
 /********* Separador ***********************/
 .separator {
     box-sizing: border-box;
@@ -283,7 +284,6 @@ body {
     align-items: center;
     justify-content: center;
     align-content: center;
-
 }
 
 .separator-content {
@@ -303,7 +303,6 @@ body {
     font-weight: 800;
     font-size: clamp(1.2rem, 2vw, 2rem);
     margin-bottom: 8px;
-
 }
 
 .separator-text p {
@@ -311,6 +310,7 @@ body {
     line-height: 1.5;
     min-width: 300px;
 }
+
 
 
 
@@ -350,7 +350,6 @@ body {
     line-height: 1.5;
     min-width: 300px;
 }
-
 
 
 
@@ -459,7 +458,6 @@ body {
     transition: 0.3s ease;
 }
 
-
 .btn-container {
     margin-top: 10px;
     padding: 5px;
@@ -468,18 +466,18 @@ body {
 }
 
 
-/**************************************************/
 
+
+
+/**************************************************/
 .MasterContainer {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     color: white;
 }
 
 .BomWithNet {
-
     padding: 20px 20px;
     max-width: 1200px;
     margin: auto;
@@ -511,7 +509,6 @@ body {
 }
 
 .card h3 {
-
     font-size: 1.3rem;
     margin-bottom: 5px;
 }
@@ -534,7 +531,6 @@ body {
     text-align: left;
 }
 
-
 .learn-btn {
     display: inline-block;
     padding: 12px 28px;
@@ -549,7 +545,6 @@ body {
 .contenedorBotones .btn-container:first-child .learn-btn:hover {
     color: #5afdbfd2;
     background-color: #040026;
-
     border: none;
 }
 
@@ -595,7 +590,7 @@ body {
 }
 
 #portfolio {
-     scroll-margin-top: 50px; 
+    scroll-margin-top: 50px;
 }
 
 .skills {
@@ -659,9 +654,8 @@ body {
 
 
 
+
 /* ------------------ about3 (PORTFOLIO) ---------------- */
-
-
 .about3 {
     color: black;
     display: flex;
@@ -674,7 +668,6 @@ body {
     background-color: rgb(202, 202, 202);
 }
 
-/* TARJETAS */
 .ContenedorTarjetas {
     background-color: #040026;
     width: 100%;
@@ -683,7 +676,6 @@ body {
     display: flex;
     justify-content: center;
     overflow-x: hidden;
-
 }
 
 .fila {
@@ -715,8 +707,6 @@ body {
     flex-direction: column;
     justify-content: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-
 }
 
 .tarjeta-image img {
@@ -757,8 +747,6 @@ body {
     transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-
-
 .tarjeta:hover .arrow {
     transform: translateX(8px);
 }
@@ -766,9 +754,7 @@ body {
 .tarjeta:hover {
     transform: translateY(-10px) scale(1.02);
     color: #5afdbfd2;
-
 }
-
 
 #BomWithNet {
     scroll-margin-top: 110px;
@@ -777,6 +763,7 @@ body {
 #KinematicAnalysis {
     scroll-margin-top: 110px;
 }
+
 
 
 
@@ -810,14 +797,8 @@ body {
 
 /*******************************************/
 
-
-
-
-
-
 .presentacion {
     position: relative;
-
 }
 
 .presentacion h3 {
@@ -848,7 +829,7 @@ body {
     color: white;
     background-color: #040026;
     /* background: linear-gradient(to bottom, #040026, #007d7d); */
-    height: 100vh;
+     height: 100vh; 
 }
 
 
@@ -884,7 +865,6 @@ body {
     margin-left: 0px;
     margin-bottom: 0;
 }
-
 
 .contact-form {
     max-width: 400px;
@@ -930,7 +910,8 @@ body {
     background-color: #40fd6f;
 }
 
-/***************************************************/
+
+
 
 
 /***********Academic*******************/
@@ -946,13 +927,11 @@ body {
     margin-left: 0;
 }
 
-
-
-
-
 .site-header {
     display: none;
 }
+
+
 
 
 
@@ -1052,13 +1031,9 @@ hr {
     color: #00c3ff;
 }
 
-
-
 .fila {
-
     width: 100%;
     max-width: 1300px;
-
 }
 
 
@@ -1156,7 +1131,6 @@ hr {
 }
 
 .menu-list {
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1265,6 +1239,10 @@ hr {
 
 
 
+
+/**************   MOBILE ***************/
+
+
 @media (max-width: 1050px) {
     .fila {
         grid-template-columns: repeat(2, minmax(280px, 1fr));
@@ -1277,7 +1255,8 @@ hr {
     }
 }
 
-/**************   MOBILE ***************/
+
+
 @media (max-width: 810px) {
 
     html,
@@ -1304,7 +1283,6 @@ hr {
     .site-header {
         display: block;
         padding: 0;
-
     }
 
     .ulHorizontal {
@@ -1341,15 +1319,9 @@ hr {
         left: 0;
     }
 
-
-
-
     .li-academic {
-
         align-items: center;
         justify-content: center;
-
-
     }
 
     .h3-School {
@@ -1358,7 +1330,6 @@ hr {
     }
 
     .separador {
-
         text-align: center;
     }
 
@@ -1368,7 +1339,6 @@ hr {
     }
 
     .caja1 img {
-
         padding-top: 50px;
     }
 

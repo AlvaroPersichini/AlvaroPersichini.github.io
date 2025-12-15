@@ -348,6 +348,7 @@ body {
     width: 85%;
 }
 
+
 .menu-list {
     display: flex;
     flex-direction: column;
@@ -365,6 +366,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 
 .menu-list li {
     margin: 10px 0;
@@ -410,9 +412,11 @@ body {
     margin-bottom: 20px;
 }
 
+
 .menu-content ul:nth-of-type(2) {
     box-shadow: none;
 }
+
 
 .menu-content ul:nth-of-type(4) {
     box-shadow: none;
@@ -535,7 +539,7 @@ body {
 .matriceria-nav .nav-link {
     text-decoration: none;
     color: #f0f0f0;
-    font-size: 0.90rem;
+    font-size: 0.95rem;
     padding: 6px 10px;
     border-radius: 4px;
     transition: background 0.2s ease, color 0.2s ease;
@@ -613,6 +617,7 @@ body {
     margin-bottom: 25px;
     color: #f5c32b;
     max-width: 700px;
+    
 }
 
 .presentacion-texto {
@@ -624,6 +629,9 @@ body {
     font-weight: 400;
     text-align: center;
 }
+
+
+
 
 .scroll-indicator a {
     text-align: center;
@@ -642,6 +650,10 @@ body {
 .scroll-indicator a:hover {
     color: yellow;
 }
+
+
+
+
 
 .scroll-indicator {
     text-align: center;
@@ -752,6 +764,7 @@ body {
     justify-content: center;
 }
 
+
 .seccion-inner {
     width: 100%;
     max-width: 1400px;
@@ -779,6 +792,7 @@ body {
 .seccion-innerImage {
     width: clamp(350px, 40vw, 500px);
 }
+
 
 .seccion-texto h2 {
     font-size: clamp(1.5rem, 3.6vw, 2.4rem);
@@ -816,6 +830,7 @@ body {
     text-align: left;
 }
 
+
 .seccion-bullets li::before {
     content: "";
     position: absolute;
@@ -829,6 +844,7 @@ body {
     display: inline-block;
 }
 
+
 .seccion-texto h2 .canooImage {
     width: 100px;
     height: auto;
@@ -837,8 +853,10 @@ body {
 }
 
 
-
+/*-------------------------*/
 /*   DESKTOP (default)    */
+
+
 .lightbox {
     display: none;
     position: fixed;
@@ -908,6 +926,9 @@ body {
     z-index: 99999 !important;
 }
 
+
+
+
 .main-image {
     max-width: 370px;
     height: auto;
@@ -915,6 +936,7 @@ body {
     cursor: pointer;
     border-radius: 3px;
 }
+
 
 
 
