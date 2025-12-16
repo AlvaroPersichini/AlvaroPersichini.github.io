@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="Portfolio.css">
+    <title>Alvaro Persichini Portfolio</title>
+</head>
+
+<body>
+
+    <main>
+        
+  <header class="site-header">
+    <nav class="mobile">
+      <ul class="ulHorizontal">
+        <li class="lineasBurga">
+          <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span class="barra"></span>
+            <span class="barra"></span>
+            <span class="barra"></span>
+            <span class="cruz">X</span>
+          </button>
+        </li>
+        <li class="liHorizontal1">
+          <a class="aHorizontal" href="#top">ALVARO PERSICHINI</a>
+        </li>
+      </ul>
+
+
+      <!-- ********** MENU DESPLEGABLE *************** -->
+      <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+          <ul class="menu-list">
+            <li>
+              Engineering & Software Solutions
+            </li>
+          </ul>
+          <ul class="menu-list">
+            <li><a href="#top" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#academic" onclick="toggleMenu()">Academic</a></li>
+            <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+            <li><a target="_blank" href="/assets/pdf/cvPersichini_R28_Eng.pdf" onclick="toggleMenu()">Download CV</a>
+            </li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+          <ul class="menu-list">
+            <li><a target="_blank" href="https://github.com/AlvaroPersichini"><i class="fab fa-github"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/alvaropersichini/"><i
+                  class="fab fa-linkedin-in"></i></a></li>
+            <!-- <li><a href="#"> <i class="fas fa-envelope"></i></a></li> -->
+          </ul>
+          <ul class="menu-list">
+            <li>
+              <p>+54 341 640 1315</p>
+            </li>
+            <li>
+              <p>alvaro.persichini@gmail.com</p>
+            </li>
+            <li>
+              <p>&copy; 2025 Álvaro Persichini</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+  <div class="desktop">
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#top" onclick="toggleMenu()">WELCOME</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#academic">Academic</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+    </main>
+
+
+
+
+
+    <section class="portfolio-bom" id="AutomatedBOM">
+        <div class="bom-container">
+            <div class="bom-text">
+                <span class="bom-author">ALVARO PERSICHINI</span>
+                <h2 class="bom-title">Automated<br>Bill of Materials</h2>
+                <div class="bom-feature">
+                    <p>
+                        Custom Bill of Materials automatically generated from CATIA assemblies,
+                        using CAA interfaces and part properties. Optimized for large and complex
+                        product structures.
+                    </p>
+                    <p>
+                        Independent spare parts lists extracted from assemblies, including vendor
+                        codes, descriptions, images and custom attributes.
+                    </p>
+                    <p>
+                        Image-based tables prepared for internal catalogs, documentation or
+                        commercial material with minimal manual intervention.
+                    </p>
+                    <p>
+                        Export to XLS, CSV or PDF formats for direct integration with ERP,
+                        purchasing or manufacturing workflows.
+                    </p>
+                </div>
+                <div class="btn-container">
+                    <a href="#" class="learn-btn">See Code</a>
+                </div>
+            </div>
+            <div class="bom-image">
+                <img src="/assets/images/CATIA-automation-1.png" alt="Automated BOM preview">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

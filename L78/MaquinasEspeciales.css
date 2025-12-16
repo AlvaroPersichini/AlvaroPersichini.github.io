@@ -733,6 +733,14 @@ body {
     transition: opacity 0.35s ease-out, transform 0.35s ease-out;
 }
 
+.presentacion-subtitle {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.35s ease-out, transform 0.35s ease-out;
+}
+
+
+
 /* Visible */
 .presentacion-wrapper.animate img {
     opacity: 1;
@@ -743,6 +751,12 @@ body {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.4s;
+}
+
+.presentacion-wrapper.animate .presentacion-subtitle {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.55s;
 }
 
 

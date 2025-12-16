@@ -60,6 +60,13 @@ body {
     color: #ddd;
 }
 
+
+
+
+
+
+
+
 .contenedorBotones {
     display: flex;
     flex-direction: row;
@@ -73,6 +80,13 @@ body {
 }
 
 
+.contenedorBotones .btn-container:first-child .learn-btn:hover {
+    color: #5afdbfd2;
+    background-color: #040026;
+    border: none;
+}
+
+
 .learn-btn {
     display: inline-block;
     padding: 12px 28px;
@@ -82,13 +96,6 @@ body {
     font-size: 0.9rem;
     font-weight: bold;
     transition: 0.3s ease;
-}
-
-.contenedorBotones .btn-container:first-child .learn-btn:hover {
-    color: #5afdbfd2;
-    background-color: #040026;
-
-    border: none;
 }
 
 .learn-btn:hover {

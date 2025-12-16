@@ -142,9 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".counter");
   const aboutSection = document.querySelector(".about-section");
@@ -153,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const animateCounter = (counter) => {
     const target = +counter.dataset.target;
-    const duration = 2000;
+    const duration = 2700;
     const startTime = performance.now();
 
     const update = (time) => {

@@ -1,9 +1,12 @@
 * {
     scroll-behavior: smooth;
+
+
 }
 
 html {
     scroll-behavior: smooth;
+
 
 }
 
@@ -444,7 +447,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 }
 
 .learn-btn {
@@ -829,7 +832,7 @@ body {
     color: white;
     background-color: #040026;
     /* background: linear-gradient(to bottom, #040026, #007d7d); */
-     height: 100vh; 
+    height: 100vh;
 }
 
 
@@ -1374,4 +1377,111 @@ hr {
         padding: 0;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== PORTFOLIO BOM SECTION ===== */
+.portfolio-bom {
+    background-color: #040026;
+    color: white;
+    padding: 80px 30px;
+}
+
+
+
+
+.PortfolioTitle {
+    text-align: center;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+}
+
+.bom-container {
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.bom-author {
+    color: #5afdbfd2;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.bom-title {
+    font-size: clamp(2.5rem, 3.5vw, 3rem);
+    font-weight: 800;
+    margin: 15px 0 40px;
+    line-height: 1.1;
+}
+
+.bom-feature {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #5afdbfd2;
+}
+
+.bom-feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.bom-feature p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d6d6d6;
+    max-width: 520px;
+}
+
+
+.bom-image {
+    /* background-color: black;
+    width: 100%; */
+}
+
+.bom-image img {
+    width: 100%;
+    max-width: 520px;
+    display: block;
+    margin: auto;
+    /* filter: drop-shadow(0 0 25px rgba(90, 253, 191, 0.15)); */
+
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .bom-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .bom-image {
+        order: 1;
+    }
+
+    .bom-title {
+        text-align: center;
+    }
+
+    .bom-author {
+        text-align: center;
+        display: block;
+    }
 }
