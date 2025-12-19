@@ -1,6 +1,6 @@
 * {
     scroll-behavior: smooth;
-    border: solid red 1px;
+    
 }
 
 html {
@@ -1418,8 +1418,8 @@ hr {
     background-color: #040026;
     color: white;
     /* padding: 20px 30px 100px 30px; */
-    padding-top:30px ;
-      padding-bottom:30px ;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .bom-container {
@@ -1468,7 +1468,7 @@ hr {
     width: 100%;
     max-width: 520px;
     /* height: 320px; */
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1576,8 +1576,9 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    max-width: 1000px; /* Un poco más ancho que la imagen para dar aire a las flechas */
+    /* width: 100%; */
+    max-width: 1000px;
+    /* Un poco más ancho que la imagen para dar aire a las flechas */
 }
 
 #lightbox-img {
@@ -1596,8 +1597,10 @@ hr {
 
 
 .modal-content {
-    width: 90vw;         /* Se adapta a pantallas pequeñas */
-    max-width: 850px;    /* Ancho fijo máximo en escritorio */
+    width: 90vw;
+    /* Se adapta a pantallas pequeñas */
+    max-width: 850px;
+    /* Ancho fijo máximo en escritorio */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1626,13 +1629,22 @@ hr {
 
 #lightbox-img,
 #lightbox-video {
-    width: 100%;           /* Ocupa todo el ancho de .modal-content */
-    height: auto;          
-    aspect-ratio: 16 / 9;  /* Fuerza a que todos tengan formato panorámico */
-    object-fit: cover;     /* Llena el espacio sin deformar (puede recortar bordes) */
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit:contain;
     display: block;
-    border-radius: 8px;    /* Opcional: para suavizar las esquinas */
+    border-radius: 8px;
+
 }
+
+/* #lightbox-img,
+#lightbox-video {
+    width: 100%;
+    max-width: 900px;
+    max-height: 70vh;
+    object-fit: contain;
+} */
 
 .prev,
 .next {
@@ -1680,13 +1692,6 @@ hr {
     text-align: center;
 }
 
-#lightbox-img,
-#lightbox-video {
-    width: 100%;
-    max-width: 900px;
-    max-height: 70vh;
-    object-fit: contain;
-}
 
 
 @media (max-width: 900px) {
@@ -1708,16 +1713,14 @@ hr {
 
 /* Responsive */
 @media (max-width: 900px) {
-    .carousel {
-        max-width: 80vw;
-    }
+    .carousel {}
 
     .prev {
-        left: -30px;
+        left: -10px;
     }
 
     .next {
-        right: -30px;
+        right: -10px;
     }
 }
 
@@ -1738,7 +1741,7 @@ hr {
     .prev,
     .next {
         font-size: 28px;
-        padding: 4px 10px;
+        /* padding: 4px 10px; */
         left: 5px;
         right: 5px;
     }
