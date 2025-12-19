@@ -60,13 +60,6 @@ body {
     color: #ddd;
 }
 
-
-
-
-
-
-
-
 .contenedorBotones {
     display: flex;
     flex-direction: row;
@@ -79,13 +72,11 @@ body {
     text-align: left;
 }
 
-
 .contenedorBotones .btn-container:first-child .learn-btn:hover {
     color: #5afdbfd2;
     background-color: #040026;
     border: none;
 }
-
 
 .learn-btn {
     display: inline-block;
@@ -104,10 +95,6 @@ body {
 }
 
 
-
-
-
-
 @media (min-width: 768px) {
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -121,8 +108,15 @@ body {
         font-size: 1.4rem;
     }
 
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+

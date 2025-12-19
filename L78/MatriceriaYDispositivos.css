@@ -720,7 +720,6 @@ body {
 }
 
 
-
 /* Visible */
 .presentacion-wrapper.animate img {
     opacity: 1;
@@ -867,7 +866,6 @@ body {
 .carousel {
     position: relative;
     width: 820px;
-    /* imagen + flechas afuera */
     height: 450px;
     display: flex;
     justify-content: center;
