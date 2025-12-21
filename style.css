@@ -1423,16 +1423,6 @@ hr {
 
 }
 
-/* .bom-container {
-    width: clamp(320px, 80vw, 1100px);
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 60px;
-    align-items: center;
-  
-}  */
-
 
 .bom-container {
     width: clamp(320px, 80vw, 1100px);
@@ -1445,13 +1435,10 @@ hr {
     /* ===== ESTÉTICA ONLY ===== */
     background-color: rgba(255, 255, 255, 0.028);
     border-radius: 12px;
-
     border: 1px solid rgba(120, 180, 255, 0.18);
-
     box-shadow:
         0 10px 26px rgba(0, 0, 0, 0.45),
         0 0 55px rgba(120, 180, 255, 0.22);
-
     padding: 40px 50px;
 }
 
@@ -1467,13 +1454,6 @@ hr {
             0 0 18px rgba(90, 253, 191, 0.12);
     }
 }
-
-
-
-
-
-
-
 
 
 
@@ -1534,6 +1514,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 
@@ -1574,8 +1555,9 @@ hr {
 }
 
 .main-image {
-    max-width: 420px;
+    /* max-width: 420px; */
     width: 100%;
+    height: auto;
     cursor: pointer;
     border-radius: 3px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -1634,21 +1616,10 @@ hr {
     max-width: 90vw;
 }
 
-/* .modal-content {
-    width: 900px;
-    max-width: 90vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-} */
-
 
 .modal-content {
     width: 90vw;
-    /* Se adapta a pantallas pequeñas */
     max-width: 850px;
-    /* Ancho fijo máximo en escritorio */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1656,24 +1627,6 @@ hr {
     margin: 0 auto;
 }
 
-/* #lightbox-img,
-#lightbox-video {
-    width: 100%;
-    max-width: 900px;
-    max-height: 70vh;
-    object-fit: contain;
-    display: block;
-} */
-
-/* #lightbox-img,
-#lightbox-video {
-    width: 100%;
-    height: 450px;
-    object-fit: contain;
-    display: block;
-    border-radius: 4px;
-    background-color: #000;
-} */
 
 #lightbox-img,
 #lightbox-video {
@@ -1686,13 +1639,6 @@ hr {
 
 }
 
-/* #lightbox-img,
-#lightbox-video {
-    width: 100%;
-    max-width: 900px;
-    max-height: 70vh;
-    object-fit: contain;
-} */
 
 .prev,
 .next {
@@ -1738,6 +1684,8 @@ hr {
 #lightbox-text {
     margin-top: 10px;
     text-align: center;
+    max-width: 650px;
+    text-align: justify;
 }
 
 
