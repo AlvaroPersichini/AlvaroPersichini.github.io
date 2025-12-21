@@ -60,63 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
-
-
-
-
-
-// const mainImage = document.querySelector(".main-image");
-// const lightbox = document.getElementById("lightbox");
-// const lightboxImg = document.getElementById("lightbox-img");
-// const lightboxText = document.getElementById("lightbox-text");
-// const lightboxTitle = document.querySelector(".lightbox-title");
-
-// const prevBtn = document.querySelector(".prev");
-// const nextBtn = document.querySelector(".next");
-// const closeBtn = document.querySelector(".close");
-
-// let images = [];
-// let index = 0;
-
-// mainImage.addEventListener("click", () => {
-//     images = JSON.parse(mainImage.dataset.images);
-//     index = 0;
-
-//     lightboxTitle.textContent = mainImage.dataset.title;
-//     showImage();
-
-//     lightbox.classList.add("show");
-// });
-
-// function showImage() {
-//     lightboxImg.src = images[index].src;
-//     lightboxText.textContent = images[index].text;
-// }
-
-// prevBtn.addEventListener("click", () => {
-//     index = (index - 1 + images.length) % images.length;
-//     showImage();
-// });
-
-// nextBtn.addEventListener("click", () => {
-//     index = (index + 1) % images.length;
-//     showImage();
-// });
-
-// closeBtn.addEventListener("click", () => {
-//     lightbox.classList.remove("show");
-// });
-
-
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
 
   const triggers = document.querySelectorAll(".main-image");
@@ -135,19 +78,14 @@ document.addEventListener("DOMContentLoaded", () => {
   let images = [];
   let index = 0;
 
-  // function render() {
-  //   img.src = images[index].src;
-  //   text.textContent = images[index].text || "";
-  // }
-
-
+ 
 
   const video = document.getElementById("lightbox-video");
 
 
-
-
  
+
+
   function render() {
     const item = images[index];
     img.style.display = "none";
@@ -162,33 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     text.textContent = item.text || "";
   }
-
-
-// function render() {
-//   const current = images[index];
-
-//   if (current.type === "image") {
-//     img.style.display = "block";
-//     video.style.display = "none";
-//     img.src = current.src;
-//     text.textContent = current.text || "";
-//     video.pause();
-//     video.currentTime = 0;
-//   } else if (current.type === "video") {
-//     img.style.display = "none";
-//     video.style.display = "block";
-//     video.src = current.src;
-//     text.textContent = current.text || "";
-//     video.play(); // autoplay
-//   }
-// }
-
-
-
-
-
-
-
 
 
 

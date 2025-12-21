@@ -1,6 +1,6 @@
 * {
     scroll-behavior: smooth;
-    
+
 }
 
 html {
@@ -1419,8 +1419,20 @@ hr {
     color: white;
     /* padding: 20px 30px 100px 30px; */
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+
 }
+
+/* .bom-container {
+    width: clamp(320px, 80vw, 1100px);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+  
+}  */
+
 
 .bom-container {
     width: clamp(320px, 80vw, 1100px);
@@ -1429,7 +1441,43 @@ hr {
     grid-template-columns: 1.1fr 0.9fr;
     gap: 60px;
     align-items: center;
+
+    /* ===== ESTÉTICA ONLY ===== */
+    background-color: rgba(255, 255, 255, 0.028);
+    border-radius: 12px;
+
+    border: 1px solid rgba(120, 180, 255, 0.18);
+
+    box-shadow:
+        0 10px 26px rgba(0, 0, 0, 0.45),
+        0 0 55px rgba(120, 180, 255, 0.22);
+
+    padding: 40px 50px;
 }
+
+
+@media (max-width: 600px) {
+    .bom-container {
+        padding: 26px 22px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.025);
+        border: 1px solid rgba(90, 253, 191, 0.08);
+        box-shadow:
+            0 6px 18px rgba(0, 0, 0, 0.45),
+            0 0 18px rgba(90, 253, 191, 0.12);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .bom-author {
     color: #5afdbfd2;
@@ -1632,7 +1680,7 @@ hr {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
-    object-fit:contain;
+    object-fit: contain;
     display: block;
     border-radius: 8px;
 
