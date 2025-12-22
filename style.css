@@ -1389,20 +1389,20 @@ hr {
 }
 
 .separator-title {
-    font-size: clamp(1.8rem, 3vw, 3rem);
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
     font-weight: 700;
     letter-spacing: 1px;
-    color: #5afdbfd2;
+    color: #5afdbf;
     white-space: nowrap;
 }
 
 .separator-line {
     flex: 1;
-    height: 1px;
+     height: 1px;
     background: linear-gradient(to right,
             transparent,
             #5afdbfd2,
-            transparent);
+            transparent); 
 }
 
 @media (max-width: 900px) {
@@ -1410,6 +1410,38 @@ hr {
         margin: 60px auto 40px;
     }
 }
+
+
+
+
+
+.portfolio-subseparator {
+    width: clamp(320px, 70vw, 900px);
+    margin: 60px auto 20px;
+}
+
+.subseparator-title {
+    font-size: clamp(1.6rem, 1.8vw, 2rem);
+    font-weight: 600;
+    color: #5afdbf;
+    letter-spacing: 0.6px;
+}
+
+.subseparator-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 6px;
+    background-color: rgba(90, 253, 191, 0.25);
+}
+
+
+
+
+
+
+
 
 
 
@@ -1433,7 +1465,7 @@ hr {
     align-items: center;
 
     /* ===== ESTÉTICA ONLY ===== */
-    background-color: rgba(255, 255, 255, 0.028);
+    background-color: rgba(2, 3, 59, 0.685);
     border-radius: 12px;
     border: 1px solid rgba(120, 180, 255, 0.18);
     box-shadow:
@@ -1514,7 +1546,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 
