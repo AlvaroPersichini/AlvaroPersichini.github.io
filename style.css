@@ -1398,11 +1398,11 @@ hr {
 
 .separator-line {
     flex: 1;
-     height: 1px;
+    height: 1px;
     background: linear-gradient(to right,
             transparent,
             #5afdbfd2,
-            transparent); 
+            transparent);
 }
 
 @media (max-width: 900px) {
@@ -1718,6 +1718,61 @@ hr {
     text-align: center;
     max-width: 650px;
     text-align: justify;
+}
+
+
+
+/* Estilos para el botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 22px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    /* Para que quede por encima del footer y modales */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float i {
+    font-size: 24px;
+}
+
+.whatsapp-float span {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: translateY(-5px);
+    color: #FFF;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+}
+
+/* Adaptación para móviles */
+@media (max-width: 480px) {
+    .whatsapp-float span {
+        display: none;
+        /* Oculta el texto en pantallas muy pequeñas para no tapar contenido */
+    }
+
+    .whatsapp-float {
+        padding: 15px;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 50%;
+    }
 }
 
 
