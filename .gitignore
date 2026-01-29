@@ -1,0 +1,14 @@
+# Extensiones de VS Code (Aquí están tus claves de DonWeb)
+sftp.json
+.vscode/sftp.json
+
+# Carpetas de configuración de entorno
+.vscode/
+.env
+
+# Archivos temporales del sistema
+Thumbs.db
+.DS_Store
+
+# Archivos de registro (logs)
+*.log
