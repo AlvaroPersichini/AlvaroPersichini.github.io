@@ -452,12 +452,11 @@ body {
 .learn-btn {
     display: inline-block;
     padding: 12px 28px;
-    border: 2px solid #fff;
     text-decoration: none;
-    color: #fff;
     font-size: 0.9rem;
     font-weight: bold;
     transition: 0.3s ease;
+    color:  black;
 }
 
 .btn-container {
@@ -529,20 +528,11 @@ body {
 
 .btn-container {
 
+    background-color: orange;
     padding: 0;
     text-align: left;
 }
 
-.learn-btn {
-    display: inline-block;
-    /* padding: 12px 28px; */
-    border: 2px solid #fff;
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.9rem;
-    font-weight: bold;
-    transition: 0.3s ease;
-}
 
 
 .learn-btn:hover {
@@ -1482,7 +1472,7 @@ body {
 
 
 .bom-container {
-    width: clamp(320px, 80vw, 1100px);
+    width: clamp(300px, 70vw, 1100px);
     margin: auto;
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
@@ -1490,7 +1480,7 @@ body {
     align-items: center;
 
     /* ===== ESTÉTICA ONLY ===== */
-    background-color: rgba(2, 3, 59, 0.685);
+    background-color: rgba(11, 156, 156, 0.685);
     border-radius: 12px;
     border: 1px solid rgba(120, 180, 255, 0.18);
     box-shadow:
@@ -1502,15 +1492,44 @@ body {
 
 @media (max-width: 600px) {
     .bom-container {
+        font-size: 10px;
         padding: 26px 22px;
         border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.025);
         border: 1px solid rgba(90, 253, 191, 0.08);
         box-shadow:
             0 6px 18px rgba(0, 0, 0, 0.45),
             0 0 18px rgba(90, 253, 191, 0.12);
     }
 }
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .bom-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        justify-items: center;
+    }
+
+    .bom-image {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #5afdbfd2;
+    }
+
+    .bom-image {
+        order: 1;
+    }
+
+    .bom-title {
+        text-align: center;
+    }
+
+    .bom-author {
+        text-align: center;
+        display: block;
+    }
+}
+
 
 
 
@@ -1542,10 +1561,10 @@ body {
 }
 
 .bom-feature p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.6;
     color: #d6d6d6;
-    max-width: 520px;
+    max-width: 300px;
     text-align: justify;
 }
 
@@ -1576,33 +1595,6 @@ body {
 
 
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .bom-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-
-        justify-items: center;
-    }
-
-    .bom-image {
-        padding-bottom: 30px;
-        border-bottom: 1px solid #5afdbfd2;
-    }
-
-    .bom-image {
-        order: 1;
-    }
-
-    .bom-title {
-        text-align: center;
-    }
-
-    .bom-author {
-        text-align: center;
-        display: block;
-    }
-}
 
 
 
@@ -1648,15 +1640,6 @@ body {
     margin-bottom: 20px;
     color: white;
 }
-
-/* .carousel {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px;
-} */
 
 .carousel {
     position: relative;
