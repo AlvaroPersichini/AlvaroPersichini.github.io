@@ -456,7 +456,7 @@ body {
     font-size: 0.9rem;
     font-weight: bold;
     transition: 0.3s ease;
-    color:  black;
+    color: black;
 }
 
 .btn-container {
@@ -486,7 +486,7 @@ body {
 
 .subtitle {
     color: #5afdbfd2;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
@@ -818,14 +818,14 @@ body {
 }
 
 .contact-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(90, 253, 191, 0.2);
+    /* background: rgba(226, 196, 196, 0.03); */
+    /* border: 1px solid rgba(90, 253, 191, 0.2); */
     border-radius: 15px;
     padding: 60px 40px;
     max-width: 700px;
     width: 100%;
     text-align: center;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); */
     box-sizing: border-box;
     /* Clave para que el padding no estire la caja */
 }
@@ -1480,7 +1480,7 @@ body {
     align-items: center;
 
     /* ===== ESTÉTICA ONLY ===== */
-    background-color: rgba(11, 156, 156, 0.685);
+     background-color: #040026;
     border-radius: 12px;
     border: 1px solid rgba(120, 180, 255, 0.18);
     box-shadow:
@@ -1547,6 +1547,7 @@ body {
     font-weight: 800;
     margin: 15px 0 30px;
     line-height: 1.1;
+    text-align: justify;
 }
 
 .bom-feature {
@@ -1564,8 +1565,8 @@ body {
     font-size: 0.8rem;
     line-height: 1.6;
     color: #d6d6d6;
-    max-width: 300px;
     text-align: justify;
+    max-width: 420px;
 }
 
 .bom-image {
@@ -1915,14 +1916,14 @@ body {
 }
 
 .contact-card {
-    background: rgba(255, 255, 255, 0.03);
+    /* background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(90, 253, 191, 0.2);
-    border-radius: 15px;
+    border-radius: 15px; */
     padding: 60px 40px;
     max-width: 700px;
     width: 100%;
     text-align: center;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+   /*  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); */
 }
 
 .contact-title {
