@@ -7,7 +7,6 @@ function toggleMenu() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Observador para animaciones de texto y formación
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
