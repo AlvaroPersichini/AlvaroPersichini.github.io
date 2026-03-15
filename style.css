@@ -501,7 +501,6 @@ body {
     gap: 30px;
     color: #718096;
     font-size: 0.9rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 30px;
     flex-wrap: wrap;
     /* Para que en mobile los datos se pongan uno abajo del otro */
@@ -1110,7 +1109,7 @@ body {
     box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
 }
 
-.contact-footer-info {
+/* .contact-footer-info {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -1118,7 +1117,7 @@ body {
     font-size: 0.9rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 30px;
-}
+} */
 
 .contact-footer-info i {
     color: #5afdbf;
