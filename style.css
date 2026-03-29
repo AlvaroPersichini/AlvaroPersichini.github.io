@@ -434,7 +434,7 @@ body {
 }
 
 .contact-card {
-   
+
     border-radius: 15px;
     padding: 60px 40px;
     max-width: 700px;
@@ -646,11 +646,9 @@ body {
     transform: translateY(0);
     visibility: visible;
     transition: transform 0.4s ease, opacity 0.4s ease, visibility 0s 0s;
+      align-items: flex-start;
 }
 
-.menu-overlay.active {
-    align-items: flex-start;
-}
 
 .menu-content {
     display: flex;
@@ -959,26 +957,11 @@ body {
         justify-items: center;
     }
 
-    .bom-image {
-        padding-bottom: 30px;
-        border-bottom: 1px solid #5afdbfd2;
-    }
-
-    .bom-image {
-        order: 1;
-    }
-
     .bom-title {
         text-align: center;
     }
 
-
 }
-
-
-
-
-
 
 
 .bom-title {
@@ -1003,31 +986,11 @@ body {
     max-width: 420px;
 }
 
-.bom-image {
-    width: 100%;
-    max-width: 520px;
-    /* height: 320px; */
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
-.bom-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
 .bom-visual {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 
 .main-image {
     width: 100%;
@@ -1062,41 +1025,6 @@ body {
 
 
 
-/* Responsive */
-@media (max-width: 900px) {
-    .prev {
-        left: -10px;
-    }
-
-    .next {
-        right: -10px;
-    }
-}
-
-
-@media (max-width: 600px) {
-
-    #lightbox-img,
-    #lightbox-video {
-        max-width: 90vw;
-        max-height: 50vh;
-    }
-}
-
-
-
-@media (max-width: 600px) {
-
-    .prev,
-    .next {
-        font-size: 28px;
-        left: 5px;
-        right: 5px;
-    }
-}
-
-
-
 
 .whatsapp-main {
     background-color: #25d366;
@@ -1109,15 +1037,6 @@ body {
     box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
 }
 
-/* .contact-footer-info {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    color: #718096;
-    font-size: 0.9rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 30px;
-} */
 
 .contact-footer-info i {
     color: #5afdbf;
