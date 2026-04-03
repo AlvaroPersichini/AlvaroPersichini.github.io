@@ -4,7 +4,7 @@
 }
 
 html {
-    background-color: #040026; /* Tu color azul oscuro */
+    background-color: #ad1988; /* Tu color azul oscuro */
     min-height: 100dvh;
     height: 100%;
     margin: 0;
@@ -1131,6 +1131,17 @@ body {
         height: 45px;
         font-size: 20px;
     }
+}
+
+.footer {
+    /* Mantené tu gradiente, pero estiralo */
+    background: linear-gradient(180deg, #060b2b 0%, #02041a 100%);
+    
+    /* El padding-bottom tiene que sumar el espacio de la barra de iPhone */
+    padding-bottom: calc(30px + env(safe-area-inset-bottom)); 
+    
+    /* Esto asegura que el color del footer se pegue al borde inferior del vidrio */
+    margin-bottom: 0; 
 }
 
 
