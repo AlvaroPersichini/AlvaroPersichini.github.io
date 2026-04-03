@@ -105,14 +105,6 @@ body {
     background-color: #010436;
 }
 
-.liHorizontal1 {
-    display: flex;
-    align-items: center;
-    border-left: solid 1px #5afdbfd2;
-}
-
-
-
 
 
 /* **************** BOTON AMBURGUESA ***************/
@@ -776,7 +768,6 @@ body {
     html,
     body {
         overflow-y: auto;
-        scrollbar-width: none;
         height: 100%;
     }
 
