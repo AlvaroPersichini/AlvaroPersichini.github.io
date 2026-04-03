@@ -4,7 +4,7 @@
 }
 
 html {
-    background-color: transparent;
+    background-color: #040026;
     min-height: 100dvh;
     height: 100%;
     margin: 0;
@@ -186,6 +186,8 @@ body {
 
 
     min-height: 100dvh;
+
+  
 
 }
 
