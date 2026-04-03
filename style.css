@@ -17,13 +17,8 @@ body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
     scrollbar-width: none;
-    /* background-color: #040026;
-    background-color: red; */
-
     background-color: #040026;
-    /* Ajustá al color exacto de tu fondo */
     min-height: 100dvh;
-    /* Altura dinámica */
 }
 
 
@@ -187,7 +182,7 @@ body {
 
     min-height: 100dvh;
 
-  
+
 
 }
 
@@ -321,7 +316,7 @@ body {
     color: white;
     min-height: 100vh;
     background-color: #040026;
-    
+
     background-image: url("/assets/images/Autopista1.avif");
     background-size: cover;
     background-position: center;
@@ -648,8 +643,9 @@ body {
     top: 50px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 50px);
-     background-color: #040026;
+    height: calc(100dvh - 50px);
+    /* height: 100dvh; */
+    background-color: #040026;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1139,12 +1135,10 @@ body {
 .footer {
     /* Mantené tu gradiente, pero estiralo */
     background: linear-gradient(180deg, #060b2b 0%, #02041a 100%);
-    
+
     /* El padding-bottom tiene que sumar el espacio de la barra de iPhone */
-    padding-bottom: calc(30px + env(safe-area-inset-bottom)); 
-    
+    padding-bottom: calc(30px + env(safe-area-inset-bottom));
+
     /* Esto asegura que el color del footer se pegue al borde inferior del vidrio */
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
-
-
