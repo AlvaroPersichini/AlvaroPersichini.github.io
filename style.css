@@ -3,6 +3,13 @@
 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto evita que el padding ensanche los elementos */
+    scroll-behavior: smooth;
+}
+
 html {
     /* Esto es lo más importante: el fondo debe estar aquí */
     background-color: #040026 !important; 
