@@ -1,32 +1,22 @@
 * {
     scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
 
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Esto evita que el padding ensanche los elementos */
-    scroll-behavior: smooth;
 }
 
 html {
-    /* Esto es lo más importante: el fondo debe estar aquí */
-    background-color: #040026 !important; 
-    /* Quitamos cualquier restricción de altura que use dvh */
-    height: 100%; 
+    background-color: #040026 !important;
+    height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #040026;
     margin: 0;
     padding: 0;
-    /* Usamos min-height para asegurar que el cuerpo cubra todo */
+    background-color: #040026;
     min-height: 100vh;
-    /* Evitamos que el body corte el renderizado del html */
-    overflow-x: hidden; 
 }
 
 .menu-overlay {
@@ -193,8 +183,8 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* USAR VH, NO DVH */
-    min-height: 100vh; 
+    /* Cambiamos 100dvh por 100vh */
+    min-height: 100vh;
 }
 
 #top {
@@ -564,6 +554,7 @@ body {
     padding: 70px 40px 30px;
     color: #fff;
     border-top: 1px solid rgba(90, 253, 191, 0.1);
+    padding-bottom: calc(30px + env(safe-area-inset-bottom)) !important;
 }
 
 .footer-container {
@@ -1142,4 +1133,3 @@ body {
         font-size: 20px;
     }
 }
-
