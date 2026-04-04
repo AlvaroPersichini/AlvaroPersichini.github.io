@@ -16,12 +16,8 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #040026;
     min-height: 100vh;
     overflow-x: hidden;
-   
-
-    min-height: 100%;
     width: 100%;
     overflow-x: hidden;
 }
@@ -170,28 +166,13 @@ body {
 
 
 
-
-
-
-
 /* ------------------ about1 ---------------- */
-/* .about1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    min-height: 100dvh;
-} */
-
-
 .about1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* Cambiamos 100dvh por 100vh */
-    min-height: 100vh;
+    min-height: calc(100vh - 200px);
 }
 
 #top {
@@ -260,10 +241,6 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-
-
-
-
 
 
 
@@ -791,7 +768,6 @@ body {
 /**************   MOBILE ***************/
 
 
-
 @media (max-width: 810px) {
 
     html,
@@ -879,7 +855,6 @@ body {
     }
 
 
-
 }
 
 /*--------------------*/
@@ -888,8 +863,8 @@ body {
 
 /* ===== PORTFOLIO SEPARATOR ===== */
 .portfolio-separator {
-    width: clamp(320px, 80vw, 1100px);
-    margin: 60px auto 60px;
+    background-color: white;
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -899,7 +874,7 @@ body {
     font-size: clamp(2rem, 3.5vw, 3.5rem);
     font-weight: 700;
     letter-spacing: 1px;
-    color: #5afdbf;
+    color: black;
     white-space: nowrap;
 }
 
@@ -908,142 +883,119 @@ body {
     height: 1px;
     background: linear-gradient(to right,
             transparent,
-            #5afdbfd2,
+            #0509f1d2,
             transparent);
-}
-
-@media (max-width: 900px) {
-    .portfolio-separator {
-        margin: 60px auto 40px;
-    }
 }
 
 
 
 
 /* ===== PORTFOLIO BOM SECTION ===== */
-.portfolio-bom {
-    background-color: #040026;
-    color: white;
-    padding-top: 30px;
-    padding-bottom: 40px;
 
+.portfolio-grid {
+   background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    align-items: stretch;
+ 
 }
 
 .portfolio-bom {
-
+    /* Eliminamos padding-top/bottom para que el contenedor azul llegue a los bordes si queres */
     scroll-margin-top: 100px;
+    flex: 1 1 300px;
+    max-width: 400px;
+    display: flex;
 }
-
 
 .bom-container {
-    width: clamp(300px, 70vw, 1100px);
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 60px;
-    align-items: center;
-
-
-    /* ===== ESTÉTICA rgb(167, 27, 109)=== */
     background-color: #3863da;
-    border-radius: 12px;
-    border: 1px solid rgba(120, 180, 255, 0.18);
-    box-shadow:
-        0 10px 26px rgba(0, 0, 0, 0.45),
-        0 0 55px rgba(120, 180, 255, 0.22);
-    padding: 40px 50px;
+    border-radius: 4px;
+   
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45), 0 0 55px rgba(120, 180, 255, 0.22);
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    /* Importante para que la imagen no se salga de las esquinas redondeadas */
 }
 
-
-@media (max-width: 600px) {
-    .bom-container {
-        font-size: 10px;
-        padding: 26px 22px;
-        border-radius: 10px;
-        border: 1px solid rgba(90, 253, 191, 0.08);
-        box-shadow:
-            0 6px 18px rgba(0, 0, 0, 0.45),
-            0 0 18px rgba(90, 253, 191, 0.12);
-    }
+.bom-text {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: white;
+  
 }
-
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .bom-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        justify-items: center;
-    }
-
-    .bom-title {
-        text-align: center;
-    }
-
-}
-
 
 .bom-title {
-    font-size: clamp(1.9rem, 3.5vw, 3rem);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: 800;
-    margin: 15px 0 30px;
-    line-height: 1.1;
-    text-align: justify;
+    margin: 0 0 20px;
+    text-align: left;
 }
 
 .bom-feature {
     margin-bottom: 25px;
-    max-width: 520px;
+    flex-grow: 1;
+    /* EMPUJA todo lo que esté debajo (la imagen) al fondo de la tarjeta */
 }
-
 
 .bom-feature p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.6;
-    color: #d6d6d6;
-    text-align: justify;
-    max-width: 420px;
+    color:black;
+    text-align: left;
 }
 
+/* Contenedor de la imagen: Sin padding para que toque los bordes */
 .bom-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    margin-top: auto;
+    /* Se asegura de estar al fondo */
+}
+
+.bom-visual a {
+    display: block;
+    width: 100%;
 }
 
 .main-image {
     width: 100%;
-    height: auto;
-    border-radius: 3px;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
 
-.main-image:hover {
-    transform: scale(1.02);
-    /* Un zoom muy sutil */
-    filter: brightness(1.1);
-    /* Brillo para indicar interactividad */
-    cursor: pointer;
-}
-
+/* ===== RESPONSIVE ===== */
 
 @media (max-width: 900px) {
-    .bom-container {
-        grid-template-columns: 1fr;
+    .portfolio-grid {
+        gap: 20px;
     }
 
-    .bom-visual {
-        order: 2;
+    .bom-title {
+        text-align: center;
+        min-height: auto;
     }
 
-    .bom-text {
-        order: 1;
+    .bom-feature p {
         text-align: center;
     }
 }
 
+@media (max-width: 600px) {
+    .bom-container {
+        border-radius: 1px;
+    }
+}
 
+/* ======================================= */
 
 
 .whatsapp-main {
@@ -1056,7 +1008,6 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
 }
-
 
 .contact-footer-info i {
     color: #5afdbf;
