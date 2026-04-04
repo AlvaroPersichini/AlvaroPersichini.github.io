@@ -25,6 +25,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".animarTexto, .li-academic").forEach(el => observer.observe(el));
 });
-
-
-window.addEventListener("load", iniciar);
