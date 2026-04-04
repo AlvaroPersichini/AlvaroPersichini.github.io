@@ -4,19 +4,22 @@
 }
 
 html {
-    /* Eliminamos el height: 100% y min-height: 100dvh */
-    background-color: #040026;
+    /* Esto es lo más importante: el fondo debe estar aquí */
+    background-color: #040026 !important; 
+    /* Quitamos cualquier restricción de altura que use dvh */
+    height: 100%; 
     margin: 0;
     padding: 0;
 }
 
 body {
+    background-color: #040026;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
-    background-color: #040026;
-    /* Usamos vh en lugar de dvh para que el fondo ignore las barras de Safari */
-    min-height: 100vh; 
+    /* Usamos min-height para asegurar que el cuerpo cubra todo */
+    min-height: 100vh;
+    /* Evitamos que el body corte el renderizado del html */
+    overflow-x: hidden; 
 }
 
 .menu-overlay {
@@ -183,7 +186,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* Cambiamos 100dvh por 100vh */
+    /* USAR VH, NO DVH */
     min-height: 100vh; 
 }
 
