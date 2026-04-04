@@ -4,9 +4,8 @@
 }
 
 html {
+    /* Eliminamos el height: 100% y min-height: 100dvh */
     background-color: #040026;
-    min-height: 100dvh;
-    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -15,12 +14,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    overflow-x: hidden;
-    scrollbar-width: none;
     background-color: #040026;
-    min-height: 100dvh;
+    /* Usamos vh en lugar de dvh para que el fondo ignore las barras de Safari */
+    min-height: 100vh; 
 }
-
 
 .menu-overlay {
     display: none;
@@ -171,19 +168,23 @@ body {
 
 
 /* ------------------ about1 ---------------- */
-.about1 {
+/* .about1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
     justify-content: center;
-    /* min-height: calc(100vh - 200px); */
-
-
     min-height: 100dvh;
+} */
 
 
-
+.about1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* Cambiamos 100dvh por 100vh */
+    min-height: 100vh; 
 }
 
 #top {
