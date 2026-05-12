@@ -14,6 +14,7 @@ html {
 }
 
 body {
+    background-color: #040026 !important;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -21,6 +22,12 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
+
+.site-header {
+    display: none;
+    padding-top: env(safe-area-inset-top);
+}
+
 
 .menu-overlay {
     display: none;
@@ -526,9 +533,6 @@ body {
 
 
 
-.site-header {
-    display: none;
-}
 
 
 
@@ -539,6 +543,7 @@ body {
     color: #fff;
     border-top: 1px solid rgba(90, 253, 191, 0.1);
     padding-bottom: calc(30px + env(safe-area-inset-bottom)) !important;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 .footer-container {
@@ -598,6 +603,8 @@ body {
     font-size: 0.85rem;
     color: #718096;
 }
+
+
 
 
 
@@ -893,14 +900,14 @@ body {
 /* ===== PORTFOLIO BOM SECTION ===== */
 
 .portfolio-grid {
-   background-color: white;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     padding: 20px;
     align-items: stretch;
- 
+
 }
 
 .portfolio-bom {
@@ -914,7 +921,7 @@ body {
 .bom-container {
     background-color: #3863da;
     border-radius: 4px;
-   
+
     box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45), 0 0 55px rgba(120, 180, 255, 0.22);
 
     display: flex;
@@ -930,7 +937,7 @@ body {
     flex-direction: column;
     flex-grow: 1;
     background-color: white;
-  
+
 }
 
 .bom-title {
@@ -949,7 +956,7 @@ body {
 .bom-feature p {
     font-size: 0.9rem;
     line-height: 1.6;
-    color:black;
+    color: black;
     text-align: left;
 }
 
