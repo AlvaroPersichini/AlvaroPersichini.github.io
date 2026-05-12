@@ -29,6 +29,47 @@ body {
 }
 
 
+
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+
+    /* 1. Obligamos al fondo a teñir hasta el último píxel del vidrio */
+    html {
+        background-color: #040026;
+        /* Pon el color exacto de tu web aquí */
+    }
+
+    body {
+        background-color: #040026;
+        margin: 0;
+        min-height: 100dvh;
+        /* Usa dvh para que se adapte si la barra de Safari sube o baja */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 2. Ajuste para que el contenido no quede "atrapado" bajo el notch o la barra */
+    /* Aplica esto a los contenedores que tocan los bordes superior e inferior */
+
+    header {
+        padding-top: env(safe-area-inset-top);
+    }
+
+    footer,
+    .last-section {
+        /* Esto empuja los botones hacia arriba de la barra de búsqueda 
+           pero permite que el color de fondo siga por debajo */
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
+
+
+
+
+
+
+
 .menu-overlay {
     display: none;
 }
