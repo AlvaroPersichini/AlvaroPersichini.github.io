@@ -115,12 +115,12 @@ li::marker {
 }
 
 .hamburger .barra {
-    display: block;
+    display: block; 
     width: 100%;
     height: 2px;
     background: white;
     border-radius: 1px;
-    margin: 1px 0;
+    margin: 2px 0; /* Un poco más de margen para que se vea mejor */
     transition: all 0.3s ease;
 }
 
@@ -131,16 +131,17 @@ li::marker {
     transform: translate(-50%, -50%);
     font-size: 26px;
     color: white;
-    display: none;
+    display: none; /* Oculta por defecto */
     pointer-events: none;
 }
 
+/* Estado Activo: Barras ocultas, Cruz visible */
 .hamburger.active .barra {
-    display: none;
+    display: none !important; /* Forzamos el ocultado */
 }
 
 .hamburger.active .cruz {
-    display: block;
+    display: block !important; /* Forzamos la aparición */
 }
 
 
