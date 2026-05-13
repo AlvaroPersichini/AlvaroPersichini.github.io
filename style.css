@@ -4,43 +4,19 @@
     box-sizing: border-box;
 }
 
-/* html {
-    background-color: #040026;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100%;
-    overflow-y: scroll;
-} */
-
 html {
     background-color: #040026;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Eliminamos height y overflow fijo aquí */
 }
-
-/* body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    overflow-x: hidden;
-    width: 100%;
-    overflow-x: hidden;
-} */
 
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Permite que crezca */
+    min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
-}
-
-.site-header {
-    display: none;
-    padding-top: env(safe-area-inset-top);
 }
 
 .menu-overlay {
@@ -119,7 +95,6 @@ body {
 }
 
 
-
 /* **************** BOTON AMBURGUESA ***************/
 .hamburger {
     position: relative;
@@ -186,13 +161,6 @@ li::marker {
     scroll-margin-top: 60px;
 }
 
-.caja1,
-.caja2 {
-    box-sizing: border-box;
-    color: white;
-    margin: 0 20px;
-    padding: 10px 10px;
-}
 
 .caja1 img {
     width: clamp(220px, 19vw, 500px);
@@ -238,16 +206,27 @@ li::marker {
     padding: 0;
     align-self: baseline;
     margin-bottom: 30px;
-    margin-right: 10px;
+
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.9s ease, transform 1s ease;
 }
 
+.caja1,
+.caja2 {
+    box-sizing: border-box;
+    color: white;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+
 .p-about1.show {
     opacity: 1;
     transform: translateY(0);
+    margin-bottom: 60px;
 }
+
 
 
 
@@ -608,11 +587,9 @@ li::marker {
 
 
 
-
 /* *************** MENU DESPLEGABLE ****************** */
 .menu-overlay {
     position: fixed;
-    top: 50px;
     left: 0;
     width: 100%;
     height: calc(100dvh - 50px);
@@ -626,29 +603,28 @@ li::marker {
 }
 
 .menu-overlay.active {
+
+
+    overflow: hidden;
     transform: translateY(0);
     visibility: visible;
     transition: transform 0.4s ease, opacity 0.4s ease, visibility 0s 0s;
-    align-items: flex-start;
 }
 
 .menu-content {
+    background-color: transparent;
     display: flex;
     flex-direction: column;
-    padding-left: 0px;
-    padding-top: 0px;
     border-radius: 2px;
     text-align: center;
     width: 100%;
-    position: relative;
     height: 100%;
     box-sizing: border-box;
-    width: 85%;
+    padding: 20px;
 }
 
 .menu-content ul.menu-list:first-of-type {
     font-size: 1.2rem;
-    color: #fff;
     border-bottom: none;
     padding: 20px 0;
     text-align: center;
@@ -662,7 +638,6 @@ li::marker {
     padding: 0;
     margin: 0;
     row-gap: 10px;
-    align-items: flex-start;
     border-bottom: none;
     box-shadow: inset 0 -0.5px 0 0 #5afdbfd2;
 }
@@ -674,27 +649,37 @@ li::marker {
 }
 
 .menu-content ul:nth-of-type(3) {
+    display: flex;
     flex-direction: row;
-    align-self: center;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    padding: 0;
     box-shadow: none;
-    gap: 30px;
+    list-style: none;
+    padding-top: 30px;
 }
 
+
 .menu-content ul:nth-of-type(3) li {
-    display: inline-block;
-    margin-right: 12px;
-    padding-top: 40px;
+
+    display: flex;
+
 }
 
 .menu-content ul:nth-of-type(3) a {
-    font-size: 25px;
+    font-size: 28px;
     color: white;
-    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .menu-content ul:nth-of-type(3) a:hover {
-    color: #5afdbfd2;
+    color: #5afdbf;
+    transform: scale(1.2);
 }
 
 .menu-list li {
@@ -745,20 +730,29 @@ li::marker {
 
 
 
-/**************   MOBILE ***************/
+/**************  MOBILE  ***************/
+
+.site-header {
+    display: none;
+}
+
 @media (max-width: 810px) {
 
     html,
     body {
-        /* overflow-y: auto; */
-       height: auto;
+        height: auto;
+        width: 100%;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+        height: 100vh;
     }
 
     html::-webkit-scrollbar,
     body::-webkit-scrollbar {
         display: none;
     }
-
 
     .desktop {
         display: none;
@@ -767,28 +761,19 @@ li::marker {
     .site-header {
         display: block;
         padding: 0;
+        padding-top: env(safe-area-inset-top);
     }
 
-    /* .ulHorizontal {
-     
-        box-sizing: border-box;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        list-style: none;
-        margin: 0;
-        padding: 15px;
-        z-index: 1000;
-    } */
 
     .ulHorizontal {
-        position: sticky; /* CAMBIO CLAVE: sticky en lugar de fixed o nada */
+        overflow: hidden;
+        position: sticky;
+        padding-left: 15px;
         top: 0;
         width: 100%;
         display: flex;
         background-color: #040026;
         z-index: 1000;
-        /* El padding-top para el notch va acá */
         padding-top: env(safe-area-inset-top);
     }
 
@@ -798,14 +783,12 @@ li::marker {
     }
 
     .h3-School {
-
         text-align: center;
     }
 
     .separador {
         text-align: center;
     }
-
 
     .about1 {
         min-height: 100vh;
@@ -832,8 +815,11 @@ li::marker {
         margin-left: 15px;
     }
 
-
 }
+
+
+
+
 
 
 
