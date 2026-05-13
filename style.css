@@ -120,7 +120,7 @@ li::marker {
     height: 2px;
     background: white;
     border-radius: 1px;
-    margin: 2px 0; /* Un poco más de margen para que se vea mejor */
+    margin: 2px 0; 
     transition: all 0.3s ease;
 }
 
@@ -137,11 +137,11 @@ li::marker {
 
 /* Estado Activo: Barras ocultas, Cruz visible */
 .hamburger.active .barra {
-    display: none !important; /* Forzamos el ocultado */
+    display: none ; 
 }
 
 .hamburger.active .cruz {
-    display: block !important; /* Forzamos la aparición */
+    display: block;
 }
 
 
@@ -599,9 +599,12 @@ li::marker {
     z-index: 1000;
     transform: translateY(-2000px);
     transition: transform 0.6s ease;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 .menu-overlay.active {
+    
     overflow: hidden;
     transform: translateY(0);
     visibility: visible;
