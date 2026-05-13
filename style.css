@@ -14,7 +14,6 @@ html {
 }
 
 body {
-    background-color: #040026 !important;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -140,6 +139,10 @@ body {
     z-index: 1001;
 }
 
+li::marker {
+    content: "";
+}
+
 .hamburger .barra {
     display: block;
     width: 100%;
@@ -168,6 +171,10 @@ body {
 .hamburger.active .cruz {
     display: block;
 }
+
+
+
+
 
 
 
@@ -542,7 +549,9 @@ body {
     border-top: 1px solid rgba(90, 253, 191, 0.1);
     padding-bottom: calc(30px + env(safe-area-inset-bottom)) !important;
     padding-bottom: env(safe-area-inset-bottom);
+
 }
+
 
 .footer-container {
     max-width: 1200px;
@@ -791,10 +800,10 @@ body {
         display: none;
     }
 
-    .site-header {
+    /* .site-header {
         display: block;
         padding: 0;
-    }
+    }  */
 
     /* .ulHorizontal {
         position: fixed;
@@ -1098,49 +1107,3 @@ body {
 }
 
 
-
-
-
-
-
-/* 1. Asegurar que el fondo cubra todo */
-html,
-body {
-    background-color: #040026;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    /* Esto ayuda a que el rebote del scroll sea del mismo color */
-}
-
-/* 2. Corregir el Header Móvil (Notch) */
-@media (max-width: 810px) {
-    .ulHorizontal {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 80px;
-        display: flex;
-        background-color: #040026;
-        z-index: 2000;
-
-        /* Uso correcto del área segura superior */
-        padding-top: env(safe-area-inset-top);
-        /* Ajustamos el height para que no se vea gigante */
-        height: calc(50px + env(safe-area-inset-top));
-    }
-
-    /* Empujar el contenido hacia abajo para que no lo tape el header */
-    .about1 {
-        padding-top: calc(50px + env(safe-area-inset-top));
-    }
-}
-
-/* 3. Corregir el Footer (Zona inferior/Barra de búsqueda) */
-.footer {
-    background: linear-gradient(180deg, #060b2b 0%, #02041a 100%);
-    padding: 70px 40px 30px;
-    color: #fff;
-    /* Combinar los paddings en una sola regla */
-    padding-bottom: calc(30px + env(safe-area-inset-bottom)) !important;
-}
