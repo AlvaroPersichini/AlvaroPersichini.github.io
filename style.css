@@ -5,7 +5,7 @@
 }
 
 html {
-    background-color: #040026 !important;
+    background-color: #040026;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,18 +27,14 @@ body {
     padding-top: env(safe-area-inset-top);
 }
 
-
-
-
-
 .menu-overlay {
     display: none;
 }
 
-
 .desktop {
     box-sizing: border-box;
-    position: sticky;
+    position: fixed;
+    background-color: #040026;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -51,9 +47,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
     color: white;
-    z-index: 1000;
 }
 
 .navbar .nav-links a {
@@ -109,20 +103,6 @@ body {
 }
 
 
-/* --------------------------------------------------------- */
-/* .ulHorizontal {
-    top: 0;
-    left: 0;
-    list-style: none;
-    margin: 0;
-    display: none;
-    align-items: center;
-    height: 50px;
-  
-  background-color:red; 
-} */
-
-
 
 /* **************** BOTON AMBURGUESA ***************/
 .hamburger {
@@ -176,9 +156,6 @@ li::marker {
 
 
 
-
-
-
 /* ------------------ about1 ---------------- */
 .about1 {
     display: flex;
@@ -186,6 +163,7 @@ li::marker {
     align-items: center;
     justify-content: center;
     min-height: calc(100vh - 200px);
+    margin-top: 60px;
 }
 
 #top {
@@ -383,8 +361,6 @@ li::marker {
     text-align: left;
 }
 
-
-
 .learn-btn {
     display: inline-block;
     padding: 12px 28px;
@@ -402,7 +378,6 @@ li::marker {
     padding: 0;
     text-align: left;
 }
-
 
 .learn-btn:hover {
     background: #fff;
@@ -485,12 +460,9 @@ li::marker {
     font-weight: 700;
     font-size: 1rem;
     transition: all 0.3s ease;
-
-    /* Solución al desborde en celulares */
     max-width: 100%;
     box-sizing: border-box;
     white-space: normal;
-    /* Permite que el texto baje si no entra */
     text-align: center;
 }
 
@@ -541,7 +513,7 @@ li::marker {
 
 
 
-/* --- FOOTER REFINADO --- */
+/* --- FOOTER --- */
 .footer {
     background: linear-gradient(180deg, #060b2b 0%, #02041a 100%);
     padding: 70px 40px 30px;
@@ -549,16 +521,13 @@ li::marker {
     border-top: 1px solid rgba(90, 253, 191, 0.1);
     padding-bottom: calc(30px + env(safe-area-inset-bottom)) !important;
     padding-bottom: env(safe-area-inset-bottom);
-
 }
-
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
-    /* Le damos más aire al nombre */
     gap: 40px;
 }
 
@@ -571,7 +540,6 @@ li::marker {
 .footer-col h4 {
     font-size: 1.1rem;
     color: #5afdbf;
-    /* Tu verde agua */
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -596,7 +564,6 @@ li::marker {
 .footer-col ul li a:hover {
     color: #5afdbf;
     padding-left: 5px;
-    /* Efecto sutil al pasar el mouse */
 }
 
 .footer-divider {
@@ -611,15 +578,6 @@ li::marker {
     color: #718096;
 }
 
-
-
-
-
-
-
-
-
-/* RESPONSIVE */
 @media (max-width: 810px) {
     .footer-container {
         grid-template-columns: 1fr;
@@ -629,8 +587,6 @@ li::marker {
     .footer-col ul li a:hover {
         padding-left: 0;
     }
-
-
 }
 
 
@@ -644,7 +600,6 @@ li::marker {
     left: 0;
     width: 100%;
     height: calc(100dvh - 50px);
-    /* height: 100dvh; */
     background-color: #040026;
     display: flex;
     justify-content: center;
@@ -799,6 +754,7 @@ li::marker {
     }
 
     .ulHorizontal {
+     
         box-sizing: border-box;
         width: 100%;
         display: flex;
@@ -808,8 +764,6 @@ li::marker {
         padding: 15px;
         z-index: 1000;
     }
-
-
 
     .li-academic {
         align-items: center;
@@ -828,6 +782,7 @@ li::marker {
 
     .about1 {
         min-height: 100vh;
+        margin-top: 0;
     }
 
     .caja1 img {
