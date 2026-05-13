@@ -661,7 +661,6 @@ li::marker {
     align-items: flex-start;
 }
 
-
 .menu-content {
     display: flex;
     flex-direction: column;
@@ -701,9 +700,7 @@ li::marker {
     font-size: 1.5rem;
     font-weight: 700;
     color: #5afdbf;
-    /* tus estilos aquí */
 }
-
 
 .menu-content ul:nth-of-type(3) {
     flex-direction: row;
@@ -777,11 +774,7 @@ li::marker {
 
 
 
-
-
 /**************   MOBILE ***************/
-
-
 @media (max-width: 810px) {
 
     html,
@@ -800,34 +793,23 @@ li::marker {
         display: none;
     }
 
-    /* .site-header {
+    .site-header {
         display: block;
         padding: 0;
-    }  */
+    }
 
-    /* .ulHorizontal {
-        position: fixed;
+    .ulHorizontal {
         box-sizing: border-box;
         width: 100%;
         display: flex;
         align-items: center;
         list-style: none;
         margin: 0;
-        padding: 0;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 15px;
         z-index: 1000;
-    } */
-
-
-    .no-scroll {
-        position: fixed;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
     }
+
+
 
     .li-academic {
         align-items: center;
@@ -871,7 +853,7 @@ li::marker {
 
 }
 
-/*--------------------*/
+
 
 
 
@@ -904,8 +886,8 @@ li::marker {
 
 
 
-/* ===== PORTFOLIO BOM SECTION ===== */
 
+/* ===== PORTFOLIO BOM SECTION ===== */
 .portfolio-grid {
     background-color: white;
     display: flex;
@@ -914,11 +896,9 @@ li::marker {
     justify-content: center;
     padding: 20px;
     align-items: stretch;
-
 }
 
 .portfolio-bom {
-    /* Eliminamos padding-top/bottom para que el contenedor azul llegue a los bordes si queres */
     scroll-margin-top: 100px;
     flex: 1 1 300px;
     max-width: 400px;
@@ -928,14 +908,11 @@ li::marker {
 .bom-container {
     background-color: #3863da;
     border-radius: 4px;
-
     box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45), 0 0 55px rgba(120, 180, 255, 0.22);
-
     display: flex;
     flex-direction: column;
     width: 100%;
     overflow: hidden;
-    /* Importante para que la imagen no se salga de las esquinas redondeadas */
 }
 
 .bom-text {
@@ -944,7 +921,6 @@ li::marker {
     flex-direction: column;
     flex-grow: 1;
     background-color: white;
-
 }
 
 .bom-title {
@@ -957,7 +933,6 @@ li::marker {
 .bom-feature {
     margin-bottom: 25px;
     flex-grow: 1;
-    /* EMPUJA todo lo que esté debajo (la imagen) al fondo de la tarjeta */
 }
 
 .bom-feature p {
@@ -967,7 +942,7 @@ li::marker {
     text-align: left;
 }
 
-/* Contenedor de la imagen: Sin padding para que toque los bordes */
+
 .bom-visual {
     width: 100%;
     margin-top: auto;
@@ -985,8 +960,6 @@ li::marker {
     object-fit: cover;
     display: block;
 }
-
-/* ===== RESPONSIVE ===== */
 
 @media (max-width: 900px) {
     .portfolio-grid {
@@ -1009,8 +982,11 @@ li::marker {
     }
 }
 
-/* ======================================= */
 
+
+
+
+/* ======== Whatsapp =============== */
 
 .whatsapp-main {
     background-color: #25d366;
@@ -1028,8 +1004,6 @@ li::marker {
     margin-right: 8px;
 }
 
-
-/* RESPONSIVE */
 @media (max-width: 600px) {
     .contact-card {
         padding: 40px 20px;
@@ -1053,13 +1027,13 @@ li::marker {
 
 
 
+
 /* --- ICONOS DEL FOOTER --- */
 .social-icons {
     display: flex;
     gap: 15px;
     margin-top: 15px;
 }
-
 
 .social-icons a {
     display: flex;
@@ -1076,7 +1050,6 @@ li::marker {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .social-icons a:hover {
     background: #5afdbf;
     color: #040026;
@@ -1085,13 +1058,10 @@ li::marker {
     border-color: #5afdbf;
 }
 
-
 .social-icons a i.fa-file-pdf {
     font-size: 17px;
 }
 
-
-/* --- RESPONSIVE FOOTER ICONS --- */
 @media (max-width: 810px) {
     .social-icons {
         justify-content: center;
@@ -1105,5 +1075,3 @@ li::marker {
         font-size: 20px;
     }
 }
-
-
