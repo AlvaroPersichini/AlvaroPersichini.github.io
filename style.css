@@ -4,20 +4,36 @@
     box-sizing: border-box;
 }
 
-html {
+/* html {
     background-color: #040026;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 100%;
     overflow-y: scroll;
+} */
+
+html {
+    background-color: #040026;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Eliminamos height y overflow fijo aquí */
 }
 
-body {
+/* body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
     overflow-x: hidden;
+    width: 100%;
+    overflow-x: hidden;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Permite que crezca */
     width: 100%;
     overflow-x: hidden;
 }
@@ -734,8 +750,8 @@ li::marker {
 
     html,
     body {
-        overflow-y: auto;
-        height: 100%;
+        /* overflow-y: auto; */
+       height: auto;
     }
 
     html::-webkit-scrollbar,
@@ -753,7 +769,7 @@ li::marker {
         padding: 0;
     }
 
-    .ulHorizontal {
+    /* .ulHorizontal {
      
         box-sizing: border-box;
         width: 100%;
@@ -763,6 +779,17 @@ li::marker {
         margin: 0;
         padding: 15px;
         z-index: 1000;
+    } */
+
+    .ulHorizontal {
+        position: sticky; /* CAMBIO CLAVE: sticky en lugar de fixed o nada */
+        top: 0;
+        width: 100%;
+        display: flex;
+        background-color: #040026;
+        z-index: 1000;
+        /* El padding-top para el notch va acá */
+        padding-top: env(safe-area-inset-top);
     }
 
     .li-academic {
