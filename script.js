@@ -1,15 +1,16 @@
 function toggleMenu() {
   const menuOverlay = document.getElementById('menuOverlay');
   const btn = document.getElementById('hamburger');
+  const body = document.body;
+
   menuOverlay.classList.toggle('active');
   btn.classList.toggle('active');
 
-  // Bloqueamos/Desbloqueamos el scroll
-    if (menu.classList.contains('active')) {
+    if (menuOverlay.classList.contains('active')) {
         body.classList.add('no-scroll');
     } else {
         body.classList.remove('no-scroll');
-    }
+    } 
 
 }
 

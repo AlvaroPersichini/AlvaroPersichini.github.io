@@ -603,8 +603,6 @@ li::marker {
 }
 
 .menu-overlay.active {
-
-
     overflow: hidden;
     transform: translateY(0);
     visibility: visible;
