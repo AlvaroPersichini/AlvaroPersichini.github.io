@@ -810,9 +810,20 @@ li::marker {
         margin-left: 15px;
     }
 
+
+
+    .contact-clean-section,
+    .about,
+    .footer {
+        width: 100%;
+        overflow-x: hidden;
+        /* Evita que los hijos estiren el contenedor */
+        box-sizing: border-box;
+    }
+
+
+
 }
-
-
 
 
 
