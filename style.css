@@ -287,7 +287,6 @@ li::marker {
     color: white;
     min-height: 100vh;
     background-color: #040026;
-
     background-image: url("/assets/images/Autopista1.avif");
     background-size: cover;
     background-position: center;
@@ -413,7 +412,6 @@ li::marker {
 }
 
 .contact-card {
-
     border-radius: 15px;
     padding: 60px 40px;
     max-width: 700px;
@@ -661,9 +659,7 @@ li::marker {
 
 
 .menu-content ul:nth-of-type(3) li {
-
     display: flex;
-
 }
 
 .menu-content ul:nth-of-type(3) a {
@@ -740,6 +736,7 @@ li::marker {
     body {
         height: auto;
         width: 100%;
+        overflow-x: hidden;
     }
 
     .no-scroll {
