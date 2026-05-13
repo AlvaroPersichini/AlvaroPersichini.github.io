@@ -52,10 +52,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    background-color: #040026;
-
-
+    background-color: red;
     color: white;
     z-index: 1000;
 }
@@ -113,10 +110,8 @@ body {
 }
 
 
-
-
 /* --------------------------------------------------------- */
-.ulHorizontal {
+/* .ulHorizontal {
     top: 0;
     left: 0;
     list-style: none;
@@ -124,8 +119,9 @@ body {
     display: none;
     align-items: center;
     height: 50px;
-    background-color: #040026;
-}
+  
+  background-color:red; 
+} */
 
 
 
@@ -800,7 +796,7 @@ body {
         padding: 0;
     }
 
-    .ulHorizontal {
+    /* .ulHorizontal {
         position: fixed;
         box-sizing: border-box;
         width: 100%;
@@ -812,7 +808,7 @@ body {
         padding-left: 20px;
         padding-right: 20px;
         z-index: 1000;
-    }
+    } */
 
 
     .no-scroll {
@@ -1122,12 +1118,11 @@ body {
     .ulHorizontal {
         position: fixed;
         top: 0;
-        /* Asegura que empiece arriba de todo */
         left: 0;
-        width: 100%;
+        width: 80px;
         display: flex;
         background-color: #040026;
-        z-index: 1000;
+        z-index: 2000;
 
         /* Uso correcto del área segura superior */
         padding-top: env(safe-area-inset-top);
